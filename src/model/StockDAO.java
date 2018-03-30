@@ -5,10 +5,13 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
+import java.util.ResourceBundle;
 
 import util.DBUtil;
 
 public class StockDAO {
+	static ResourceBundle sql = DBUtil.getResourceBundle();
+	
 	public static ArrayList<String[]>selectAll() throws SQLException{
 		Connection con = null;
 		PreparedStatement pstmt = null;
@@ -18,7 +21,8 @@ public class StockDAO {
 		
 		try {
 			con = DBUtil.getConnection();
-			pstmt = con.prepareStatement("select * from kor_stocks_prices where name='경동가스'");
+//			pstmt = con.prepareStatement("select * from kor_stocks_prices where name='경동가스'");
+			pstmt = con.prepareStatement(sql.getString("getStock"));
 			rset = pstmt.executeQuery();
 			
 			stock = new ArrayList<String[]>();
