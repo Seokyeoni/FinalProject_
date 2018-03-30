@@ -1,0 +1,13 @@
+중국,미국,베트남,홍콩,일본,대만,인도,필리핀,싱가포르,멕시코
+
+한국=
+중국=Sjanghai(SSE),Shenzhen(SZSE)
+미국=NASDAQ,NYSE,OTC BB,OTC Markets
+베트남=Hanoi(HNX),Ho Chi Minh(HSX)
+홍콩=Hong Kong(HKEX)
+일본=Tokyo(JPX)
+대만=Taiwan(TWSE),TPEX
+인도=봄베이(BSE),국립증권거래소(NSE)
+필리핀=Philippines(PSE)
+싱가포르=singapore(SGX)
+멕시코=Mexico(BMV)

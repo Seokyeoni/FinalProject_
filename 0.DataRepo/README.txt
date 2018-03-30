@@ -6,5 +6,5 @@
 0.TestData_Big
 	: sample test for 태형
 
-0.TestData_Middle 
+0.TestData_Pjong 
 	: sample test for 종현
