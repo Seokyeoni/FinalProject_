@@ -59,8 +59,7 @@ def getStockData(nation, data):
             stock['Currency'] = param['c']
             
             stock = pd.DataFrame(stock, columns = columns)
-            #stock.to_csv('"C:/0.bigdata/4.web/Triple_Core/0.DataRepo/0.StockData/' + param['q'] + "." + param['x'])
-            stock.to_csv("C:/0.bigdata/4.web/Triple_Core/0.DataRepo/0.TestData_Papa/" + param['q'] + "." + param['x'])
+            stock.to_csv("C:/0.bigdata/4.web/Triple_Core/0.DataRepo/0.TestData_Papa/" + param['q'] + "." + param['x'], index=False)
             print("success")
         else:
             print("fail")
@@ -70,10 +69,8 @@ def getStockData(nation, data):
     if endTime / 60 > 1:
         print( endTime / 60, '분')
 
-#getStockData("KOR", k_util)
+getStockData("KOR", k_util)
 #getStockData("JPN", j_util)
-
-
 
 #test_param = {
 #		'q': "105560",

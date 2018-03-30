@@ -10,7 +10,6 @@ import pandas as pd
 #		'p': "1Y"
 #      	}
 
-
 def get_price_data(query):
 	r = requests.get("https://finance.google.com/finance/getprices", params=query)
 	print(r, query['q'])
@@ -26,16 +25,18 @@ def get_price_data(query):
 #			print("1", basetime)
 #			index.append(datetime.fromtimestamp(basetime))
 #			print("2", index)
-			data.append([datetime.fromtimestamp(basetime), float(cols[4]), float(cols[2]), float(cols[3]), float(cols[1]), int(cols[5])])
+			data.append([str(datetime.fromtimestamp(basetime)), float(cols[4]), float(cols[2]), float(cols[3]), float(cols[1]), int(cols[5])])
 		elif cols[0][0].isdigit():
 			date = basetime + (int(cols[0])*int(query['i']))
 #			print("3", date)
 #			index.append(datetime.fromtimestamp(date))
-			data.append([datetime.fromtimestamp(date), float(cols[4]), float(cols[2]), float(cols[3]), float(cols[1]), int(cols[5])])
+			data.append([str(datetime.fromtimestamp(date)), float(cols[4]), float(cols[2]), float(cols[3]), float(cols[1]), int(cols[5])])
 
 	stock = pd.DataFrame(data, columns = ['Date', 'Open', 'High', 'Low', 'Close', 'Volume'])
 	
 	return stock
+
+
 
 def get_closing_data(queries, period):
 	closing_data = []
