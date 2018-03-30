@@ -26,27 +26,27 @@ def check_symbol_info():
         
 #존재하면 o입력,(없어졌으면 x 유지) 
 def listing_validation():
-    path_csv = "C:/0.bigdata/4.web/Triple_Core/0.DataRepo/0.TestData_Pjong/csv_data/"
-    path_info = "C:/0.bigdata/4.web/Triple_Core/0.DataRepo/0.TestData_Pjong/"
-    csv_list = os.listdir(path_csv)
-    info_list = os.listdir(path_info)
-    
     check_symbol_info()
     symbol_info = pd.read_csv("C:/0.bigdata/4.web/Triple_Core/0.DataRepo/0.TestData_Pjong/symbol_info.csv")
     symbol_info["listing"]='x'
+    info_vals = symbol_info['symbol'].values
     for file in csv_list:
-        symbol_new = pd.read_csv("C:/0.bigdata/4.web/Triple_Core/0.DataRepo/0.TestData_Pjong/csv_data/"+file)       
-        for symbol in symbol_info['symbol'].values:
-            if symbol in symbol_new['symbol'].values:
+        symbol_new = pd.read_csv("C:/0.bigdata/4.web/Triple_Core/0.DataRepo/0.TestData_Pjong/csv_data/"+file)
+        vals = symbol_new['symbol'].values
+        for symbol in info_vals:
+            if symbol in vals:
                 symbol_info.loc[symbol_info['symbol'] == symbol,'listing']='o'
         #갱신된 것
-        for symbol in symbol_new['symbol'].values:
-            if symbol not in symbol_info['symbol']:
-                symbol_info.append(symbol_new.loc[symbol_new['symbol'] == symbol.index])
-                symbol_info.loc[symbol_info['symbol'] == symbol,'listing']='New'
-                
+        a = [ symbol for symbol in vals if symbol not in info_vals ]
+        #print(a)
+        if len(a) != 0:
+            b = symbol_new[symbol_new['symbol'] == a]
+            b['listing'] = 'New'
+            symbol_info = symbol_info.append(b, ignore_index=True)
+     
     update_time = datetime.date.today().isoformat()
     symbol_info["updatetime"]=update_time
+    symbol_info.name = "a"
     symbol_info.to_csv("C:/0.bigdata/4.web/Triple_Core/0.DataRepo/0.TestData_Pjong/symbol_info_update.csv", index=False, sep=",", encoding='‘utf-8’')
 
 def update_symbol_info():
@@ -55,4 +55,5 @@ def update_symbol_info():
     #불러와서 저장
 check_symbol_info()
 listing_validation()
-
+symbol_new = pd.read_csv("C:/0.bigdata/4.web/Triple_Core/0.DataRepo/0.TestData_Pjong/symbol_info.csv")
+symbol_new.loc[symbol_new['symbol']==int('11000')]
