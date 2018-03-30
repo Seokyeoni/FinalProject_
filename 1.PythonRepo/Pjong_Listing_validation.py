@@ -7,13 +7,15 @@ import datetime
 #csv는 미리 존재해야함
 
 path_csv = "C:/0.bigdata/4.web/Triple_Core/0.DataRepo/0.TestData_Pjong/csv_data"
-file_list = os.listdir(path_csv)
+path_info = "C:/0.bigdata/4.web/Triple_Core/0.DataRepo/0.TestData_Pjong"
+csv_list = os.listdir(path_csv)
+info_list = os.listdir(path_csv)
 
 def check_symbol_info():
-    if 'symbol_info.csv' not in file_list:
+    if 'symbol_info.csv' not in info_list:
         print("새로 뽑음")
         symbol_info = pd.DataFrame()
-        for file in file_list:
+        for file in csv_list:
             symbol_new = pd.read_csv("C:/0.bigdata/4.web/Triple_Core/0.DataRepo/0.TestData_Pjong/csv_data/"+file)  
             symbol_info=symbol_info.append(symbol_new)
         symbol_info.to_csv("C:/0.bigdata/4.web/Triple_Core/0.DataRepo/0.TestData_Pjong/symbol_info.csv", index=False, sep=",", encoding='‘utf-8’')
@@ -23,7 +25,7 @@ def listing_validation():
     check_symbol_info()
     symbol_info = pd.read_csv("C:/0.bigdata/4.web/Triple_Core/0.DataRepo/0.TestData_Pjong/symbol_info.csv")
     symbol_info["listing"]='x'
-    for file in file_list:
+    for file in csv_list:
         symbol_new = pd.read_csv("C:/0.bigdata/4.web/Triple_Core/0.DataRepo/0.TestData_Pjong/csv_data/"+file)       
         for symbol in symbol_info['symbol'].values:
             if symbol in symbol_new['symbol'].values:
