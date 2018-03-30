@@ -39,7 +39,7 @@ def getStockDataYahoo(stockCode, start='', end=''):
             stock = stock.drop(stock[stock.Volume < 10].index)
             
             # 수집한 데이터를 파일에 저장한다.
-            stock.to_pickle('StockData/' + stockCode)
+            stock.to_csv("C:/0.bigdata/4.web/KPC_FinalProject/0.DataRepo/0.TestData_Papa/" + stockCode)
             break
         
     if stock.empty:

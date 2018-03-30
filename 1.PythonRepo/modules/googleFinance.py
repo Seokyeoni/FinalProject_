@@ -3,13 +3,19 @@ import requests
 from datetime import datetime
 import pandas as pd
 
+#k_param = {
+#		'q': "105560",
+#		'i': "86400",
+#		'x': "KRX",
+#		'p': "1Y"
+#      	}
+
 
 def get_price_data(query):
 	r = requests.get("https://finance.google.com/finance/getprices", params=query)
 	print(r, query['q'])
 	lines = r.text.splitlines()
 	data = []
-	index = []
 	basetime = 0
 	stock = pd.DataFrame()
 
@@ -17,14 +23,17 @@ def get_price_data(query):
 		cols = price.split(",")
 		if cols[0][0] == 'a':
 			basetime = int(cols[0][1:])
-			index.append(datetime.fromtimestamp(basetime))
-			data.append([float(cols[4]), float(cols[2]), float(cols[3]), float(cols[1]), int(cols[5])])
+#			print("1", basetime)
+#			index.append(datetime.fromtimestamp(basetime))
+#			print("2", index)
+			data.append([datetime.fromtimestamp(basetime), float(cols[4]), float(cols[2]), float(cols[3]), float(cols[1]), int(cols[5])])
 		elif cols[0][0].isdigit():
 			date = basetime + (int(cols[0])*int(query['i']))
-			index.append(datetime.fromtimestamp(date))
-			data.append([float(cols[4]), float(cols[2]), float(cols[3]), float(cols[1]), int(cols[5])])
+#			print("3", date)
+#			index.append(datetime.fromtimestamp(date))
+			data.append([datetime.fromtimestamp(date), float(cols[4]), float(cols[2]), float(cols[3]), float(cols[1]), int(cols[5])])
 
-	stock = pd.DataFrame(data, index = index, columns = ['Open', 'High', 'Low', 'Close', 'Volume'])
+	stock = pd.DataFrame(data, columns = ['Date', 'Open', 'High', 'Low', 'Close', 'Volume'])
 	
 	return stock
 
