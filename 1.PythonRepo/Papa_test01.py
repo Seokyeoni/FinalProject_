@@ -12,11 +12,11 @@ all_param = {
             'JPN': {'i': "86400", 'x': "TYO", 'p': "1Y", 'c': "JPY"}
             }
 
-k_util = pd.read_csv("C:/0.bigdata/4.web/KPC_FinalProject/0.DataRepo/0.TestData_Papa/k_util.csv")
+k_util = pd.read_csv("C:/0.bigdata/4.web/Triple_Core/0.DataRepo/0.TestData_Papa/k_util.csv")
 k_util = pd.DataFrame(k_util)
 k_util.name = "KOR"
 
-j_util = pd.read_csv("C:/0.bigdata/4.web/KPC_FinalProject/0.DataRepo/0.TestData_Papa/j_util.csv")
+j_util = pd.read_csv("C:/0.bigdata/4.web/Triple_Core/0.DataRepo/0.TestData_Papa/j_util.csv")
 j_util.name = "JPN"
 
 
@@ -59,8 +59,8 @@ def getStockData(nation, data):
             stock['Currency'] = param['c']
             
             stock = pd.DataFrame(stock, columns = columns)
-            #stock.to_csv('"C:/0.bigdata/4.web/KPC_FinalProject/0.DataRepo/0.StockData/' + param['q'] + "." + param['x'])
-            stock.to_csv("C:/0.bigdata/4.web/KPC_FinalProject/0.DataRepo/0.TestData_Papa/" + param['q'] + "." + param['x'])
+            #stock.to_csv('"C:/0.bigdata/4.web/Triple_Core/0.DataRepo/0.StockData/' + param['q'] + "." + param['x'])
+            stock.to_csv("C:/0.bigdata/4.web/Triple_Core/0.DataRepo/0.TestData_Papa/" + param['q'] + "." + param['x'])
             print("success")
         else:
             print("fail")
