@@ -68,18 +68,19 @@ def getStockData(nation, data):
     print('실행에 소용된 시간=', endTime, '초')
     if endTime / 60 > 1:
         print( endTime / 60, '분')
+        
 
 getStockData("KOR", k_util)
 #getStockData("JPN", j_util)
 
-#test_param = {
-#		'q': "105560",
-#		'i': "86400",
-#		'x': "KRX",
-#		'p': "1Y"
-#      	}
-#
-#test = get_price_data(test_param)
-#col = test.columns
+test_param = {
+		'q': "NTPC",
+		'i': "86400",
+		'x': "NSE",
+		'p': "1Y"
+      	}
+
+test = get_price_data(test_param)
+col = test.columns
 
 

@@ -45,5 +45,33 @@ public class StockDAO {
 		}
 		return stock;
 	}
+	
+	
+	public static ArrayList<String[]>selectTwoSector() throws SQLException{
+		Connection con = null;
+		PreparedStatement pstmt = null;
+		ResultSet rset = null;
+		String[] row = null;
+		ArrayList<String[]> stock = null;
+		
+		try {
+			con = DBUtil.getConnection();
+//			pstmt = con.prepareStatement("select * from kor_stocks_prices where name='경동가스'");
+			pstmt = con.prepareStatement("select Date, Sector, avg(Close) from test_stocks_prices where Date = '2017-04-10 16:00:00' or Date = '2017-08-09 16:00:00' or Date = '2017-12-11 16:00:00' group by Date, Sector");
+			rset = pstmt.executeQuery();
+			
+			stock = new ArrayList<String[]>();
+			while(rset.next()) {
+				row = new String[] {String.valueOf(rset.getString(1)),
+											String.valueOf(rset.getString(2)),
+											String.valueOf(rset.getDouble(3)),
+											};
+				stock.add(row);
+			}
+		} finally {
+			DBUtil.close(con, pstmt, rset);
+		}
+		return stock;
+	}
 
 }
