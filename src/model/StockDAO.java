@@ -58,14 +58,48 @@ public class StockDAO {
 		try {
 			con = DBUtil.getConnection();
 //			pstmt = con.prepareStatement("select * from kor_stocks_prices where name='경동가스'");
-			pstmt = con.prepareStatement("select Date, Sector, avg(Close) from test_stocks_prices where Date = '2017-04-10 16:00:00' or Date = '2017-08-09 16:00:00' or Date = '2017-12-11 16:00:00' group by Date, Sector");
+//			pstmt = con.prepareStatement("select Date, Sector, avg(Close) from test_stocks_prices where Date = '2017-04-10 16:00:00' or Date = '2017-08-09 16:00:00' or Date = '2017-12-11 16:00:00' group by Date, Sector");
+			pstmt = con.prepareStatement("select Sector, avg(Rtn)*252 from test_stocks_prices \r\n" + 
+					"where Date between '2017-04-01' and '2017-04-30'\r\n" + 
+					"group by Sector\r\n" + 
+					"union\r\n" + 
+					"select Sector, avg(Rtn)*252 from test_stocks_prices \r\n" + 
+					"where Date between '2017-05-01' and '2017-05-31'\r\n" + 
+					"group by Sector\r\n" + 
+					"union\r\n" + 
+					"select Sector, avg(Rtn)*252 from test_stocks_prices \r\n" + 
+					"where Date between '2017-06-01' and '2017-06-30'\r\n" + 
+					"group by Sector\r\n" + 
+					"union\r\n" + 
+					"select Sector, avg(Rtn)*252 from test_stocks_prices \r\n" + 
+					"where Date between '2017-07-01' and '2017-07-31'\r\n" + 
+					"group by Sector\r\n" + 
+					"union\r\n" + 
+					"select Sector, avg(Rtn)*252 from test_stocks_prices \r\n" + 
+					"where Date between '2017-08-01' and '2017-08-31'\r\n" + 
+					"group by Sector\r\n" + 
+					"union\r\n" + 
+					"select Sector, avg(Rtn)*252 from test_stocks_prices \r\n" + 
+					"where Date between '2017-09-01' and '2017-09-30'\r\n" + 
+					"group by Sector\r\n" + 
+					"union\r\n" + 
+					"select Sector, avg(Rtn)*252 from test_stocks_prices \r\n" + 
+					"where Date between '2017-10-01' and '2017-10-30'\r\n" + 
+					"group by Sector\r\n" + 
+					"union\r\n" + 
+					"select Sector, avg(Rtn)*252 from test_stocks_prices \r\n" + 
+					"where Date between '2017-11-01' and '2017-11-30'\r\n" + 
+					"group by Sector\r\n" + 
+					"union\r\n" + 
+					"select Sector, avg(Rtn)*252 from test_stocks_prices \r\n" + 
+					"where Date between '2017-12-01' and '2017-12-31'\r\n" + 
+					"group by Sector");
 			rset = pstmt.executeQuery();
 			
 			stock = new ArrayList<String[]>();
 			while(rset.next()) {
 				row = new String[] {String.valueOf(rset.getString(1)),
-											String.valueOf(rset.getString(2)),
-											String.valueOf(rset.getDouble(3)),
+											String.valueOf(rset.getDouble(2)),
 											};
 				stock.add(row);
 			}

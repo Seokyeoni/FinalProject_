@@ -46,7 +46,7 @@ def getHKG(symbol):
 def getStockData(data):
     startTime = time.time()
     param = {}
-    columns = ['Sector', 'Exchange', 'Symbol', 'Name', 'Date', 'Currency', 'Open', 'High', 'Low', 'Close', 'Volume']
+    columns = ['Sector', 'Exchange', 'Symbol', 'Name', 'Date', 'Currency', 'Open', 'High', 'Low', 'Close', 'Rtn', 'Volume']
     stocks = pd.DataFrame()
     
     for d in data.values:
@@ -66,7 +66,8 @@ def getStockData(data):
             stock['Symbol'] = str(symbol)
             stock['Exchange'] = d[2]
             stock['Currency'] = param['c']
-            
+            stock['Rtn'] = np.log(stock['Close']) - np.log(stock['Close'].shift(1))
+            stock = stock.dropna()
             stock = pd.DataFrame(stock, columns = columns)
             stocks = stocks.append(stock)
             #stock.to_csv("C:/0.bigdata/4.web/Triple_Core/0.DataRepo/0.TestData_Papa/" + param['q'] + "." + param['x'], index=False)
@@ -94,4 +95,5 @@ getStockData(sample)
 #test = get_price_data(test_param)
 #col = test.columns
 
+pivot = pd.read_csv("C:/0.bigdata/4.web/Triple_Core/0.DataRepo/0.TestData_Papa/test_sample.csv")
 
