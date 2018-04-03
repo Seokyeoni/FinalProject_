@@ -22,6 +22,7 @@
           
         ]);
 
+        
         var options = {
           title: 'Company Performance',
           curveType: 'function',

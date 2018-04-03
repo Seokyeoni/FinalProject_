@@ -25,6 +25,7 @@ public class StockDAO {
 			pstmt = con.prepareStatement(sql.getString("getStock"));
 			rset = pstmt.executeQuery();
 			
+			
 			stock = new ArrayList<String[]>();
 			while(rset.next()) {
 				row = new String[] {String.valueOf(rset.getString(1)),

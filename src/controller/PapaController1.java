@@ -31,6 +31,7 @@ public class PapaController1 extends HttpServlet {
 				request.getRequestDispatcher("Papa_google.jsp").forward(request, response);
 			} catch (SQLException e) {
 				e.printStackTrace();
+				
 			}
 		}
 
