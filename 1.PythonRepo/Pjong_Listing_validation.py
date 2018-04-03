@@ -16,9 +16,8 @@ def check_symbol_info():
     if 'symbol_info_update.csv' not in check_exist_info:
         symbol_info = pd.DataFrame()
         for file in csv_list:
-            columns = ['Name', 'Symbol', 'Exchange', 'Sector', 'Industry']
             symbol_new = pd.read_csv("C:/0.bigdata/4.web/Triple_Core/0.DataRepo/0.LocalStorage/csv_data/"+ file)
-            symbol_new = pd.DataFrame(symbol_new, columns = columns)
+            symbol_new.columns = ['Name', 'Symbol', 'Exchange', 'Sector', 'Industry']
             symbol_info=symbol_info.append(symbol_new)
         symbol_info.to_csv("C:/0.bigdata/4.web/Triple_Core/0.DataRepo/0.LocalStorage/symbol_info.csv", index=False, sep=",", encoding='‘utf-8’')
         
@@ -46,3 +45,4 @@ def listing_validation():
 
     #불러와서 저장
 listing_validation()
+check_symbol_info()
