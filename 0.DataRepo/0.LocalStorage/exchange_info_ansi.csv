@@ -1,0 +1,19 @@
+Exchange,Nation,Acronym,Name,Currency,WebSite
+한국,한국,KSE,Korea Stock Exchange,KRW,www.krx.co.kr
+KOSDAQ,한국,KOSDAQ,Korea Securities Dealers Automated Quotations,KRW,www.krx.co.kr
+상하이,중국,SSE,Shanghai Stock Exchange,CNY,www.sse.com.cn
+심천,중국,SZSE,Shenzhen Stock Exchange,CNY,www.szse.cn
+홍콩,홍콩,HKEX,Hong Kong Exchanges and Clearing,HKD,www.hkex.com.hk
+대만,대만,TSE,Taiwan Stock Exchange,TWD,www.tse.com.tw
+TPEX,대만,TPEX,Taipei Exchange,TWD,www.tpex.org.tw
+도쿄,일본,JPX,Japan Exchange,JPY,www.jpx.co.jp
+BMV,멕시코,BMV,Bolsa Mexicana de Valores,MXN,www.bmv.com.mx
+뉴욕,미국,NYSE,New York Stock Exchange,USD,www.nyse.com
+나스닥,미국,NASDAQ,National Association of Securities Dealers Automated Quotation,USD,www.nasdaq.com
+OTC Markets,미국,OTCQX,Over-The-Counter Market,USD,www.otcmarkets.com
+싱가포르,싱가폴,SGX,Singapore Exchange,SGD,www.sgx.com
+NSE,인도,NSE,National Stock Exchange of India,INR,www.nseindia.com
+BSE,인도,BSE,Bombay Stock Exchange,INR,www.bseindia.com
+Ho Chi Minh,베트남,HSX,Hochiminh Stock Exchange,VND,www.hsx.vn
+하노이,베트남,HNX,Hanoi Stock Exchange,VND,www.hastc.org.vn
+필리핀,필리핀,PSE,Philippine Stock Exchange,PHP,www.pse.com.ph
