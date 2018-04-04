@@ -1,5 +1,4 @@
 # -*- coding: utf-8 -*-
-12
 
 import pandas as pd
 import numpy as np
@@ -85,15 +84,13 @@ def getStockData(data):
 getStockData(sample)
 #getStockData("JPN", j_util)
 
-#test_param = {
-#		'q': "005930",
-#		'i': "86400",
-#		'x': "KRX",
-#		'p': "1M"
-#      	}
-#
-#test = get_price_data(test_param)
-#col = test.columns
+test_param = {
+		'q': "VESTA",
+		'i': "86400",
+		'x': "BMV",
+		'p': "1M"
+      	}
 
-pivot = pd.read_csv("C:/0.bigdata/4.web/Triple_Core/0.DataRepo/0.TestData_Papa/test_sample.csv")
+test = get_price_data(test_param)
 
+getStockDataYahoo('LUNMF')
