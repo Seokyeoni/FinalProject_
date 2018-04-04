@@ -7,7 +7,8 @@
 # -----------------------------------------------------------------
 import pandas_datareader.data as web
 import pandas as pd
-import datetime as dt
+from datetime import datetime as dt
+from datetime import timedelta as td
 
 # Yahoo site로 부터 대형주 종목 데이터를 수집하여 파일에 저장한다.
 # Yahoo site로 부터 주가 데이터를 수집한다. 가끔 안들어올 때가 있어서 10번 시도한다.
@@ -15,7 +16,10 @@ import datetime as dt
 def getStockDataYahoo(stockCode, start='', end=''):
     # 수집 기간
     if start == '':
-        start = dt.datetime(2007, 1, 1)
+        today = dt.today()
+        time_delta = td(days=730)
+        firstday = (today - time_delta).replace(day=1)
+        start = dt.strftime(firstday,"%Y-%m-%d")
     else:
         start = dt.datetime.strptime(start, '%Y-%m-%d')
     

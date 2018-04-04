@@ -13,7 +13,7 @@ info_list = os.listdir(path_info)
 
 def check_symbol_info():
     check_exist_info = [i for i in info_list if i.endswith('.csv')]
-    if 'symbol_info_update.csv' not in check_exist_info:
+    if 'symbol_info.csv' not in check_exist_info:
         symbol_info = pd.DataFrame()
         for file in csv_list:
             symbol_new = pd.read_csv("C:/0.bigdata/4.web/Triple_Core/0.DataRepo/0.LocalStorage/csv_data/"+ file)

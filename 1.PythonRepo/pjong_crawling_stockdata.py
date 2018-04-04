@@ -19,14 +19,7 @@ def collectData(q,x,startDate="2016-01-01"):
     s = getStockDataYahoo(q + '.' + x, start=startDate)
     s.to_pickle('Stocks/' + q + '.' + x )
 
-def set_param(q,x):
-    param = {
-            'q': q,
-            'i': "86400",
-            'x': x,
-            'p': "2Y"
-    }
-    return param
+
 
 def add_ZeroSymbol(symbol,n):
     adj_symbol = str(symbol).rjust(n, "0")
@@ -35,7 +28,8 @@ def add_ZeroSymbol(symbol,n):
 def get_StockData_google(param):#트라이 캐치 할 것
     stock = get_price_data(param)
     stock.to_pickle('Stocks/' + param['q'] + "." + param['x'])
-exchange_match={"서울":"KRX","KOSDAQ":"KOSDAQ","심천":"SHE","상하이":"SHA","홍콩":"HKG","대만":"TPE","일본":"TYO","TPEX":"TWO","싱가포르":"SI","멕시코":"MX"}
+exchange_match={"서울":["KRX","KRW"],"KOSDAQ":["KOSDAQ","KRW"],"심천":["SHE","CNY"],"상하이":["SHA","CNY"],"홍콩":["HKG","HKD"],"대만":["TPE","TWD"],"일본":["TYO","JPY"],"TPEX":["TWO","TWD"],"싱가포르":["SI","SGD"]
+,"멕시코":["MX","MXN"]}
 def get_Data():
     startTime = time.time()
     symbol_info=pd.read_csv("C:/0.bigdata/4.web/Triple_Core/0.DataRepo/0.LocalStorage/symbol_info.csv")
