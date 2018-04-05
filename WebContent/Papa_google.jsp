@@ -16,16 +16,16 @@
       function drawChart() {
         var data = google.visualization.arrayToDataTable([
           ['Year', 'Cyclical', 'Non-cyclical'],
-          ['4월',	${requestScope.sample[0][1]},	${requestScope.sample[1][1]}],
-          ['5월',	${requestScope.sample[2][1]},	${requestScope.sample[3][1]}],
-          ['6월',	${requestScope.sample[4][1]},	${requestScope.sample[5][1]}],
-          ['7월',	${requestScope.sample[6][1]},	${requestScope.sample[7][1]}],
-          ['8월',	${requestScope.sample[8][1]},	${requestScope.sample[9][1]}],
-          ['9월',	${requestScope.sample[10][1]},	${requestScope.sample[11][1]}],
-          ['10월',	${requestScope.sample[12][1]},	${requestScope.sample[13][1]}],
-          ['11월',	${requestScope.sample[14][1]},	${requestScope.sample[15][1]}],
-          ['12월',	${requestScope.sample[16][1]},	${requestScope.sample[17][1]}]
-          
+          ['1',	${requestScope.sample[0][1]},	${requestScope.sample[5][1]}],
+          ['2',	${requestScope.sample[10][1]},	${requestScope.sample[15][1]}],
+          ['3',	${requestScope.sample[20][1]},	${requestScope.sample[25][1]}],
+          ['4',	${requestScope.sample[30][1]},	${requestScope.sample[35][1]}],
+          ['5',	${requestScope.sample[40][1]},	${requestScope.sample[45][1]}],
+          ['6',	${requestScope.sample[50][1]},	${requestScope.sample[55][1]}],
+          ['7',	${requestScope.sample[60][1]},	${requestScope.sample[65][1]}],
+          ['8',	${requestScope.sample[70][1]},	${requestScope.sample[75][1]}],
+          ['9',	${requestScope.sample[80][1]},	${requestScope.sample[85][1]}],
+          ['10',	${requestScope.sample[90][1]},	${requestScope.sample[95][1]}],
         ]);
 
         

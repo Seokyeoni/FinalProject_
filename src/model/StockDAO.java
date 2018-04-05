@@ -97,8 +97,8 @@ public class StockDAO {
 					"union\r\n" + 
 					"select Sector, avg(Volume) from test_stocks_prices \r\n" + 
 					"where Date between '2018-01-01' and '2018-01-31'\r\n" + 
-					"group by Sector\r\n" + 
-					"order by Sector asc");
+					"group by Sector\r\n" 
+					);
 			rset = pstmt.executeQuery();
 			
 			stock = new ArrayList<String[]>();
