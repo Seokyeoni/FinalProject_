@@ -12,7 +12,6 @@ import pandas as pd
 
 def get_price_data(query):
 	r = requests.get("https://finance.google.com/finance/getprices", params=query)
-	print(r, query['q'])
 	lines = r.text.splitlines()
 	data = []
 	basetime = 0

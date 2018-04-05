@@ -19,15 +19,15 @@ def check_symbol_info():
             symbol_new = pd.read_csv("C:/0.bigdata/4.web/Triple_Core/0.DataRepo/0.LocalStorage/csv_data/"+ file)
             symbol_new.columns = ['Name', 'Symbol', 'Exchange', 'Sector', 'Industry']
             symbol_info=symbol_info.append(symbol_new)
-        symbol_info.to_csv("C:/0.bigdata/4.web/Triple_Core/0.DataRepo/0.LocalStorage/symbol_info.csv", index=False, sep=",", encoding='‘utf-8’')
+        symbol_info.to_csv("C:/0.bigdata/4.web/Triple_Core/0.DataRepo/0.LocalStorage/symbol_info1.csv", index=False, sep=",", encoding='‘utf-8’')
         
 def listing_validation():
-    check_symbol_info()
-    symbol_info = pd.read_csv("C:/0.bigdata/4.web/Triple_Core/0.DataRepo/0.LocalStorage/symbol_info.csv")
+    symbol_info = pd.read_csv("C:/0.bigdata/4.web/Triple_Core/0.DataRepo/0.LocalStorage/symbol_info1.csv")
     symbol_info["listing"]='x'
     info_vals = symbol_info['Symbol'].values
     for file in csv_list:
         symbol_new = pd.read_csv("C:/0.bigdata/4.web/Triple_Core/0.DataRepo/0.LocalStorage/csv_data/"+file)
+        print(symbol_new[:2])
         vals = symbol_new['Symbol'].values
         for symbol in info_vals:
             if symbol in vals:
@@ -41,8 +41,8 @@ def listing_validation():
     update_time = datetime.date.today().isoformat()
     symbol_info["updatetime"]=update_time
     symbol_info.name = "a"
-    symbol_info.to_csv("C:/0.bigdata/4.web/Triple_Core/0.DataRepo/0.LocalStorage/symbol_info.csv", index=False, sep=",", encoding='‘utf-8’')
+    symbol_info.to_csv("C:/0.bigdata/4.web/Triple_Core/0.DataRepo/0.LocalStorage/symbol_info1.csv", index=False, sep=",", encoding='‘utf-8’')
 
     #불러와서 저장
-listing_validation()
 check_symbol_info()
+listing_validation()
