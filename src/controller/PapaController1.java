@@ -27,12 +27,24 @@ public class PapaController1 extends HttpServlet {
 			try {
 				ArrayList<String[]> sample = StockDAO.selectTwoSector();
 				request.setAttribute("sample", sample);
-				System.out.println(sample);
+//				System.out.println(sample);
 				request.getRequestDispatcher("Papa_google.jsp").forward(request, response);
 			} catch (SQLException e) {
 				e.printStackTrace();
 				
 			}
+		}
+		else if (command.equals("test")) {
+			try {
+				ArrayList<String[]> sample = StockDAO.selectTwoSector();
+				request.setAttribute("sample", sample);
+//				System.out.println(sample);
+				request.getRequestDispatcher("input_test.jsp").forward(request, response);
+			} catch (SQLException e) {
+				e.printStackTrace();
+				
+			}
+			
 		}
 
 	}

@@ -15,7 +15,10 @@ import datetime as dt
 def getStockDataYahoo(stockCode, start='', end=''):
     # 수집 기간
     if start == '':
-        start = dt.datetime(2007, 1, 1)
+        today = dt.datetime.today()
+        time_delta = dt.timedelta(days=365)
+        firstday = (today - time_delta).replace(day=1)
+        start = dt.datetime.strftime(firstday,"%Y-%m-%d")
     else:
         start = dt.datetime.strptime(start, '%Y-%m-%d')
     
@@ -39,7 +42,6 @@ def getStockDataYahoo(stockCode, start='', end=''):
             stock = stock.drop(stock[stock.Volume < 10].index)
             
             # 수집한 데이터를 파일에 저장한다.
-            stock.to_csv("C:/0.bigdata/4.web/Triple_Core/0.DataRepo/0.TestData_Papa/" + stockCode)
             break
         
     if stock.empty:

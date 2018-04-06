@@ -1,4 +1,4 @@
-﻿Name,Symbol,Exchange,Sector,Industry
+Name,Symbol,Exchange,Sector,Industry
 Baoshan Iron & Steel,600019,상하이,기초 소재,철과 철강
 China Molybdenum A,603993,상하이,기초 소재,금속 광업
 Wanhua Chemical,600309,상하이,기초 소재,화학 제품 – 플라스틱과 고무
@@ -16394,7 +16394,6 @@ Hilton Worldwide,HLT,멕시코,서비스,호텔과 모텔
 일본전신전화,NTT1N,멕시코,서비스,통신 서비스
 델,DVMT,멕시코,테크놀로지,컴퓨터 데이터 저장 장치
 VMware,VMW,멕시코,테크놀로지,소프트웨어와 프로그래밍
-종목,기호,거래소,부문,산업
 시스코 시스템즈,CSCO,멕시코,테크놀로지,통신 장비
 HP Inc,HPQ,멕시코,테크놀로지,컴퓨터 하드웨어
 IBM,IBM,멕시코,테크놀로지,컴퓨터 서비스
@@ -25671,3 +25670,1019 @@ Blue Sphere,BLSP,OTC Markets,유틸러티,전기 유틸러티
 Garb Oil & Pwr Corp,GARB,OTC Markets,유틸러티,전기 유틸러티
 Biofuels Power Corp.,BFLS,OTC Markets,유틸러티,전기 유틸러티
 Dong Fang Hui Le,DFHL,OTC Markets,유틸러티,전기 유틸러티
+Hoa Phat Group JSC,HPG,Ho Chi Minh,기초 소재,철과 철강
+Masan Resources,MSR,하노이,기초 소재,금속 광업
+Sai Gon Quy Nhon,SQC,하노이,기초 소재,금속 광업
+PetroVietnam Fertilizer Chemical,DPM,Ho Chi Minh,기초 소재,화학제조
+Hoasen Group,HSG,Ho Chi Minh,기초 소재,철과 철강
+Binh Minh Plastics JSC,BMP,Ho Chi Minh,기초 소재,조립식 플라스틱과 고무
+Viet Nam Steel,TVN,하노이,기초 소재,철과 철강
+Petrovietnam Camau Fertilizer,DCM,Ho Chi Minh,기초 소재,화학제조
+Viet Nam Forestry,VIF,하노이,기초 소재,임업과 목재 제품
+Tien Phong Plastic JSC,NTP,하노이,기초 소재,조립식 플라스틱과 고무
+Nam Kim Steel JSC,NKG,Ho Chi Minh,기초 소재,철과 철강
+Phuoc Hoa Rubber JSC,PHR,Ho Chi Minh,기초 소재,조립식 플라스틱과 고무
+Pomina Steel Corp,POM,Ho Chi Minh,기초 소재,철과 철강
+Ducgiang Lao Cai Chemicals JSC,DGL,하노이,기초 소재,화학제조
+Dai Thien Loc Corp,DTL,Ho Chi Minh,기초 소재,철과 철강
+Vietnam Electric Cable Corp,CAV,Ho Chi Minh,기초 소재,다종 조립 제품
+Loc Troi,LTG,하노이,기초 소재,화학제조
+Viet Nam Italy Steel JSC,VIS,Ho Chi Minh,기초 소재,철과 철강
+An Phat Plastic and Green,AAA,Ho Chi Minh,기초 소재,컨테이너와 포장
+Vinacomin Minerals,KSV,하노이,기초 소재,금속 광업
+Binh Dien Fertilizer JSC,BFC,Ho Chi Minh,기초 소재,화학제조
+South Basic Chemicals JSC,CSV,Ho Chi Minh,기초 소재,화학제조
+Dong Phu Rubber JSC,DPR,Ho Chi Minh,기초 소재,조립식 플라스틱과 고무
+Ducgiang Chemicals Detergent Powder,DGC,하노이,기초 소재,화학제조
+LAM THAO FERTI,LAS,하노이,기초 소재,화학제조
+Dong Hai JSC of Bentre,DHC,Ho Chi Minh,기초 소재,컨테이너와 포장
+SMC Investment Trading JSC,SMC,Ho Chi Minh,기초 소재,철과 철강
+Baria Rubber,BRR,하노이,기초 소재,조립식 플라스틱과 고무
+Tan Bien Rubber,RTB,하노이,기초 소재,조립식 플라스틱과 고무
+Tienlen Steel Corp JSC,TLH,Ho Chi Minh,기초 소재,철과 철강
+Duc Long Gia Lai Group JSC,DLG,Ho Chi Minh,기초 소재,임업과 목재 제품
+DAP VINACHEM JSC,DDV,하노이,기초 소재,화학제조
+Dong Nai Plastic Construction JSC,DNP,하노이,기초 소재,조립식 플라스틱과 고무
+AMD Group Investment JSC,AMD,Ho Chi Minh,기초 소재,다종 조립 제품
+Hoa Binh Rubber JSC,HRC,Ho Chi Minh,기초 소재,임업과 목재 제품
+HAI Agrochem JSC,HAI,Ho Chi Minh,기초 소재,화학제조
+Tay Ninh Rubber JSC,TRC,Ho Chi Minh,기초 소재,임업과 목재 제품
+Viet Nam Fumigation JSC,VFG,Ho Chi Minh,기초 소재,화학제조
+Dream House Investment Corp,DRH,Ho Chi Minh,기초 소재,화학제조
+Vimico Thai Nguyen,TMG,하노이,기초 소재,금속 광업
+Daklak Rubber,DRI,하노이,기초 소재,조립식 플라스틱과 고무
+Southern Fertilizer JSC,SFG,Ho Chi Minh,기초 소재,화학제조
+RangDong Plastic JSC,RDP,Ho Chi Minh,기초 소재,화학 제품 – 플라스틱과 고무
+Tien Bo Group Js,TTB,하노이,기초 소재,다종 조립 제품
+Dong Anh Licogi,CKD,하노이,기초 소재,철과 철강
+Bien Hoa Packaging Co,SVI,Ho Chi Minh,기초 소재,컨테이너와 포장
+VICCO,HVT,하노이,기초 소재,화학제조
+Ngoc Nghia Industry,NNG,하노이,기초 소재,컨테이너와 포장
+Tan Tien Plastic,TTP,하노이,기초 소재,컨테이너와 포장
+My Chau Printing & Packaging Holdin,MCP,Ho Chi Minh,기초 소재,컨테이너와 포장
+Vegetable Oil Packing JSC,VPK,Ho Chi Minh,기초 소재,컨테이너와 포장
+CEVIMETAL,KMT,하노이,기초 소재,다종 조립 제품
+Do Thanh Tech,DTT,Ho Chi Minh,기초 소재,조립식 플라스틱과 고무
+Truong Phu JSC,TGP,하노이,기초 소재,다종 조립 제품
+Tan Binh Culture Co.,ALT,하노이,기초 소재,화학 제품 – 플라스틱과 고무
+Bim Son Packing JSC,BPC,하노이,기초 소재,컨테이너와 포장
+Dam Phu My Packaging JSC,PMP,하노이,기초 소재,컨테이너와 포장
+Viet Thai Electric,VTH,하노이,기초 소재,다종 조립 제품
+Tai Nguyen Corp,TNT,Ho Chi Minh,기초 소재,금속 광업
+PTRAMESCO,KKC,하노이,기초 소재,철과 철강
+But Son Cement Packing JSC,BBS,하노이,기초 소재,컨테이너와 포장
+A Cuong Mineral Group JSC,ACM,하노이,기초 소재,금속 광업
+Soc Son Development Invest,DPS,하노이,기초 소재,다종 조립 제품
+Dong Nai Paint Corporation,SDN,하노이,기초 소재,화학제조
+QUANG ANH MINE,KSQ,하노이,기초 소재,금속 광업
+Petrovietnam Pac,PBP,하노이,기초 소재,컨테이너와 포장
+KSD,KSD,하노이,기초 소재,다종 조립 제품
+Solavina JSC,SVN,하노이,기초 소재,다종 조립 제품
+MIMECO JSC,MIM,하노이,기초 소재,금속 광업
+NHP Production Import Export JSC,NHP,하노이,기초 소재,컨테이너와 포장
+An Truong An,ATG,Ho Chi Minh,기초 소재,다종 조립 제품
+Song Da Industry Trade JSC,STP,하노이,기초 소재,컨테이너와 포장
+HCPC,BXH,하노이,기초 소재,컨테이너와 포장
+PP Pack Making,HPB,하노이,기초 소재,컨테이너와 포장
+Tay Bac Minerals Investment JSC,KTB,하노이,기초 소재,금속 광업
+Da Nang Plastic JSC,DPC,하노이,기초 소재,조립식 플라스틱과 고무
+WMT Sana Joint,ASA,하노이,기초 소재,다종 조립 제품
+Dong A Packaging,DAP,하노이,기초 소재,컨테이너와 포장
+Lao Cai Mineral Exploitation,LCM,Ho Chi Minh,기초 소재,금속 광업
+Tech-Vina,CET,하노이,기초 소재,화학제조
+Binh Duong PP Pack,HBD,하노이,기초 소재,컨테이너와 포장
+Phu Thinh Metallurgy JSC,PTK,하노이,기초 소재,금속 광업
+Huu Lien Asia Corp,HLA,하노이,기초 소재,철과 철강
+Hung Dao Container,HDO,하노이,기초 소재,컨테이너와 포장
+General Materials Biochemistry Fert,HSI,하노이,기초 소재,화학제조
+Manganese Mineral,MMC,하노이,기초 소재,금속 광업
+Viky Plastic JSC,VKP,하노이,기초 소재,컨테이너와 포장
+Viet Phat Import Export,VPG,Ho Chi Minh,기초 소재,금속 광업
+Vietnam Pesticide JSC,VPS,Ho Chi Minh,기초 소재,화학제조
+Petrovietnam Drilling Mud JSC,PVC,하노이,기초 소재,화학제조
+Dong A Plastic Group JSC,DAG,Ho Chi Minh,기초 소재,조립식 플라스틱과 고무
+Hai Phong Paint JSC,HPP,하노이,기초 소재,화학제조
+HGM,HGM,하노이,기초 소재,금속 광업
+Quang Binh Import and Export JSC,QBS,Ho Chi Minh,기초 소재,화학제조
+An Phat Yen Bai Mineral Plastic,HII,Ho Chi Minh,기초 소재,화학 제품 – 플라스틱과 고무
+Tung Kuang Industrial JSC,TKU,하노이,기초 소재,다종 조립 제품
+Techno Agricultural Supplying JSC,TSC,Ho Chi Minh,기초 소재,화학제조
+Van Dien Fused Magnesium Phosphate,VAF,Ho Chi Minh,기초 소재,화학제조
+PetroVietnam Coating JSC,PVB,하노이,기초 소재,다종 조립 제품
+Thanh Nam,TNI,Ho Chi Minh,기초 소재,다종 조립 제품
+Taya Vietnam Electric Wire and Cabl,TYA,Ho Chi Minh,기초 소재,다종 조립 제품
+Pha Le Plastics,PLP,Ho Chi Minh,기초 소재,화학 제품 – 플라스틱과 고무
+Hochiminh City Metal Corp,HMC,Ho Chi Minh,기초 소재,다종 조립 제품
+A Dong Paint,ADP,하노이,기초 소재,화학제조
+Thai Trung Steel,TTS,하노이,기초 소재,철과 철강
+Saigon Plant Protection JSC,SPC,하노이,기초 소재,화학제조
+Industrial Gas Welding Electrode,SVG,하노이,기초 소재,화학제조
+Thong Nhat Rubber JSC,TNC,Ho Chi Minh,기초 소재,임업과 목재 제품
+Da Nang Steel JSC,DNS,하노이,기초 소재,철과 철강
+Bien Hoa Steel JSC,VCA,하노이,기초 소재,철과 철강
+Dong Anh C&F,DFC,하노이,기초 소재,다종 조립 제품
+Hcd Investment Producing,HCD,Ho Chi Minh,기초 소재,조립식 플라스틱과 고무
+Tan Dai Hung Plastic JSC,TPC,Ho Chi Minh,기초 소재,컨테이너와 포장
+Song Hong Aluminum,NSH,하노이,기초 소재,금속 광업
+Hapaco Group JSC,HAP,Ho Chi Minh,기초 소재,종이와 종이 제품
+Hatinh Minerals Trading,MTA,하노이,기초 소재,금속 광업
+Son Ha Sai Gon,SHA,Ho Chi Minh,기초 소재,다종 조립 제품
+VBC,VBC,하노이,기초 소재,컨테이너와 포장
+Binh Dinh Minerals JSC,BMC,Ho Chi Minh,기초 소재,금속 광업
+Vien Dong Investment Development,VID,Ho Chi Minh,기초 소재,종이와 종이 제품
+DNY,DNY,하노이,기초 소재,철과 철강
+Thu Duc Steel,TDS,하노이,기초 소재,철과 철강
+Yen Bai Forest JSC,CAP,하노이,기초 소재,종이와 종이 제품
+CPC,CPC,하노이,기초 소재,화학제조
+Ninh Binh Phosphate,NFC,하노이,기초 소재,화학제조
+Nha Be Steel JSC,TNB,하노이,기초 소재,철과 철강
+Ben Thanh Rubber JSC,BRC,Ho Chi Minh,기초 소재,조립식 플라스틱과 고무
+SADICO CAN THO,SDG,하노이,기초 소재,컨테이너와 포장
+Me Lin Steel,MEL,하노이,기초 소재,다종 조립 제품
+Kim Vi Inox Import Export,KVC,하노이,기초 소재,철과 철강
+SAPLASTIC. JSC,SPP,하노이,기초 소재,컨테이너와 포장
+Petroleum Mechanical JSC,PMS,하노이,기초 소재,컨테이너와 포장
+Duong Hieu Trading and Mining,DHM,Ho Chi Minh,기초 소재,금속 광업
+KSH Investment and Development,KSH,Ho Chi Minh,기초 소재,금속 광업
+TAPLAST,TPP,하노이,기초 소재,컨테이너와 포장
+Bamcorp.,BKC,하노이,기초 소재,금속 광업
+HSDA,HDA,하노이,기초 소재,화학제조
+Mechanical Engineering Metallurgy,SDK,하노이,기초 소재,다종 조립 제품
+Faros Construction,ROS,Ho Chi Minh,자본재,건설 서비스
+No Va Land Invest,NVL,Ho Chi Minh,자본재,건설 서비스
+Advanced Compound Stone JSC,VCS,하노이,자본재,건설 – 원자재
+Cotec Construction JSC,CTD,Ho Chi Minh,자본재,건설 서비스
+Refrigeration Electrical Engineerin,REE,Ho Chi Minh,자본재,건설 서비스
+Viglacera Corp,VGC,하노이,자본재,건설 – 용품과 비품
+VINACONEX,VCG,하노이,자본재,건설 서비스
+Hoang Huy Investment,TCH,Ho Chi Minh,자본재,건설 서비스
+Van Phu Invest,VPI,하노이,자본재,건설 서비스
+Kinh Bac City Development Share,KBC,Ho Chi Minh,자본재,건설 서비스
+Sonadezi,SNZ,하노이,자본재,건설 서비스
+Ha Tien 1 Cement JSC,HT1,Ho Chi Minh,자본재,건설 – 원자재
+Development Investment Construction,DIG,Ho Chi Minh,자본재,건설 서비스
+Nam Long Investment Corp,NLG,Ho Chi Minh,자본재,건설 서비스
+Hoa Binh Construction & Real Estate,HBC,Ho Chi Minh,자본재,건설 서비스
+Power Construction No 1,PC1,Ho Chi Minh,자본재,건설 서비스
+CII Bridges and Roads Investment,LGC,Ho Chi Minh,자본재,건설 서비스
+Ha Do Group JSC,HDG,Ho Chi Minh,자본재,건설 서비스
+NBB Investment Corp,NBB,Ho Chi Minh,자본재,건설 서비스
+HUD - TASCO,HUT,하노이,자본재,건설 서비스
+CEO Group JSC,CEO,하노이,자본재,건설 서비스
+CuongThuan Idico Development Invest,CTI,Ho Chi Minh,자본재,건설 – 원자재
+Saigon Co.op,SID,하노이,자본재,건설 서비스
+Binh Duong Mineral and Construction,KSB,Ho Chi Minh,자본재,건설 – 원자재
+Fecon Foundation Engineering,FCN,Ho Chi Minh,자본재,건설 서비스
+Construction 1,CC1,하노이,자본재,건설 서비스
+Sacom Development and Investment,SAM,Ho Chi Minh,자본재,건설 서비스
+Dat Phuong,DPG,하노이,자본재,건설 서비스
+Bien Hoa Building Materials,VLB,하노이,자본재,건설 – 원자재
+Vietnam Machinery Installation,LLM,하노이,자본재,건설 서비스
+Vinacomin Viet Bac Mining,MVB,하노이,자본재,건설 – 원자재
+CMC,CVT,Ho Chi Minh,자본재,건설 – 용품과 비품
+Nam Tan Uyen,NTC,하노이,자본재,건설 서비스
+Becamex Infrastructure Development,IJC,Ho Chi Minh,자본재,건설 서비스
+Saigon Real Estate,SGR,Ho Chi Minh,자본재,건설 서비스
+Binh Duong Building Materials,MVC,하노이,자본재,건설 – 원자재
+Viettel Construction,CTR,하노이,자본재,건설 서비스
+Hoang Quan Consulting Trading Serv,HQC,Ho Chi Minh,자본재,건설 서비스
+VIGLACERA HALO,VHL,하노이,자본재,건설 – 원자재
+Nui Nho Stone JSC,NNC,Ho Chi Minh,자본재,건설 – 원자재
+Investment Trading of Real Estate,ITC,Ho Chi Minh,자본재,건설 서비스
+LICOGI 14,L14,하노이,자본재,건설 서비스
+Long Hau Corp,LHG,Ho Chi Minh,자본재,건설 서비스
+Cho Lon Investment,CLX,하노이,자본재,건설 서비스
+CII Infrastructure,CEE,Ho Chi Minh,자본재,건설 서비스
+Bim Son Cement JSC,BCC,하노이,자본재,건설 – 원자재
+PVC,PVX,하노이,자본재,건설 서비스
+Binh Duong Trade and Development,TDC,Ho Chi Minh,자본재,건설 – 원자재
+Licogi 16 JSC,LCG,Ho Chi Minh,자본재,건설 서비스
+Viet Nam Inves,CTX,하노이,자본재,건설 서비스
+VNECO1,VE1,하노이,자본재,건설 서비스
+Consultant and Inspection,CNN,하노이,자본재,건설 서비스
+Hoa Cam Concrete JSC,HCC,하노이,자본재,건설 – 원자재
+Hydraulics Construction No4,TL4,하노이,자본재,건설 서비스
+Real Estate 11,D11,하노이,자본재,건설 서비스
+Thanh Thanh JSC,TTC,하노이,자본재,건설 – 용품과 비품
+SONG DA 4,SD4,하노이,자본재,건설 서비스
+HUD3 Investment and Construction,HU3,Ho Chi Minh,자본재,건설 서비스
+HUD1 Investment and Construction,HU1,Ho Chi Minh,자본재,건설 서비스
+Pacific Dinco Corp,PDB,하노이,자본재,건설 – 원자재
+Post and Telecommunications Invest,PTC,Ho Chi Minh,자본재,건설 서비스
+NAGAKAWA VIETN,NAG,하노이,자본재,다종 자본재
+Cotec Investment and Land House Dev,CLG,Ho Chi Minh,자본재,건설 서비스
+VIWELCO,QHD,하노이,자본재,건설과 농업용 기계
+Binh Trieu Construction,BTC,하노이,자본재,다종 자본재
+DA NANG HOUSIN,NDX,하노이,자본재,건설 서비스
+Viglacera Thang Long JSC,TLT,하노이,자본재,건설 – 용품과 비품
+Petroleum Pipeline Tank Construct,PXT,Ho Chi Minh,자본재,건설 서비스
+Vinalines Logistics Viet Nam,VLG,하노이,자본재,다종 자본재
+Binh Thuan Mineral Industry JSC,KSA,Ho Chi Minh,자본재,건설 – 원자재
+COMA 18 JSC,CIG,Ho Chi Minh,자본재,건설 서비스
+An Giang Centrifugal Concrete JSC,ACE,하노이,자본재,건설 – 원자재
+LICOGI - 18,L18,하노이,자본재,건설 서비스
+Petroleum Industrial and Civil Cons,PXI,Ho Chi Minh,자본재,건설 서비스
+Sai Son Cement JSC,SCJ,하노이,자본재,건설 – 원자재
+Asia Mineral,AMC,하노이,자본재,건설 – 원자재
+THIEN QUANG GR,ITQ,하노이,자본재,건설 – 용품과 비품
+VNECO 9,VE9,하노이,자본재,건설 서비스
+VNECO.SSM,SSM,하노이,자본재,건설 서비스
+Becamex Mineral JSC,BMJ,하노이,자본재,건설 – 원자재
+Vietnam Constr,CMS,하노이,자본재,건설 서비스
+Song Da No. 2 JSC,SD2,하노이,자본재,건설 서비스
+M & C,MCC,하노이,자본재,건설 – 용품과 비품
+Gypsum And Cement JSC,TXM,하노이,자본재,건설 – 원자재
+VINACONEX 6,VC6,하노이,자본재,건설 서비스
+Songda 9 Construction and Investmen,SCI,하노이,자본재,건설 서비스
+"Vinam.,JSC",CVN,하노이,자본재,건설 – 원자재
+LILAMA 69-2 CO,L62,하노이,자본재,건설 서비스
+Ha Tay Trading,HTT,Ho Chi Minh,자본재,건설 서비스
+VINACONEX 12,V12,하노이,자본재,건설 서비스
+COTRACO-QNA,QTC,하노이,자본재,건설 서비스
+1168 Construction JSC,MST,하노이,자본재,건설 서비스
+HOANG PHUC Mineral,HPM,하노이,자본재,건설 – 원자재
+Project 3 Construction Investment,CT3,하노이,자본재,건설 서비스
+VXB,VXB,하노이,자본재,건설 – 원자재
+Engineering Construction JSC No492,C92,하노이,자본재,건설 서비스
+Vitaly JSC,VTA,하노이,자본재,건설 – 용품과 비품
+"CEMENT.T., JSC",TMX,하노이,자본재,건설 – 원자재
+YenBinh Cement,VCX,하노이,자본재,건설 – 원자재
+VAM,ALV,하노이,자본재,건설 – 원자재
+VINACONEX 21,V21,하노이,자본재,건설 서비스
+Viet Nam Construction JSC No. 2,VC2,하노이,자본재,건설 서비스
+Thong Nhat,BAX,하노이,자본재,건설 서비스
+Lilama 18 JSC,LM8,Ho Chi Minh,자본재,건설 서비스
+Saigon Machinery Spare Parts JSC,SMA,Ho Chi Minh,자본재,다종 자본재
+HONGHA VIETNAM,PHH,하노이,자본재,건설 서비스
+Construction JSC 47,C47,Ho Chi Minh,자본재,건설 서비스
+Vietnam Mechanization Electrificat,MCG,Ho Chi Minh,자본재,건설과 농업용 기계
+Becamex Asphalt and Concrete JSC,ACC,Ho Chi Minh,자본재,건설 – 원자재
+Water Supply Sewerage Construction,VSI,Ho Chi Minh,자본재,건설 서비스
+Petrolimex Construction 1,PCC,하노이,자본재,건설 서비스
+Song Da 909 JSC,S99,하노이,자본재,건설 서비스
+LHC,LHC,하노이,자본재,건설 서비스
+LICOGI 13,LIG,하노이,자본재,건설 서비스
+VINACONEX NO7,VC7,하노이,자본재,건설 서비스
+Binh Duong Construction Civil Eng,BCE,Ho Chi Minh,자본재,건설 서비스
+Khang Minh Brick,GKM,하노이,자본재,건설 – 원자재
+Saigon Traffic Construction,GTS,하노이,자본재,건설 서비스
+Beton 6,BT6,하노이,자본재,건설 – 원자재
+DIC No 4,DC4,하노이,자본재,건설 서비스
+VINACONEX 25,VCC,하노이,자본재,건설 서비스
+Vinacomin Coal Import,CLM,하노이,자본재,건설과 농업용 기계
+Lilama 10 JSC,L10,Ho Chi Minh,자본재,건설 서비스
+DIC Investment and Trading JSC,DIC,Ho Chi Minh,자본재,건설 – 원자재
+QNCC,QNC,하노이,자본재,건설 – 원자재
+Everland Investment,EVG,Ho Chi Minh,자본재,건설 – 원자재
+Cantcimex,CCM,하노이,자본재,건설 – 원자재
+Vicem Hai Van Cement JSC,HVX,Ho Chi Minh,자본재,건설 – 원자재
+HA NOI SOUTH,NHA,하노이,자본재,건설 서비스
+Thanh An 96 Installation,TA9,하노이,자본재,건설 서비스
+Alphanam M&E,AME,하노이,자본재,건설 서비스
+Petrovietnam Premier,PVR,하노이,자본재,건설 서비스
+TECGROUP,TEG,Ho Chi Minh,자본재,건설 – 용품과 비품
+Cholon Real Estate JSC,RCL,하노이,자본재,건설 서비스
+Airimex JSC,ARM,하노이,자본재,항공 우주와 방위
+Mien Dong JSC,MDG,Ho Chi Minh,자본재,건설 서비스
+VINACONEX 1,VC1,하노이,자본재,건설 서비스
+Taicera Enterprise Co,TCR,Ho Chi Minh,자본재,건설 – 용품과 비품
+Viglacera Dong Trieu JSC,DTC,하노이,자본재,건설 – 용품과 비품
+VINACONEX 9 JS,VC9,하노이,자본재,건설 서비스
+MY XUAN BRICK,GMX,하노이,자본재,건설 – 용품과 비품
+La Hien Cement,CLH,하노이,자본재,건설 – 원자재
+LILAMA 69-1,L61,하노이,자본재,건설 서비스
+Song Da 505 JSC,S55,하노이,자본재,건설 서비스
+Urban Development and Construction,UDC,Ho Chi Minh,자본재,건설 서비스
+INCOMEX,ICG,하노이,자본재,건설 서비스
+Ha Long Investment,HID,Ho Chi Minh,자본재,다종 자본재
+Becamex Urban Development JSC,UDJ,하노이,자본재,건설 – 원자재
+Yenbai Cement,YBC,하노이,자본재,건설 – 원자재
+Nhi Hiep Brick-Tile JSC,NHC,하노이,자본재,건설 – 원자재
+Petrolimex Installation III,PEN,하노이,자본재,건설 서비스
+"TKV Investment, Trading Services",ITS,하노이,자본재,다종 자본재
+VNN Trading and Invest,VNN,하노이,자본재,다종 자본재
+SONGDA CAO CUO,SCL,하노이,자본재,건설 – 용품과 비품
+Da Nang Construction Building Mater,DXV,Ho Chi Minh,자본재,건설 – 원자재
+Nam Viet JSC,NAV,Ho Chi Minh,자본재,건설 – 용품과 비품
+SPILIT STONE,SPI,하노이,자본재,건설 – 원자재
+Phuc Thinh Design Construction Trad,PTD,하노이,자본재,건설 서비스
+Song Da Infrastructure,SDH,하노이,자본재,건설 서비스
+TIEN TRUNG INV,TTZ,하노이,자본재,건설 – 원자재
+DALAT REALCO,DLR,하노이,자본재,건설 서비스
+VINACONEX-PVC,PVV,하노이,자본재,건설 서비스
+Song Da 3 JSC,SD3,하노이,자본재,건설 서비스
+Haiphong Cement Transport JSC,HCT,하노이,자본재,건설 – 원자재
+Song Da No 25 JSC,SDJ,하노이,자본재,건설 서비스
+Binh Tay Steel Wire Netting,VDT,하노이,자본재,건설 – 용품과 비품
+JSCono6,CT6,하노이,자본재,건설 서비스
+Song Da Consulting JSC,SDC,하노이,자본재,건설 서비스
+DIC DONG TIEN,DID,하노이,자본재,건설 – 원자재
+Industrial Construction,ICI,하노이,자본재,건설 서비스
+LUTACO,LUT,하노이,자본재,건설 서비스
+DIC HOI AN,DIH,하노이,자본재,건설 서비스
+LICOGI 16.6 JS,LCS,하노이,자본재,건설 서비스
+Song Da Yaly Cement,SDY,하노이,자본재,건설 – 원자재
+Songda 7 JSC,SD7,하노이,자본재,건설 서비스
+SONGDA 7.04.,S74,하노이,자본재,건설 – 용품과 비품
+Power Engineering,PEC,하노이,자본재,건설 – 용품과 비품
+Visaco Mineral and Investment JSC,VMI,하노이,자본재,건설 서비스
+No5 Construction Invest,CI5,하노이,자본재,건설 서비스
+Vinacomin Machinery JSC,CTT,하노이,자본재,건설과 농업용 기계
+SOTRACO,SDP,하노이,자본재,건설 – 원자재
+Thanh Dat Investment,VHH,하노이,자본재,건설 – 원자재
+Viglacera Tu Son Ceramic JSC,VTS,하노이,자본재,건설 – 용품과 비품
+Mechanical and Industrial,IME,하노이,자본재,다종 자본재
+Dona Transportation,DGT,하노이,자본재,건설 서비스
+SONG DA IC,SDD,하노이,자본재,건설 서비스
+PetroVietnam Power Eng,PPE,하노이,자본재,건설 서비스
+Mineral Ferrous Metallergy JSC,KSK,하노이,자본재,건설과 농업용 기계
+Khanh Hoa Power Centrifugal,KCE,하노이,자본재,건설 – 원자재
+Song Da Mechanical Assembling JSC,MEC,하노이,자본재,건설 서비스
+LILAMA 5.JSC,LO5,하노이,자본재,건설 서비스
+VNECO2,VE2,하노이,자본재,건설 서비스
+Hanoi Construction Invest,HCI,하노이,자본재,건설 서비스
+Thanh An 665 Invest,TA6,하노이,자본재,건설 서비스
+Quang Nam Mineral Industry,MIC,하노이,자본재,건설 – 원자재
+Development Investment 1,DC1,하노이,자본재,건설 서비스
+Construction and Materials,CNT,하노이,자본재,건설 – 원자재
+1369 Construction,C69,하노이,자본재,건설 – 원자재
+Constrexim,CX8,하노이,자본재,건설 서비스
+Bach Dang TMC,BHT,하노이,자본재,건설 서비스
+"SARA., JSC",SRA,하노이,자본재,건설 서비스
+Ben Thanh Material,VT1,하노이,자본재,다종 자본재
+LILAMA 7,LM7,하노이,자본재,건설 서비스
+Thua Thien Hue Construct,GTH,하노이,자본재,건설 서비스
+Dong Nai Roofsheet,DCT,하노이,자본재,건설 – 원자재
+VNECO 8 ELECTR,VE8,하노이,자본재,건설 서비스
+Long Thanhnstruction and Trading,KDM,하노이,자본재,건설 – 용품과 비품
+Lang Son Cement,LCC,하노이,자본재,건설 – 원자재
+Chang Yih Ceramic,CYC,하노이,자본재,건설 – 용품과 비품
+Song Da 207,SDB,하노이,자본재,건설 서비스
+Bac Viet Steel,BVG,하노이,자본재,다종 자본재
+"HBM.,JSC",KHB,하노이,자본재,건설 – 원자재
+KTT,KTT,하노이,자본재,건설 서비스
+Tranimexco Transportation Import,TNM,하노이,자본재,건설 서비스
+Low Current - Telecom JSC,LTC,하노이,자본재,건설 서비스
+DIC No 2,DC2,하노이,자본재,건설 서비스
+LILAMA.EMC,L35,하노이,자본재,건설 서비스
+DZIMA,DZM,하노이,자본재,다종 자본재
+Ha Long No. 1 Viglacera JSC,HLY,하노이,자본재,건설 – 용품과 비품
+Bien Hoa Concrete,BHC,하노이,자본재,건설 – 원자재
+VNECO 3,VE3,하노이,자본재,건설 서비스
+Sai Gon Petroleum Construct,PSG,하노이,자본재,건설 서비스
+TBX,TBX,하노이,자본재,건설 – 원자재
+PetroVietnam Nghe An,PVA,하노이,자본재,건설 서비스
+Viglacera Dong,DAC,하노이,자본재,건설 – 용품과 비품
+JSC 482,B82,하노이,자본재,건설 서비스
+LILAMA 45.3 JS,L43,하노이,자본재,건설 서비스
+VATEL,VAT,하노이,자본재,건설 서비스
+VNECO4 Electricity,VE4,하노이,자본재,건설 서비스
+Hud101 Construction,H11,하노이,자본재,건설 서비스
+LILAMA 45.4 JS,L44,하노이,자본재,건설 서비스
+Song Da 27 JSC,S27,하노이,자본재,건설 – 용품과 비품
+Meca Vneco Investment Electricity,VES,하노이,자본재,건설 서비스
+Investment And Construction JSC No1,MCO,하노이,자본재,건설 서비스
+VINACONEX NO 5,VC5,하노이,자본재,건설 서비스
+Mientrung Petroleum Construction,PXM,하노이,자본재,건설 서비스
+Song Da No 9.06,S96,하노이,자본재,건설 서비스
+Underground Works Construction JSC,CTN,하노이,자본재,건설 서비스
+Phu Phong,PPG,하노이,자본재,건설 – 용품과 비품
+HUNG LONG MINE,KHL,하노이,자본재,건설 – 용품과 비품
+CTA,CTA,하노이,자본재,건설 – 원자재
+Song Da No 12,S12,하노이,자본재,건설 서비스
+Song Da 19,SJM,하노이,자본재,건설 서비스
+Meinfa,MEF,하노이,자본재,다종 자본재
+Viglacera Ba Hien,BHV,하노이,자본재,건설 – 용품과 비품
+Lilama 3,LM3,하노이,자본재,건설 서비스
+Quangnam Post Telecoms,QCC,하노이,자본재,건설 서비스
+Hoa Binh Province Hung Long Trading,SCC,하노이,자본재,건설 – 원자재
+Vietnam Construction JSC No 11,V11,하노이,자본재,건설 서비스
+SEEC,SDE,하노이,자본재,건설 서비스
+FBA International Group Corp,FBA,하노이,자본재,다종 자본재
+Vinaconex No15,V15,하노이,자본재,건설 서비스
+Bentre Transportation,TBT,하노이,자본재,건설 서비스
+Song Da 8,SD8,하노이,자본재,건설 서비스
+DANANG HOUSING,NDN,하노이,자본재,건설 서비스
+Saigon Seaproducts,SSN,하노이,자본재,건설과 농업용 기계
+Licogi,LIC,하노이,자본재,건설 – 용품과 비품
+KPF Consultant International Project,KPF,Ho Chi Minh,자본재,건설 – 원자재
+Seaprodex Refrigeration Industry,SRF,Ho Chi Minh,자본재,건설 서비스
+But Son Cement JSC,BTS,하노이,자본재,건설 – 원자재
+Dongthap Building Materials,BDT,하노이,자본재,건설 – 원자재
+Transport and Industry,TCD,Ho Chi Minh,자본재,건설 – 원자재
+MDF VRG Quang Tri Wood,MDF,하노이,자본재,건설 – 용품과 비품
+Vietnam Electricity Construction,VNE,Ho Chi Minh,자본재,건설 서비스
+36 Corp,G36,하노이,자본재,건설 서비스
+Vietnam Construction JSC No. 3,VC3,하노이,자본재,건설 서비스
+Machinery Erection&Construction JSC,VMC,하노이,자본재,건설 서비스
+Central Power Real Estate,LEC,Ho Chi Minh,자본재,건설 서비스
+Tien Giang Investment Construction,THG,Ho Chi Minh,자본재,건설 서비스
+Construction Investment Corp 3 2,C32,Ho Chi Minh,자본재,건설 – 원자재
+Materials Transport Cement JSC,VTV,하노이,자본재,건설 – 원자재
+Hoa An JSC,DHA,Ho Chi Minh,자본재,건설 – 원자재
+Tin Nghia Industrial,TIP,Ho Chi Minh,자본재,건설 서비스
+Haiphong Construction 3,HC3,하노이,자본재,건설 서비스
+Son Ha International Corp,SHI,Ho Chi Minh,자본재,건설 – 용품과 비품
+VGS,VGS,하노이,자본재,건설 – 용품과 비품
+Thang Long,TTL,하노이,자본재,건설 서비스
+Long Giang Investment and Urban Dev,LGL,Ho Chi Minh,자본재,건설 서비스
+Century 21,C21,하노이,자본재,건설 서비스
+PHUC HUNG,PHC,하노이,자본재,건설 서비스
+Construction JSC No5,SC5,Ho Chi Minh,자본재,건설 서비스
+Vietnam National Construction,VGV,하노이,자본재,건설 서비스
+Song Da N0 10. JSC,SDT,하노이,자본재,건설 서비스
+Idico Petroleum Trading Constructio,PXL,하노이,자본재,건설 서비스
+Song Da N011 JSC,SJE,하노이,자본재,건설 서비스
+Hai Duong Pump Manufacturing JSC,CTB,하노이,자본재,다종 자본재
+VIT,VIT,하노이,자본재,건설 – 용품과 비품
+Railway Construction,RCC,하노이,자본재,건설 서비스
+TAKCO,TKC,하노이,자본재,건설 서비스
+Binh Long Rubber Industrial,MH3,하노이,자본재,건설 서비스
+Vietnam Water,VIW,하노이,자본재,건설 – 용품과 비품
+Song Da No. 9 JSC,SD9,하노이,자본재,건설 서비스
+Hochiminh Museum,HMS,하노이,자본재,건설 서비스
+Lam Dong Mineral and Building Mater,LBM,Ho Chi Minh,자본재,건설 – 용품과 비품
+Chuong Duong Corp,CDC,Ho Chi Minh,자본재,건설 서비스
+Ho Chi Minh City Public,CHS,하노이,자본재,건설 서비스
+HOM,HOM,하노이,자본재,건설 – 원자재
+Song Da No. 5 JSC,SD5,하노이,자본재,건설과 농업용 기계
+Thang Long Urban,TLD,Ho Chi Minh,자본재,건설 – 용품과 비품
+Song Da N0. 6 JSC,SD6,하노이,자본재,건설 서비스
+Thanh Dat Invest,DTD,하노이,자본재,건설 서비스
+PECC4,TV4,하노이,자본재,건설 서비스
+"Cotana., JSC",CSC,하노이,자본재,건설 서비스
+Fecon Mining JSC,FCM,Ho Chi Minh,자본재,건설 – 원자재
+ThuDuc Electro Mechanical JSC,EMC,Ho Chi Minh,복합기업,복합기업
+AnPhat Securities,APG,Ho Chi Minh,금융,투자 서비스
+ORS,ORS,하노이,금융,투자 서비스
+Petrovietnam Gas JSCrp,GAS,Ho Chi Minh,에너지,석유와 가스 운용
+Vietnam National Petro,PLX,Ho Chi Minh,에너지,석유와 가스 운용
+Petroleum Technical,PVS,하노이,에너지,유정 서비스와 장비
+PetroVietnam Drilling Well Services,PVD,Ho Chi Minh,에너지,유정 서비스와 장비
+Petrolimex Petrochemical JSC,PLC,하노이,에너지,석유와 가스 운용
+Petrovietnam Southern Gas JSC,PGS,하노이,에너지,석유와 가스 운용
+Petrolimex Gas Corp JSC,PGC,Ho Chi Minh,에너지,석유와 가스 운용
+PetroVietnam General Services Corp,PET,Ho Chi Minh,에너지,유정 서비스와 장비
+Materials Petroleum JSC,COM,Ho Chi Minh,에너지,석유와 가스 운용
+Southern Waterborne,SWC,하노이,에너지,석유와 가스 운용
+Pacific Petroleum Transport,PVP,하노이,에너지,유정 서비스와 장비
+PTSC Offshore,POS,하노이,에너지,유정 서비스와 장비
+Petroleum Equipment Assembly,PXS,Ho Chi Minh,에너지,유정 서비스와 장비
+HOTRACO,HTC,하노이,에너지,석유와 가스 운용
+An Pha Petroleum Group JSC,ASP,Ho Chi Minh,에너지,석유와 가스 운용
+PVGAS NORTH,PVG,하노이,에너지,석유와 가스 운용
+Saigon Fuel JSC,SFC,Ho Chi Minh,에너지,석유와 가스 운용
+Camau Trading JSC,CMV,Ho Chi Minh,에너지,석유와 가스 운용
+VNBC,NBC,하노이,에너지,석탄
+TVD,TVD,하노이,에너지,석탄
+Petrolimex Hanoi,PJC,하노이,에너지,석유와 가스 운용
+Sao Mai Ben Dinh Petroleum Investme,PSB,하노이,에너지,유정 서비스와 장비
+Petrovietnam Engineering JSC,PVE,하노이,에너지,유정 서비스와 장비
+VHLC,HLC,하노이,에너지,석탄
+VCSC,TC6,하노이,에너지,석탄
+VHTC,THT,하노이,에너지,석탄
+PVGASCITY,PCG,하노이,에너지,유정 서비스와 장비
+VDNC,TDN,하노이,에너지,석탄
+PetroVietnam Oil Phu Yen,PPY,하노이,에너지,석유와 가스 운용
+VCASC,TCS,하노이,에너지,석탄
+Petrolimex Saigon,PSC,하노이,에너지,석유와 가스 운용
+VMDC,MDC,하노이,에너지,석탄
+Vinacomin Northern Coal,TMB,하노이,에너지,석탄
+Vietnam Enterprise Investment Dev,FID,하노이,에너지,석탄
+Vinacomin Central Zone,CZC,하노이,에너지,석탄
+APP,APP,하노이,에너지,석유와 가스 운용
+MT Gas JSC,MTG,하노이,에너지,석유와 가스 운용
+Vung Tau Petroleum,VMG,하노이,에너지,석유와 가스 운용
+Petrolimex Hatay,PTH,하노이,에너지,석유와 가스 운용
+Cavico Mineral,CMI,하노이,에너지,석유와 가스 운용
+Vinacomin Industry Investment,TVM,하노이,에너지,석탄
+Petro Center,PMG,Ho Chi Minh,에너지,석유와 가스 운용
+Vietcombank,VCB,Ho Chi Minh,금융,지방 은행
+Bank for Investment and Development,BID,Ho Chi Minh,금융,단기금융시장은행
+Vietnam Joint Stock Commercial Bank,CTG,Ho Chi Minh,금융,지방 은행
+Vietnam Prosperity,VPB,Ho Chi Minh,금융,지방 은행
+Military Commercial Bank,MBB,Ho Chi Minh,금융,지방 은행
+BaoViet Holdings,BVH,Ho Chi Minh,금융,보험(상해와 건강)
+ACB,ACB,하노이,금융,지방 은행
+Ho Chi Minh City Develop,HDB,Ho Chi Minh,금융,지방 은행
+Sai Gon Thuong Tin Commercial,STB,Ho Chi Minh,금융,지방 은행
+Viet Nam Intl Bank,VIB,하노이,금융,지방 은행
+Vietnam Export Import Commercial,EIB,Ho Chi Minh,금융,지방 은행
+Saigon Securities Incorporation,SSI,Ho Chi Minh,금융,투자 서비스
+SHB,SHB,하노이,금융,지방 은행
+Ho Chi Minh City Securities Corp,HCM,Ho Chi Minh,금융,투자 서비스
+Viet Capital,VCI,Ho Chi Minh,금융,투자 서비스
+Petrovietnam Insurance JSC,PVI,하노이,금융,보험 (손해)
+BIDV Insurance Corp,BIC,Ho Chi Minh,금융,보험 (손해)
+VNDIRECT Securities,VND,Ho Chi Minh,금융,투자 서비스
+Vietnam National Reinsurance,VNR,하노이,금융,보험 (손해)
+Kien Long Commercial,KLB,하노이,금융,지방 은행
+NAVIBANK,NVB,하노이,금융,지방 은행
+BaoMinh Insurance Corp,BMI,Ho Chi Minh,금융,보험(상해와 건강)
+SHS,SHS,하노이,금융,투자 서비스
+MB Securities,MBS,하노이,금융,투자 서비스
+POST TELECOMMU,PTI,하노이,금융,보험 (손해)
+FIT INVEST JSC,FIT,Ho Chi Minh,금융,투자 서비스
+Petrolimex Insurance Corp,PGI,Ho Chi Minh,금융,보험 (손해)
+BIDV Securities JSC,BSI,Ho Chi Minh,금융,투자 서비스
+FPT Securities,FTS,Ho Chi Minh,금융,투자 서비스
+Baoviet Securities Company,BVS,하노이,금융,투자 서비스
+Vietnam Bank For Industry,CTS,Ho Chi Minh,금융,투자 서비스
+AgriBank Securities JSC,AGR,Ho Chi Minh,금융,투자 서비스
+Viet Dragon,VDS,Ho Chi Minh,금융,투자 서비스
+Military Insurance,MIG,하노이,금융,보험 (손해)
+Agriculture Bank Insurance,ABI,하노이,금융,보험 (손해)
+Thien Viet Securities JSC,TVS,Ho Chi Minh,금융,투자 서비스
+Ocean Group JSC,OGC,Ho Chi Minh,금융,투자 서비스
+VINCOMSC,VIX,하노이,금융,투자 서비스
+Bao Long Insurance,BLI,하노이,금융,보험 (손해)
+Tri Viet Securities JSC,TVB,하노이,금융,투자 서비스
+First Securities,FSC,하노이,금융,투자 서비스
+Sacombank Securities JSC,SBS,하노이,금융,투자 서비스
+VNS SECURITY,IVS,하노이,금융,투자 서비스
+Artex Securities,ART,하노이,금융,투자 서비스
+PSI,PSI,하노이,금융,투자 서비스
+WSS,WSS,하노이,금융,투자 서비스
+Apec Securitie,APS,하노이,금융,투자 서비스
+Hai Phong Securities JSC,HAC,하노이,금융,투자 서비스
+VICS,VIG,하노이,금융,투자 서비스
+HBS,HBS,하노이,금융,투자 서비스
+AnPhat Securities,APG,Ho Chi Minh,금융,투자 서비스
+ORS,ORS,하노이,금융,투자 서비스
+DHG Pharmaceutical JSC,DHG,Ho Chi Minh,보건의료,기간 약품
+Pymepharco,PME,Ho Chi Minh,보건의료,생물공학 및 약품
+Traphaco JSC,TRA,Ho Chi Minh,보건의료,기간 약품
+Vietnam Pharma,DVN,하노이,보건의료,기간 약품
+DOMESCO Medical Import Export,DMC,Ho Chi Minh,보건의료,기간 약품
+Imexpharm Corp,IMP,Ho Chi Minh,보건의료,기간 약품
+Binh Dinh Pharma,DBD,하노이,보건의료,생물공학 및 약품
+Mekophar Chemical,MKP,하노이,보건의료,기간 약품
+OPC Pharmaceutical JSC,OPC,Ho Chi Minh,보건의료,기간 약품
+Cuu Long Pharmaceutical,DCL,Ho Chi Minh,보건의료,기간 약품
+Tam Duc Cardiology,TTD,하노이,보건의료,헬쓰케어 설비
+Hataphar,DHT,하노이,보건의료,기간 약품
+PHARMEDIC JSC,PMC,하노이,보건의료,생물공학 및 약품
+J&V Medical Instrument JSC,JVC,Ho Chi Minh,보건의료,의료 장비와 용품
+Central Pharmaceutical JSC No3,DP3,하노이,보건의료,생물공학 및 약품
+Amvibiotech,AMV,하노이,보건의료,생물공학 및 약품
+Vidipha Central Pharma,VDP,Ho Chi Minh,보건의료,생물공학 및 약품
+Traphaco High Tech JSC,CNC,하노이,보건의료,생물공학 및 약품
+No 25 Central Pharma,UPH,하노이,보건의료,생물공학 및 약품
+Central Pharma No2,DP2,하노이,보건의료,생물공학 및 약품
+SPM Corp,SPM,Ho Chi Minh,보건의료,기간 약품
+LADOPHAR,LDP,하노이,보건의료,생물공학 및 약품
+Bepharco,DBT,하노이,보건의료,생물공학 및 약품
+Armephaco,AMP,하노이,보건의료,의료 장비와 용품
+Nam Duoc JSC,NDC,하노이,보건의료,기간 약품
+Hatinh Pharmaceutical,HDP,하노이,보건의료,생물공학 및 약품
+DANAMECO MEDIC,DNM,하노이,보건의료,의료 장비와 용품
+PP PHARCO,PPP,하노이,보건의료,기간 약품
+MEKOVET,MKV,하노이,보건의료,기간 약품
+Medipharco Tenamyd Central Pharmace,MTP,하노이,보건의료,기간 약품
+Becamex Pharmaceutical JSC,BCP,하노이,보건의료,생물공학 및 약품
+Vinamilk,VNM,Ho Chi Minh,소비재/ 경기 방어형,식품 가공
+Saigon Beer Alcohol Beverage,SAB,Ho Chi Minh,소비재/ 경기 방어형,음료(알코올성)
+Masan Group Corp,MSN,Ho Chi Minh,소비재/ 경기 방어형,식품 가공
+Masan Consumer,MCH,하노이,소비재/ 경기 방어형,식품 가공
+Hanoi Beer Alcohol,BHN,Ho Chi Minh,소비재/ 경기 방어형,음료(알코올성)
+Quang Ngai Sugar,QNS,하노이,소비재/ 경기 방어형,식품 가공
+Thanh Thanh Cong Tay Ninh,SBT,Ho Chi Minh,소비재/ 경기 방어형,식품 가공
+Kinh Do Corp,KDC,Ho Chi Minh,소비재/ 경기 방어형,식품 가공
+Minh Phu Seafood,MPC,하노이,소비재/ 경기 방어형,식품 가공
+Pan Pacific Corp,PAN,Ho Chi Minh,소비재/ 경기 방어형,곡물
+Hoang Anh Gia Lai JSC,HAG,Ho Chi Minh,소비재/ 경기 방어형,곡물
+Thien Long Group Corp,TLG,Ho Chi Minh,소비재/ 경기 방어형,사무용품
+Vinacafe Bien Hoa JSC,VCF,Ho Chi Minh,소비재/ 경기 방어형,식품 가공
+Hoang Anh Gia Lai Agricultural JSC,HNG,Ho Chi Minh,소비재/ 경기 방어형,Fish/Livestock 어업/축산
+Vinh Hoan Corp,VHC,Ho Chi Minh,소비재/ 경기 방어형,식품 가공
+Vissan,VSN,하노이,소비재/ 경기 방어형,Fish/Livestock 어업/축산
+Kido Frozen Foods,KDF,하노이,소비재/ 경기 방어형,식품 가공
+Thong Nhat Production and Investmen,GTN,Ho Chi Minh,소비재/ 경기 방어형,개인과 가계용 제품
+International Development & Investm,IDI,Ho Chi Minh,소비재/ 경기 방어형,식품 가공
+Viet Nam Vegetable Oils,VOC,하노이,소비재/ 경기 방어형,곡물
+Nam Viet Corp,ANV,Ho Chi Minh,소비재/ 경기 방어형,식품 가공
+Viet Nam Seaproducts,SEA,하노이,소비재/ 경기 방어형,식품 가공
+Dabaco,DBC,하노이,소비재/ 경기 방어형,식품 가공
+Tuong An Vegetable Oil JSC,TAC,Ho Chi Minh,소비재/ 경기 방어형,식품 가공
+National Seed JSC,NSC,Ho Chi Minh,소비재/ 경기 방어형,곡물
+Hai Ha Confectionery JSC,HHC,하노이,소비재/ 경기 방어형,식품 가공
+Lix Detergent JSC,LIX,Ho Chi Minh,소비재/ 경기 방어형,개인과 가계용 제품
+Ipa Investments,IPA,하노이,소비재/ 경기 방어형,개인과 가계용 제품
+Bibica Corp,BBC,Ho Chi Minh,소비재/ 경기 방어형,식품 가공
+Hung Vuong Corp,HVG,Ho Chi Minh,소비재/ 경기 방어형,식품 가공
+Vietnam Livestock,VLC,하노이,소비재/ 경기 방어형,Fish/Livestock 어업/축산
+Sunstar Investment,SJF,Ho Chi Minh,소비재/ 경기 방어형,곡물
+Travel Investment and Seafood Devel,DAT,Ho Chi Minh,소비재/ 경기 방어형,식품 가공
+Sao Ta Foods JSC,FMC,Ho Chi Minh,소비재/ 경기 방어형,식품 가공
+Sai Gon Quang Ngai Beer,BSQ,하노이,소비재/ 경기 방어형,음료(알코올성)
+Cholimex Food,CMF,하노이,소비재/ 경기 방어형,식품 가공
+Sai Gon  Mien Trung Beer,SMB,하노이,소비재/ 경기 방어형,음료(알코올성)
+Southern Seed Corp,SSC,Ho Chi Minh,소비재/ 경기 방어형,곡물
+Cat Loi JSC,CLC,Ho Chi Minh,소비재/ 경기 방어형,담배
+An Phu Irradiation JSC,APC,Ho Chi Minh,소비재/ 경기 방어형,곡물
+Western Sai Gon Beer JSC,WSB,하노이,소비재/ 경기 방어형,음료(알코올성)
+Lam Son Sugar JSC,LSS,Ho Chi Minh,소비재/ 경기 방어형,식품 가공
+Sagiang Import&Export Corporation,SGC,하노이,소비재/ 경기 방어형,식품 가공
+Hong Ha Stationery JSC,HHA,하노이,소비재/ 경기 방어형,사무용품
+SON LA SUGAR,SLS,하노이,소비재/ 경기 방어형,식품 가공
+HuuNghi Food JSC,HNF,하노이,소비재/ 경기 방어형,식품 가공
+Saigon-Songlam Beer,BSL,하노이,소비재/ 경기 방어형,음료(알코올성)
+Quang Ngai Agricultural,APF,하노이,소비재/ 경기 방어형,식품 가공
+NETCO,NET,하노이,소비재/ 경기 방어형,개인과 가계용 제품
+Nafoods Group JSC,NAF,Ho Chi Minh,소비재/ 경기 방어형,음료 (비알코올성)
+Mitraco Livestock,MLS,하노이,소비재/ 경기 방어형,Fish/Livestock 어업/축산
+Saigon Industrial Foodstuffs,IFC,하노이,소비재/ 경기 방어형,식품 가공
+Bac Lieu Fis,BLF,하노이,소비재/ 경기 방어형,식품 가공
+Top One Allot,TOP,하노이,소비재/ 경기 방어형,식품 가공
+Cafico Viet Nam,CFC,하노이,소비재/ 경기 방어형,식품 가공
+Sai Gon Vegetable Oil JSC,SGO,하노이,소비재/ 경기 방어형,개인과 가계용 제품
+Investment Commerce Fisheries Corp,ICF,Ho Chi Minh,소비재/ 경기 방어형,식품 가공
+NGOPREXCO,NGC,하노이,소비재/ 경기 방어형,식품 가공
+Nam Dinh Export Foodstuff Agri Prod,NDF,하노이,소비재/ 경기 방어형,식품 가공
+Hung Viet Green Agriculture JSC,HVA,하노이,소비재/ 경기 방어형,식품 가공
+Dongthap Trading,FDG,하노이,소비재/ 경기 방어형,식품 가공
+NTACO,ATA,하노이,소비재/ 경기 방어형,식품 가공
+Cadovimex Seafood Import Export,CAD,하노이,소비재/ 경기 방어형,식품 가공
+Hiep Khanh Tea,HKT,하노이,소비재/ 경기 방어형,식품 가공
+Anvifish JSC,AVF,하노이,소비재/ 경기 방어형,식품 가공
+DMC Northern Petroleum Chemicals,PCN,하노이,소비재/ 경기 방어형,개인과 가계용 제품
+Viet Nhat Seafood,VNH,하노이,소비재/ 경기 방어형,식품 가공
+Vinh Long Cereal and Food Corp,VLF,하노이,소비재/ 경기 방어형,식품 가공
+Khanh Hoa Salanganes,SKV,하노이,소비재/ 경기 방어형,식품 가공
+Safoco Foodstuff JSC,SAF,하노이,소비재/ 경기 방어형,식품 가공
+Thien Nam Trading Import Export,TNA,Ho Chi Minh,소비재/ 경기 방어형,식품 가공
+Vinh Ha Food,VHF,하노이,소비재/ 경기 방어형,식품 가공
+HOANG LONG Group,HLG,Ho Chi Minh,소비재/ 경기 방어형,담배
+Seafood JSC No 1,SJ1,하노이,소비재/ 경기 방어형,식품 가공
+Lam Dong Foodstuff JSC,VDL,하노이,소비재/ 경기 방어형,음료(알코올성)
+Bentre Aquaproduct Import Export,ABT,Ho Chi Minh,소비재/ 경기 방어형,식품 가공
+Sai Gon Export Foodstuffs,AGX,하노이,소비재/ 경기 방어형,식품 가공
+Sai Gon Phu Tho Beer,BSP,하노이,소비재/ 경기 방어형,음료(알코올성)
+Interfood Shareholding,IFS,하노이,소비재/ 경기 방어형,음료 (비알코올성)
+333 Sugar,S33,하노이,소비재/ 경기 방어형,식품 가공
+Chuong Duong Beverages JSC,SCD,Ho Chi Minh,소비재/ 경기 방어형,음료 (비알코올성)
+Saigon-Baclieu Beer,SBL,하노이,소비재/ 경기 방어형,음료(알코올성)
+Khanh Hoa Mineral Water,VKD,하노이,소비재/ 경기 방어형,음료 (비알코올성)
+HAD,HAD,하노이,소비재/ 경기 방어형,음료(알코올성)
+THB,THB,하노이,소비재/ 경기 방어형,음료(알코올성)
+Phu Son Livestock JSC,PSL,하노이,소비재/ 경기 방어형,Fish/Livestock 어업/축산
+Angiang Fisheries Import & Export,AGF,Ho Chi Minh,소비재/ 경기 방어형,식품 가공
+Cuulong Fish JSC,ACL,Ho Chi Minh,소비재/ 경기 방어형,식품 가공
+Ngan Son JSC,NST,하노이,소비재/ 경기 방어형,담배
+Quang Ninh Mineral Water,QHW,하노이,소비재/ 경기 방어형,식품 가공
+An Giang Import Export Co,AGM,Ho Chi Minh,소비재/ 경기 방어형,식품 가공
+Long An Food Processing Export JSC,LAF,Ho Chi Minh,소비재/ 경기 방어형,식품 가공
+Thai Duong Petrol,TDG,Ho Chi Minh,소비재/ 경기 방어형,식품 가공
+Ha Long Canned Food JSC,CAN,하노이,소비재/ 경기 방어형,식품 가공
+South West PetroVietnam Fertil Chem,PSW,하노이,소비재/ 경기 방어형,개인과 가계용 제품
+Kien Hung,KHS,하노이,소비재/ 경기 방어형,식품 가공
+Tracimexco Supply Chains,TRS,하노이,소비재/ 경기 방어형,식품 가공
+Quang Nam Rubber Investment JSC,VHG,Ho Chi Minh,소비재/ 경기 방어형,개인과 가계용 제품
+Seafood JSC No 4,TS4,Ho Chi Minh,소비재/ 경기 방어형,식품 가공
+HABECO TRADING,HAT,하노이,소비재/ 경기 방어형,음료(알코올성)
+Thanglong JSC,VTL,하노이,소비재/ 경기 방어형,음료(알코올성)
+SouthEast Petrovietnam Fertil Chem,PSE,하노이,소비재/ 경기 방어형,개인과 가계용 제품
+MECOFOOD,MCF,하노이,소비재/ 경기 방어형,식품 가공
+Ha Noi Kinh Bac Agriculture Food,HKB,하노이,소비재/ 경기 방어형,곡물
+Mekong Fisheries JSC,AAM,Ho Chi Minh,소비재/ 경기 방어형,식품 가공
+North PetroVietnam Fertilizer & Che,PMB,하노이,소비재/ 경기 방어형,개인과 가계용 제품
+Central PetroVietnam Fertilizer and,PCE,하노이,소비재/ 경기 방어형,개인과 가계용 제품
+DIC Tourisrt Trade,DCD,하노이,소비재/ 경기 방어형,음료(알코올성)
+KTS,KTS,하노이,소비재/ 경기 방어형,식품 가공
+Petrolimex International Trading,PIT,Ho Chi Minh,소비재/ 경기 방어형,식품 가공
+Thuong Phu JSC,CTP,하노이,소비재/ 경기 방어형,식품 가공
+DaNang Seaproducts,SPD,하노이,소비재/ 경기 방어형,식품 가공
+TRANGCORP Corporation JSC,TFC,하노이,소비재/ 경기 방어형,식품 가공
+Vietnam Cotton JSC,BVN,하노이,소비재/ 경기 방어형,곡물
+Vi Na Ta Ba Trading,VTJ,하노이,소비재/ 경기 방어형,담배
+GENERALEXIM.,TH1,하노이,소비재/ 경기 방어형,식품 가공
+Hanoimilk JSC,HNM,하노이,소비재/ 경기 방어형,식품 가공
+CaMau Frozen Seafood Processing,CMX,Ho Chi Minh,소비재/ 경기 방어형,식품 가공
+Khanh Hoi Investment and Services,KHA,Ho Chi Minh,서비스,부동산 운용
+Tri Viet Management Investment Corp,TVC,하노이,서비스,사업 서비스
+Vietnam Superintendence&Inspection,VNC,하노이,서비스,사업 서비스
+Khang An Investment Real Estate,KAC,Ho Chi Minh,서비스,부동산 운용
+FLC Global JSC,KLF,하노이,서비스,여가 활동
+Petro Capital and Infrastructure,PTL,Ho Chi Minh,서비스,부동산 운용
+HUDLAND REAL E,HLD,하노이,서비스,부동산 운용
+Truong Long Engineering and Auto,HTL,Ho Chi Minh,서비스,소매(전문)
+Vimedimex Medi Pharma JSC,VMD,Ho Chi Minh,서비스,소매(약품)
+Ninh Van Bay Travel Real Estate,NVT,Ho Chi Minh,서비스,호텔과 모텔
+Saigon Hotel JSC,SGH,하노이,서비스,호텔과 모텔
+City Auto,CTF,Ho Chi Minh,서비스,소매(전문)
+Cam Ranh Airport,CIA,하노이,서비스,소매(백화점과 할인점)
+THANGLONG INVE,TIG,하노이,서비스,부동산 운용
+EVN Intl,EIC,하노이,서비스,부동산 운용
+PECC3,TV3,하노이,서비스,사업 서비스
+CuChi Commercial and Industrial Dev,CCI,Ho Chi Minh,서비스,소매(전문)
+"SURICOD.,JSC",SDU,하노이,서비스,부동산 운용
+Phuong Nam Cultural Joint Stock,PNC,Ho Chi Minh,서비스,소매(전문)
+HEID,EID,하노이,서비스,인쇄와 출판
+EDID,SED,하노이,서비스,인쇄와 출판
+Atesco Industrial Cartering,ATS,하노이,서비스,레스토랑
+Thu Duc Trading&Import Export JSC,TMC,하노이,서비스,소매(전문)
+Ba Ria Vung Tau,VTG,하노이,서비스,호텔과 모텔
+Dong A Hotel Group,DAH,Ho Chi Minh,서비스,호텔과 모텔
+Cuu Long Petro Urban Development,CCL,Ho Chi Minh,서비스,부동산 운용
+De Tam JSC,DTA,Ho Chi Minh,서비스,부동산 운용
+PV POWER SERVI,PPS,하노이,서비스,사업 서비스
+Danang Pharmaceutical Medical Equip,DDN,하노이,서비스,소매(약품)
+Tien Thanh Service,TTH,하노이,서비스,소매(의복)
+FIDITOUR JSC,FDT,하노이,서비스,개인 서비스
+VINACONEX ITC,VCR,하노이,서비스,호텔과 모텔
+PVI INVEST,PV2,하노이,서비스,부동산 운용
+Nam Dinh Educational Book&Equipment,DST,하노이,서비스,소매(전문)
+PETROLEUM REAL,PVL,하노이,서비스,부동산 운용
+Hoi An Tourist,HOT,Ho Chi Minh,서비스,호텔과 모텔
+IDJ FINANCIAL,IDJ,하노이,서비스,부동산 운용
+Educational Book JSC,EBS,하노이,서비스,인쇄와 출판
+Hanoi Fuel,HFC,하노이,서비스,소매(전문)
+Song Da 1.01 JSC,SJC,하노이,서비스,부동산 운용
+Danangbook,BED,하노이,서비스,소매(전문)
+No 4 Printing JSC,IN4,하노이,서비스,인쇄 서비스
+Deidco,DAD,하노이,서비스,인쇄와 출판
+Viet Nam Land Invest,VNI,하노이,서비스,부동산 운용
+Vung Tau Intourco,VIR,하노이,서비스,호텔과 모텔
+Vung Ang Petroleum JSC,POV,하노이,서비스,소매(전문)
+Sonadezi Services,SDV,하노이,서비스,사업 서비스
+Song Da Manpower Supply&Trading JSC,SDA,하노이,서비스,사업 서비스
+Post Printing and Telecom,PTP,하노이,서비스,인쇄 서비스
+Pacific Property and Infrastructure,PPI,Ho Chi Minh,서비스,부동산 운용
+"PIV.,JSC",PIV,하노이,서비스,부동산 운용
+PTC,PDC,하노이,서비스,호텔과 모텔
+Tourism Trade and Investment JSC,TTR,하노이,서비스,개인 서비스
+Petroleum Dong Do,PFL,하노이,서비스,부동산 운용
+Daklak Pharmaceutical Medical Equip,DBM,하노이,서비스,소매(약품)
+ADC,ADC,하노이,서비스,사업 서비스
+KASATI,KST,하노이,서비스,사업 서비스
+Bao Thu Industrial Develop Invest,BII,하노이,서비스,렌탈과 리스
+South Books Educational Equipment,SMN,하노이,서비스,인쇄와 출판
+BTSC,BSC,하노이,서비스,사업 서비스
+Educational Book In Ho Chi Minh,SGD,하노이,서비스,인쇄와 출판
+VINACONEX MEC,VCM,하노이,서비스,사업 서비스
+Vinacomin Quacontrol,VQC,하노이,서비스,사업 서비스
+EFI,EFI,하노이,서비스,사업 서비스
+Consultancy Design and Urban Devel,CDO,Ho Chi Minh,서비스,호텔과 모텔
+Gialai Ctc,CTC,하노이,서비스,인쇄와 출판
+Aviation Printing,IHK,하노이,서비스,인쇄 서비스
+Haiphong PTS JSC,PTS,하노이,서비스,소매(전문)
+P TAXI SAIGON,PGT,하노이,서비스,소매(전문)
+IDICO INCON,INC,하노이,서비스,사업 서비스
+Dongnai Pharma,DPP,하노이,서비스,소매(약품)
+Educational Book In Da Nang City,DAE,하노이,서비스,인쇄와 출판
+"ECICO.,JSC",ECI,하노이,서비스,인쇄와 출판
+Transport Engineering Construction,NTB,하노이,서비스,부동산 운용
+HTBEECO,HBE,하노이,서비스,인쇄와 출판
+Q.E.E.J.CO,QST,하노이,서비스,소매(전문)
+Sara Group,SRB,하노이,서비스,학교
+Petrovietnam Nghe An Inv,PXA,하노이,서비스,부동산 운용
+LABECO,LBE,하노이,서비스,인쇄와 출판
+Hanoi Textbooks Printing JSC,TPH,하노이,서비스,인쇄 서비스
+South Vietnam Container Shipping,VSG,하노이,서비스,렌탈과 리스
+Bisathico,BST,하노이,서비스,인쇄와 출판
+Higher Educational&Vocational Book,HEV,하노이,서비스,인쇄와 출판
+Song Da Thang Long JSC,STL,하노이,서비스,부동산 운용
+LILAMA TESTING,LCD,하노이,서비스,사업 서비스
+HST,HST,하노이,서비스,인쇄와 출판
+Hoaphat Textbook Printing JSC,HTP,하노이,서비스,인쇄 서비스
+Textbook Printing In Ho Chi Minh,SAP,하노이,서비스,인쇄 서비스
+Lang Son Tourism and Import Export,DXL,하노이,서비스,개인 서비스
+Vinaconexs Construction,VCT,하노이,서비스,사업 서비스
+Viet Nam Power Investment,VPC,하노이,서비스,학교
+Bidibook,BDB,하노이,서비스,인쇄와 출판
+Vingroup JSC,VIC,Ho Chi Minh,서비스,부동산 운용
+Vincom Retail,VRE,Ho Chi Minh,서비스,부동산 운용
+Mobile World Investment Corp,MWG,Ho Chi Minh,서비스,소매(기술제품)
+FPT Corp,FPT,Ho Chi Minh,서비스,소매(기술제품)
+Saidong Urban Development Invest,SDI,하노이,서비스,부동산 운용
+FPT Telecom,FOX,하노이,서비스,통신 서비스
+Khang Dien House Trading Invest,KDH,Ho Chi Minh,서비스,부동산 운용
+Dat Xanh Real Estate Service Contr,DXG,Ho Chi Minh,서비스,부동산 운용
+Vietnam Exhibition Fair Centre JSC,VEF,하노이,서비스,사업 서비스
+Phat Dat Real Estate Development,PDR,Ho Chi Minh,서비스,부동산 운용
+Southern Airports Services JSC,SAS,하노이,서비스,소매(백화점과 할인점)
+FLC Group JSC,FLC,Ho Chi Minh,서비스,부동산 운용
+LDG Investment,LDG,Ho Chi Minh,서비스,부동산 운용
+Quoc Cuong Gia Lai JSC,QCG,Ho Chi Minh,서비스,부동산 운용
+Phu Tai JSC,PTB,Ho Chi Minh,서비스,소매(전문)
+Song Da Urban & Industrial Zone Inv,SJS,Ho Chi Minh,서비스,부동산 운용
+Tan Tao Investment and Industry,ITA,Ho Chi Minh,서비스,부동산 운용
+Saigon Thuong Tin Real Estate JSC,SCR,Ho Chi Minh,서비스,부동산 운용
+Sao Mai Group Corp,ASM,Ho Chi Minh,서비스,부동산 운용
+Apax,IBC,Ho Chi Minh,서비스,학교
+Ha Noi Tourist,TSJ,하노이,서비스,개인 서비스
+Thanh Thanh Cong Tourist JSC,VNG,Ho Chi Minh,서비스,호텔과 모텔
+Viet Nam Books,VNB,하노이,서비스,인쇄와 출판
+Saigon General Service Corp,SVC,Ho Chi Minh,서비스,소매(전문)
+HANIC,SHN,하노이,서비스,사업 서비스
+Thu Duc Housing Development Corp,TDH,Ho Chi Minh,서비스,부동산 운용
+Apec Investmen,API,하노이,서비스,부동산 운용
+Vung Tau Real Estate Constructiion,VRC,Ho Chi Minh,서비스,부동산 운용
+An Duong Thao Dien Real estate Trad,HAR,Ho Chi Minh,서비스,부동산 운용
+OCH.JSC,OCH,하노이,서비스,호텔과 모텔
+Hang Xanh Motors Service JSC,HAX,Ho Chi Minh,서비스,소매(전문)
+Noi Bai Catering,NCS,하노이,서비스,레스토랑
+TRAN ANH DIGIT,TAG,하노이,서비스,소매(기술제품)
+Tan Binh Import Export JSC,TIX,Ho Chi Minh,서비스,부동산 운용
+Van Phat Hung Corp,VPH,Ho Chi Minh,서비스,부동산 운용
+Foreign Trade Development Invest,FDC,Ho Chi Minh,서비스,부동산 운용
+Industrial Urban Development JSC,D2D,Ho Chi Minh,서비스,부동산 운용
+Dam Sen Water Park Corp,DSN,Ho Chi Minh,서비스,여가 활동
+PV Inconess Invest,RGC,하노이,서비스,여가 활동
+APP PRINT JSC,INN,하노이,서비스,인쇄 서비스
+Ba Ria Vung Tau House Development,HDC,Ho Chi Minh,서비스,부동산 운용
+Bamboo Capital,BCG,Ho Chi Minh,서비스,사업 서비스
+PECC 2,TV2,하노이,서비스,사업 서비스
+Tu Liem Urban Development JSC,NTL,Ho Chi Minh,서비스,부동산 운용
+Royal International Corp,RIC,Ho Chi Minh,서비스,카지노와 게임
+Ben Thanh Trading Service JSC,BTT,Ho Chi Minh,서비스,소매(백화점과 할인점)
+VPID,IDV,하노이,서비스,부동산 운용
+Ben Thanh Tourist,BTV,하노이,서비스,개인 서비스
+Saigon Telecommunication & Tech,SGT,Ho Chi Minh,서비스,통신 서비스
+Power Engineering Consulting JSC 1,TV1,Ho Chi Minh,서비스,사업 서비스
+Viet Nam Electrical,GEX,Ho Chi Minh,테크놀로지,전자 장비와 제어기
+Dry Cell and Storage Battery,PAC,Ho Chi Minh,테크놀로지,전자 장비와 제어기
+Electrical Equipment,THI,Ho Chi Minh,테크놀로지,전자 장비와 제어기
+CMC Corp,CMG,Ho Chi Minh,테크놀로지,소프트웨어와 프로그래밍
+Rangdong Light source and Vacuum,RAL,Ho Chi Minh,테크놀로지,전자 장비와 제어기
+Dong Anh Electrical Equipment Manuf,TBD,하노이,테크놀로지,전자 장비와 제어기
+Dien Quang JSC,DQC,Ho Chi Minh,테크놀로지,전자 장비와 제어기
+Digiworld,DGW,Ho Chi Minh,테크놀로지,전자 장비와 제어기
+Electronics Communications Tech,ELC,Ho Chi Minh,테크놀로지,전자 장비와 제어기
+Hanoi Electromechanical,HEM,하노이,테크놀로지,전자 장비와 제어기
+GLT CORP,GLT,하노이,테크놀로지,전자 장비와 제어기
+Sieu Thanh JSC,ST8,Ho Chi Minh,테크놀로지,사무실 장비
+Petrovietnam Machinery Tech,PVM,하노이,테크놀로지,전자 장비와 제어기
+Post&Telecommunication Equipment,POT,하노이,테크놀로지,통신 장비
+PETROLEUM GENE,PSD,하노이,테크놀로지,통신 장비
+VMG Media,ABC,하노이,테크놀로지,컴퓨터 서비스
+Innovative Technology Development,ITD,Ho Chi Minh,테크놀로지,컴퓨터 하드웨어
+Book And Educational Equipment JSC,STC,하노이,테크놀로지,과학과 기술 장비
+Central Area Electrical Mechanical,CJC,하노이,테크놀로지,전자 장비와 제어기
+HIPT Group JSC,HIG,하노이,테크놀로지,소프트웨어와 프로그래밍
+SMT,SMT,하노이,테크놀로지,통신 장비
+Vien Lien Joint - Stock Co.,UNI,하노이,테크놀로지,통신 장비
+Cokyvina,CKV,하노이,테크놀로지,전자 장비와 제어기
+Information and Networking Tech,CMT,Ho Chi Minh,테크놀로지,소프트웨어와 프로그래밍
+Hacisco JSC,HAS,Ho Chi Minh,테크놀로지,컴퓨터 하드웨어
+Viettronics Binh Hoa,VBH,하노이,테크놀로지,전자 장비와 제어기
+TIBACO,TSB,하노이,테크놀로지,전자 장비와 제어기
+HPT Vietnam,HPT,하노이,테크놀로지,컴퓨터 서비스
+Viet Nam Trading Construction Devel,MBG,하노이,테크놀로지,전자 장비와 제어기
+VTC Telecommunications JSC,VTC,하노이,테크놀로지,통신 장비
+ONE CORP,ONE,하노이,테크놀로지,통신 장비
+Telvina Vietnam,PMT,하노이,테크놀로지,통신 장비
+Telecommunication Technical Service,TST,하노이,테크놀로지,통신 장비
+VITECO VIETNAM,VIE,하노이,테크놀로지,통신 장비
+VLA,VLA,하노이,테크놀로지,컴퓨터 서비스
+Ha Tien Transport JSC,HTV,Ho Chi Minh,운송,수상 운송
+Duyen Hai Multi Modal Transport JSC,TCO,Ho Chi Minh,운송,트럭 운송
+Petrolimex Joint Stock Tanker Co,PJT,Ho Chi Minh,운송,수상 운송
+VAN CARGOES,VNT,하노이,운송,다종 운송
+CGT,PCT,하노이,운송,다종 운송
+MHC JSC,MHC,Ho Chi Minh,운송,수상 운송
+Riverway Management 3,DS3,하노이,운송,다종 운송
+Ha Noi Transport Station,HNB,하노이,운송,다종 운송
+Vegetable Port JSC,VGP,하노이,운송,다종 운송
+Vinalink International Freight Forw,VNL,Ho Chi Minh,운송,다종 운송
+HOANG HA JSC,HHG,하노이,운송,다종 운송
+HAMI CORP,HMH,하노이,운송,트럭 운송
+Nghe An Bus Station JSC,NBS,하노이,운송,다종 운송
+MASERCO,MAC,하노이,운송,수상 운송
+Sai Gon Transport,TPS,하노이,운송,다종 운송
+Vietnam Maritime Development JSC,VMS,하노이,운송,다종 운송
+VP Petrochemical,VPA,하노이,운송,수상 운송
+Saigon Tourist Transport Corp,STT,Ho Chi Minh,운송,다종 운송
+Quy Nhon New Port,QSP,하노이,운송,다종 운송
+Transport Chartering,VFR,하노이,운송,수상 운송
+Indochina Petroleum Transportation,PTT,하노이,운송,다종 운송
+Ha Dong Environment Public Service,MTH,하노이,운송,트럭 운송
+Da Nang Logistics JSC,DNL,하노이,운송,트럭 운송
+Saigon Transport Agency,STS,하노이,운송,다종 운송
+Vietnam Sea Transport and Charterin,VST,하노이,운송,수상 운송
+Transportation&Trading Services JSC,TJC,하노이,운송,수상 운송
+Central Container,VSM,하노이,운송,트럭 운송
+MLC-INC,MNC,하노이,운송,다종 운송
+Viet Hai Shipping Real Properties,VSP,하노이,운송,수상 운송
+Vinaship,VNA,하노이,운송,수상 운송
+PORTSERCO,PRC,하노이,운송,트럭 운송
+Seaproducts Mechanical,SCO,하노이,운송,수상 운송
+Thuan Thao Corp,GTT,하노이,운송,다종 운송
+Haiphong Port Tugboat,TUG,하노이,운송,다종 운송
+Northern Shipping JSC,NOS,하노이,운송,수상 운송
+DongDo Marine,DDM,하노이,운송,수상 운송
+Const and Infra Dev,CID,하노이,운송,다종 운송
+Airports Corporation of Viet Nam,ACV,하노이,운송,다종 운송
+Vietjet Aviation,VJC,Ho Chi Minh,운송,항공사
+Vietnam Airlines,HVN,하노이,운송,항공사
+Gemadept Corp,GMD,Ho Chi Minh,운송,다종 운송
+Sai Gon Cargo Service,SCS,하노이,운송,다종 운송
+Ho Chi Minh City Infrastructure Inv,CII,Ho Chi Minh,운송,다종 운송
+PetroVietnam Transportation Corp,PVT,Ho Chi Minh,운송,수상 운송
+DLGL INDPS,DL1,하노이,운송,다종 운송
+Port of Hai Phong JSC,PHP,하노이,운송,다종 운송
+Sai Gon Ground,SGN,하노이,운송,다종 운송
+NoiBai Cargo Terminal Services JSC,NCT,Ho Chi Minh,운송,다종 운송
+Saigon Port,SGP,하노이,운송,다종 운송
+Dinhvu Port Investment Development,DVP,Ho Chi Minh,운송,다종 운송
+Danang Port,CDN,하노이,운송,다종 운송
+Vietnam Container Shipping,VSC,Ho Chi Minh,운송,다종 운송
+South Logistics JSC,STG,Ho Chi Minh,운송,수상 운송
+Transimex Saigon Corp,TMS,Ho Chi Minh,운송,다종 운송
+Superdong Fast Ferry Kien Giang JSC,SKG,Ho Chi Minh,운송,수상 운송
+Dong Nai Port JSC,PDN,Ho Chi Minh,운송,다종 운송
+Vietnam Sun Corp,VNS,Ho Chi Minh,운송,다종 운송
+Cat Lai Port JSC,CLL,Ho Chi Minh,운송,다종 운송
+Tay Ninh Cable Car Tour Co.,TCT,Ho Chi Minh,운송,다종 운송
+Vietnam Tanker JSC,VTO,Ho Chi Minh,운송,수상 운송
+Tan Cang Logistics and Stevedoring,TCL,Ho Chi Minh,운송,다종 운송
+Hai An Transport and Stevedoring,HAH,Ho Chi Minh,운송,다종 운송
+Vietnam Petroleum Transport JSC,VIP,Ho Chi Minh,운송,수상 운송
+Saigon Passenger Transport JSC,BSG,하노이,운송,다종 운송
+PTSC Thanh Hoa Port,PSN,하노이,운송,다종 운송
+VN Post Express,EMS,하노이,운송,항공 우편
+CamRanh Port,CCR,하노이,운송,다종 운송
+International Gas Product Shipping,GSP,Ho Chi Minh,운송,수상 운송
+Idico Infrastructure Development,HTI,Ho Chi Minh,운송,다종 운송
+BXMT,WCS,하노이,운송,다종 운송
+Hanoi Railway Transport,HRT,하노이,운송,다종 운송
+Vietnam Ocean Shipping JSC,VOS,Ho Chi Minh,운송,수상 운송
+Doan Xa Port JSC,DXP,하노이,운송,다종 운송
+Sea & Air Freight International,SFI,Ho Chi Minh,운송,수상 운송
+Danang Airport Services JSC,MAS,하노이,운송,다종 운송
+Vinafco JSC,VFC,하노이,운송,수상 운송
+Vietnam Foreign Trade,VIN,하노이,운송,다종 운송
+Multi Modal Transport Holding Co,VTX,하노이,운송,수상 운송
+Tan Cang Warehousing,TCW,하노이,운송,다종 운송
+Dinh Vu Petroleum Service Port JSC,PSP,하노이,운송,다종 운송
+Saigon Shipping,SGS,하노이,운송,수상 운송
+Noi Bai Airport Services,NAS,하노이,운송,다종 운송
+Sonadezi Environment,SZE,하노이,운송,트럭 운송
+Tay Ninh Tourist,TTT,하노이,운송,다종 운송
+VINAFREIGHT,VNF,하노이,운송,수상 운송
+Vietnam Ocean Shipping Agency Corp,VSA,하노이,운송,수상 운송
+Sai Gon Railway,SRT,하노이,운송,다종 운송
+Vinacomin Power,DTK,하노이,유틸러티,전기 유틸러티
+PetroVietnam Power Nhon Trach 2 JSC,NT2,Ho Chi Minh,유틸러티,전기 유틸러티
+Da Nhim Ham Thuan Da Mi Hydro,DNH,하노이,유틸러티,전기 유틸러티
+Hai Phong Thermal Power,HND,하노이,유틸러티,전기 유틸러티
+Pha Lai Thermal Power JSC,PPC,Ho Chi Minh,유틸러티,전기 유틸러티
+Quang Ninh Thermal Power,QTP,하노이,유틸러티,전기 유틸러티
+Binh Duong Water,BWE,Ho Chi Minh,유틸러티,수도 유틸러티
+Petrovietnam Low Pressure Gas Distr,PGD,Ho Chi Minh,유틸러티,천연가스 유틸러티
+Vinh Son Song Hinh Hydropower JSC,VSH,Ho Chi Minh,유틸러티,전기 유틸러티
+Central Hydropower JSC,CHP,Ho Chi Minh,유틸러티,전기 유틸러티
+Thac Mo Hydropower JSC,TMP,Ho Chi Minh,유틸러티,전기 유틸러티
+A Vuong Hydropower,AVC,하노이,유틸러티,전기 유틸러티
+Southern Hydropower JSC,SHP,Ho Chi Minh,유틸러티,전기 유틸러티
+Vinaconex Water Supply JSC,VCW,하노이,유틸러티,수도 유틸러티
+Baria Vungtau Water,BWS,하노이,유틸러티,수도 유틸러티
+Can Don Hydro Power JSC,SJD,Ho Chi Minh,유틸러티,전기 유틸러티
+Viet Nam Power,VPD,Ho Chi Minh,유틸러티,전기 유틸러티
+Thac Ba Hydropower JSC,TBC,Ho Chi Minh,유틸러티,전기 유틸러티
+Vinaconex Power Development,VCP,하노이,유틸러티,전기 유틸러티
+Viet Nam Urban,IDC,하노이,유틸러티,전기 유틸러티
+Hanoi Water Supply 2,NS2,하노이,유틸러티,수도 유틸러티
+Thu Dau Mot Water,TDM,하노이,유틸러티,수도 유틸러티
+Sai Gon Water Infrastructure Corp,SII,Ho Chi Minh,유틸러티,수도 유틸러티
+Gia Lai Electricity,GEG,하노이,유틸러티,전기 유틸러티
+Dong Nai Water,DNW,하노이,유틸러티,수도 유틸러티
+Bac Minh Develop,SBM,하노이,유틸러티,전기 유틸러티
+Sesan 4A Hydroelectric,S4A,Ho Chi Minh,유틸러티,전기 유틸러티
+North Electrictiy No2,ND2,하노이,유틸러티,전기 유틸러티
+MIEN TRUNG PID,SEB,하노이,유틸러티,전기 유틸러티
+Song Ba JSC,SBA,Ho Chi Minh,유틸러티,전기 유틸러티
+Bac Ha Hydropower,BHA,하노이,유틸러티,전기 유틸러티
+Tkv Campha Thermal,NCP,하노이,유틸러티,전기 유틸러티
+CNG Vietnam JSC,CNG,Ho Chi Minh,유틸러티,천연가스 유틸러티
+Hai Phong Water,HPW,하노이,유틸러티,수도 유틸러티
+Gia Lai Hydropower JSC,GHC,하노이,유틸러티,전기 유틸러티
+Ba Ria Thermal Power JSC,BTP,Ho Chi Minh,유틸러티,전기 유틸러티
+Sonadezi Long Thanh Shareholding Co,SZL,Ho Chi Minh,유틸러티,수도 유틸러티
+Viwaco,VAV,하노이,유틸러티,수도 유틸러티
+Idico Srok Phu Mieng Hydropower,ISH,하노이,유틸러티,전기 유틸러티
+Hydro Power No3,DRL,Ho Chi Minh,유틸러티,전기 유틸러티
+PC3 Investment,PIC,하노이,유틸러티,전기 유틸러티
+Nam Mu Hydropower JSC,HJS,하노이,유틸러티,전기 유틸러티
+Khanh Hoa Power JSC,KHP,Ho Chi Minh,유틸러티,전기 유틸러티
+Dinh Binh Hydro,TDB,하노이,유틸러티,전기 유틸러티
+Que Phong Hydropower,QPH,하노이,유틸러티,전기 유틸러티
+Huong Son Hydro Power JSC,GSM,하노이,유틸러티,전기 유틸러티
+Vinh Long Water,VLW,하노이,유틸러티,수도 유틸러티
+Hai Duong Water,HDW,하노이,유틸러티,수도 유틸러티
+Nhon Trach Water Supply JSC,NTW,하노이,유틸러티,수도 유틸러티
+Idico Urban and House Development,UIC,Ho Chi Minh,유틸러티,전기 유틸러티
+Cho Lon Water Supply JSC,CLW,Ho Chi Minh,유틸러티,수도 유틸러티
+Thu Duc Water Supply JSC,TDW,Ho Chi Minh,유틸러티,수도 유틸러티
+Song Da Investment Development JSC,SIC,하노이,유틸러티,전기 유틸러티
+Nha Be Water,NBW,하노이,유틸러티,수도 유틸러티
+NBTPC,NBP,하노이,유틸러티,전기 유틸러티
+Binh Dinh Water,BDW,하노이,유틸러티,수도 유틸러티
+Gia Dinh Water Supply,GDW,하노이,유틸러티,수도 유틸러티
+Long An Water,LAW,하노이,유틸러티,수도 유틸러티
+Ben Thanh Water,BTW,하노이,유틸러티,수도 유틸러티
+Dak Doa Hydropower JSC,HPD,하노이,유틸러티,전기 유틸러티
+Phu Hoa Tan Water Supply,PJS,하노이,유틸러티,수도 유틸러티
+HEWMAC,DNC,하노이,유틸러티,전기 유틸러티
+Long Khanh Water Supply,LKW,하노이,유틸러티,수도 유틸러티
+Bao Loc Supply Sewerage,BWA,하노이,유틸러티,수도 유틸러티
