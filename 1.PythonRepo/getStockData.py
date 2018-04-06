@@ -30,14 +30,14 @@ exchange_info = pd.read_json("C:/0.bigdata/4.web/Triple_Core/0.DataRepo/0.LocalS
 def getStockData(symbol_info):
     startTime = time.time()
     
-    stock_columns = ['Sector', 'Exchange', 'Symbol', 'Name', 'Date', 'Currency', 'Open', 'High', 'Low', 'Close', 'Rtn', 'Volume']
+    stock_columns = ['Sector', 'Industry', 'Exchange', 'Symbol', 'Name', 'Date', 'Currency', 'Open', 'High', 'Low', 'Close', 'Rtn', 'Volume']
     error_columns = ['Name', 'Symbol', 'Exchange', 'Sector', 'Industry']
     
     param = {}
     param['q'] = ""
     param['x'] = ""
     param['i'] = str(60*60*24)
-    param['p'] = "1M"
+    param['p'] = "1Y"
     param['c'] = ""
     
     stock = pd.DataFrame()
@@ -46,7 +46,7 @@ def getStockData(symbol_info):
     error_log = pd.DataFrame()
     
     for row in symbol_info.values:
-        print(row)
+        #print(row)
         try:
             exchange_name = row[2]
             symbol_adj = int(exchange_info[exchange_name][5])
@@ -66,6 +66,7 @@ def getStockData(symbol_info):
             if not stock.empty:
                 stock['Name'] = row[0]
                 stock['Sector'] = row[3]
+                stock['Industry'] = row[4]
                 stock['Symbol'] = quote_symbol
                 stock['Exchange'] = exchange_name
                 stock['Currency'] = currency
@@ -86,6 +87,7 @@ def getStockData(symbol_info):
                 if not stock.empty:
                     stock['Name'] = row[0]
                     stock['Sector'] = row[3]
+                    stock['Industry'] = row[4]
                     stock['Symbol'] = quote_symbol
                     stock['Exchange'] = exchange_name
                     stock['Currency'] = currency
@@ -110,11 +112,9 @@ def getStockData(symbol_info):
         
     stocks = stocks.dropna()    
     stocks = pd.DataFrame(stocks, columns = stock_columns)
-    print(stocks[:2])
-    stocks.to_csv("C:/0.bigdata/4.web/Triple_Core/0.DataRepo/0.TestData_Papa/test_stocks05.csv" , index=False)
-    
+    stocks.to_csv("C:/0.bigdata/4.web/Triple_Core/0.DataRepo/0.TestData_Papa/test_stocks01.csv", index=False, encoding="UTF-8")
     error_log = pd.DataFrame(error_log, columns = error_columns)
-    error_log.to_csv("C:/0.bigdata/4.web/Triple_Core/0.DataRepo/0.TestData_Papa/test_error_log05.csv" , index=False)    
+    error_log.to_csv("C:/0.bigdata/4.web/Triple_Core/0.DataRepo/0.TestData_Papa/test_error_log01.csv", index=False, encoding="UTF-8")
         
     endTime = time.time() - startTime
     print('실행에 소용된 시간=', endTime, '초')

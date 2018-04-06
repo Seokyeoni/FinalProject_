@@ -14,8 +14,8 @@ from modules.yahooFinance import getStockDataYahoo
 
 
 
-symbol_info = pd.read_csv("C:/0.bigData/4.web/Triple_Core/0.DataRepo/0.LocalStorage/symbol_info_utf8_sample.csv", encoding="UTF-8")
-#symbol_info = pd.read_csv("C:/0.bigData/4.web/Triple_Core/0.DataRepo/0.LocalStorage/symbol_info_utf8.csv", encoding="UTF-8")
+#symbol_info = pd.read_csv("C:/0.bigData/4.web/Triple_Core/0.DataRepo/0.LocalStorage/symbol_info_utf8_sample.csv", encoding="UTF-8")
+symbol_info = pd.read_csv("C:/0.bigData/4.web/Triple_Core/0.DataRepo/0.LocalStorage/symbol_info_utf8.csv", encoding="UTF-8")
 symbol_info = pd.DataFrame(symbol_info)
 exchange_info = pd.read_json("C:/0.bigdata/4.web/Triple_Core/0.DataRepo/0.LocalStorage/exchange_info.json", encoding="UTF-8")
 
