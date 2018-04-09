@@ -9,21 +9,21 @@ var data1 = {
       strokeColor : "rgba(56,175,91,1)",
       pointColor : "rgba(56,175,91,1)",
       pointStrokeColor : "rgba(0,0,0,0.6)",
-      data : [1000,1200,935,990,1050,1030,1040]
+      data : [-7.2, -5, -2, 2.2,-0.3,5.5,4,5]
     },
     {
       fillColor : "rgba(234,142,57,.1)",
       strokeColor : "rgba(234,142,57,1)",
       pointColor : "rgba(234,142,57,1)",
       pointStrokeColor : "rgba(0,0,0,0.6)",
-      data : [1300, 1200, 1000, 1200, 1100, 1150, 1180]
+      data : [-7.2, -5, -2, 2.2,-0.3,5.5,4,5]
     },
     {
       fillColor : "rgba(236,72,127,.1)",
       strokeColor : "rgba(236,72,127,1)",
       pointColor : "rgba(236,72,127,1)",
       pointStrokeColor : "rgba(0,0,0,0.6)",
-      data : [1400,1350,1250,1250,1350,1500,1550]
+      data : [-7.2, -5, -2, 2.2,-0.3,5.5,4,5]
     }
   ]
 }

@@ -51,7 +51,7 @@ public class Controller extends HttpServlet {
 		try {
 			UserDTO sector_info = Service.loginValidate(user);
 			if (sector_info != null) {
-				url = "dash.jsp";
+				url = "dash_q.jsp";
 				HttpSession session = request.getSession();
 				session.setAttribute("sector_info", sector_info);
 
@@ -79,7 +79,7 @@ public class Controller extends HttpServlet {
 			if (result) {
 				request.setAttribute("user", user);
 				request.setAttribute("successMsg", "가입 완료");
-				url = "mainview.jsp";
+				url = "dash_q.jsp";
 				request.getSession();
 				request.setAttribute("emailAddress", emailAddress);
 				request.setAttribute("name", name);
