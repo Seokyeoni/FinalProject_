@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- cp 기능을 위한 tomcat만의 설정 
+http://tomcat.apache.org/tomcat-8.5-doc/jndi-datasource-examples-howto.html#Oracle_8i,_9i_&_10g
+-->
+ 
+<Context>
+	<Resource 
+		name="jdbc/Maria_Test" 
+		auth="Container"
+        type="javax.sql.DataSource" 
+        driverClassName="com.mysql.jdbc.Driver"
+        url="jdbc:mysql://10.1.41.229:3306/test"
+        username="root" 
+        password="3h1y" 
+        maxTotal="20" 
+        maxIdle="10"
+        maxWaitMillis="-1"/>
+</Context>
