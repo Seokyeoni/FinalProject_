@@ -1,8 +1,0 @@
-Name,Symbol,Exchange,Sector,Industry,Listing_status,Delisting_date,New_listing_date
-0,001,거래소1,부문,산업,O,null,null
-A,A01,거래소1,부문,산업,O,null,null
-a,A01,거래소2,부문,산업,O,null,null
-B,B01,거래소1,부문,산업,O,null,null
-BB,B02,거래소1,부문,산업,O,null,null
-BBB,B03,거래소1,부문,산업,O,null,null
-bbb,B03,거래소2,부문,산업,O,null,null
