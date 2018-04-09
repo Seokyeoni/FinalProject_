@@ -22,7 +22,7 @@ public class StockDAO {
 		try {
 			con = DBUtil.getConnection();
 //			pstmt = con.prepareStatement("select * from kor_stocks_prices where name='경동가스'");
-			pstmt = con.prepareStatement(sql.getString("getStock"));
+			pstmt = con.prepareStatement("select * from test_stocks_prices where Sector = ? or Sector = ? ");
 			rset = pstmt.executeQuery();
 			
 			
