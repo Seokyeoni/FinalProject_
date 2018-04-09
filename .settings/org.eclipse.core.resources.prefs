@@ -2,6 +2,9 @@
 <<<<<<<=HEAD
 >>>>>>>=branch 'master' of https\://github.com/Seokyeoni/Triple_Core.git
 eclipse.preferences.version=1
+encoding//1.DataProcessing/Papa_Listing_validation.py=utf-8
+encoding//1.DataProcessing/getStockData.py=utf-8
+encoding//1.DataProcessing/modules/googleFinance.py=utf-8
 encoding//1.PythonRepo/Papa_test01.py=utf-8
 encoding//1.PythonRepo/Papa_test02.py=utf-8
 encoding//1.PythonRepo/Pjong_Listing_validation.py=utf-8

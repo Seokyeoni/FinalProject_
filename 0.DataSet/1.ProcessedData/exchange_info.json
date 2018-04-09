@@ -1,0 +1,23 @@
+{
+"Exchange":["Nation","Acronym","Name","Google","Yahoo","Symbol_adj","Currency","WebSite","Available"],
+"서울":["한국","KSE","Korea Stock Exchange","KRX",".KS","6","KRW","www.krx.co.kr","O"],
+"KOSDAQ":["한국","KOSDAQ","Korea Securities Dealers Automated Quotations","KOSDAQ",".KQ","6","KRW","www.krx.co.kr","O"],
+"KONEX":["한국","KONEX","Korea New Exchange","N/A","N/A","0","KRW","www.krx.co.kr","O"],
+"상하이":["중국","SSE","Shanghai Stock Exchange","SHA",".SS","6","CNY","www.sse.com.cn","O"],
+"심천":["중국","SZSE","Shenzhen Stock Exchange","SHE",".SZ","6","CNY","www.szse.cn","O"],
+"홍콩":["홍콩","HKEX","Hong Kong Exchanges and Clearing","HKG",".HK","4","HKD","www.hkex.com.hk","O"],
+"대만":["대만","TSE","Taiwan Stock Exchange","TPE",".TW","4","TWD","www.tse.com.tw","O"],
+"TPEX":["대만","TPEX","Taipei Exchange","N/A",".TWO","4","TWD","www.tpex.org.tw","O"],
+"도쿄":["일본","JPX","Japan Exchange","TYO",".T","4","JPY","www.jpx.co.jp","O"],
+"멕시코":["멕시코","BMV","Bolsa Mexicana de Valores","BMV",".MX","0","MXN","www.bmv.com.mx","O"],
+"뉴욕":["미국","NYSE","New York Stock Exchange","NYSE","","0","USD","www.nyse.com","O"],
+"나스닥":["미국","NASDAQ","National Association of Securities Dealers Automated Quotation","NASDAQ","","0","USD","www.nasdaq.com","O"],
+"OTC Markets":["미국","OTCQX","Over-The-Counter Market","OTCMKTS","","0","USD","www.otcmarkets.com","O"],
+"OTC BB":["미국","OTCBB","Over-The-Counter Bulletin Board","OTCBB","","0","USD","www.otcbb.com","O"],
+"싱가포르":["싱가폴","SGX","Singapore Exchange","SGX",".SI","0","SGD","www.sgx.com","X"],
+"NSE":["인도","NSE","National Stock Exchange of India","NSE",".NS","0","INR","www.nseindia.com","X"],
+"BSE":["인도","BSE","Bombay Stock Exchange","BOM",".BO","0","INR","www.bseindia.com","X"],
+"Ho Chi Minh":["베트남","HSX","Hochiminh Stock Exchange","N/A","N/A","0","VND","www.hsx.vn","X"],
+"하노이":["베트남","HNX","Hanoi Stock Exchange","N/A","N/A","0","VND","www.hastc.org.vn","X"],
+"필리핀":["필리핀","PSE","Philippine Stock Exchange","N/A","N/A","0","PHP","www.pse.com.ph","X"]
+}
