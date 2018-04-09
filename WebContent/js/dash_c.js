@@ -1,6 +1,5 @@
 // Inspired by https://dribbble.com/shots/1821178-Sales-Report/
 
-
 var data1 = {
   labels : ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday","test"],
   datasets : [

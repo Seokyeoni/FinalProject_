@@ -46,7 +46,6 @@ var options1 = {
 new Chart(c1.getContext("2d")).Line(data1,options1);
 
 
-
 var data2 = [{
     value: 20,
     color: "rgba(236,72,127,1)",
