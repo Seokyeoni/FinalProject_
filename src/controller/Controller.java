@@ -11,7 +11,9 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
+import model.Service;
 import model.StockDAO;
+import model.domain.UserDTO;
 
 @WebServlet("/cont")
 public class Controller extends HttpServlet {
@@ -32,7 +34,62 @@ public class Controller extends HttpServlet {
 			} catch (SQLException e) {
 				e.printStackTrace();
 			}
+		} else if (command.equals("login")) {
+			LoginValidate(request, response);
+		} else if (command.equals("sign_in")) {
+			sign_in(request, response);
 		}
 
 	}
+	//로그인 하면서 섹터 세개 뽑아와야됨! 
+	private void LoginValidate(HttpServletRequest request, HttpServletResponse response)
+			throws ServletException, IOException {
+		String url = "login.html";
+		String emailAddress = request.getParameter("emailAddress");
+		String password = request.getParameter("password");
+		UserDTO user = new UserDTO(emailAddress, password);
+		try {
+			UserDTO sector_info = Service.loginValidate(user);
+			if (sector_info != null) {
+				url = "dash_q.jsp";
+				HttpSession session = request.getSession();
+				session.setAttribute("sector_info", sector_info);
+
+			} else {
+				request.setAttribute("errMsg", "아이디와 비밀번호를 다시 확인해주세요");
+			}
+		} catch (Exception s) {
+			request.setAttribute("errorMsg", s.getMessage());
+
+		}
+		request.getRequestDispatcher(url).forward(request, response);
+	}
+	public void sign_in(HttpServletRequest request, HttpServletResponse response)
+			throws ServletException, IOException {
+		String url = "showError.jsp";
+		String name = request.getParameter("name");
+		String emailAddress = request.getParameter("emailAddress");
+		String password = request.getParameter("password");
+		String sectrorOne = request.getParameter("sectorOne");
+		String sectorTwo = request.getParameter("sectorTwo");
+		String sectorThree = request.getParameter("sectorThree");
+		UserDTO user = new UserDTO(name, emailAddress, password, sectrorOne, sectorTwo, sectorThree);
+		try {
+			boolean result = Service.addUser(user);
+			if (result) {
+				request.setAttribute("user", user);
+				request.setAttribute("successMsg", "가입 완료");
+				url = "dash_q.jsp";
+				request.getSession();
+				request.setAttribute("emailAddress", emailAddress);
+				request.setAttribute("name", name);
+			} else {
+				request.setAttribute("errorMsg", "다시 시도하세요");
+			}
+		} catch (Exception s) {
+			request.setAttribute("errorMsg", s.getMessage());
+		}
+		request.getRequestDispatcher(url).forward(request, response);
+	}
+
 }
