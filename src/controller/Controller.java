@@ -67,9 +67,9 @@ public class Controller extends HttpServlet {
 	public void sign_in(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 		String url = "showError.jsp";
-		String name = request.getParameter("name");
 		String emailAddress = request.getParameter("emailAddress");
 		String password = request.getParameter("password");
+		String name = request.getParameter("name");
 		String sectrorOne = request.getParameter("sectorOne");
 		String sectorTwo = request.getParameter("sectorTwo");
 		String sectorThree = request.getParameter("sectorThree");

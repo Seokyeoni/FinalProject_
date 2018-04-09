@@ -1,9 +1,9 @@
 package model.domain;
 
 public class UserDTO {
-	private String name;
 	private String emailAddress;
 	private String password;
+	private String name;
 	private String sectorOne;
 	private String sectorTwo;
 	private String sectorThree;
@@ -17,8 +17,7 @@ public class UserDTO {
 		this.password = password; 
 	}
 	
-	public UserDTO(String emailAddress, String name, String sectrorOne, String sectorTwo,
-			String sectorThree) {
+	public UserDTO(String emailAddress, String name, String sectrorOne, String sectorTwo, String sectorThree) {
 		this.emailAddress = emailAddress;
 		this.name = name;
 		this.sectorOne = sectrorOne;
@@ -26,12 +25,12 @@ public class UserDTO {
 		this.sectorThree = sectorThree;
 	}
 	
-	public UserDTO(String name, String emailAddress, String password, String sectorOne, String sectorTwo,
+	public UserDTO(String emailAddress, String password, String name, String sectorOne, String sectorTwo,
 			String sectorThree) {
 		super();
-		this.name = name;
 		this.emailAddress = emailAddress;
 		this.password = password;
+		this.name = name;
 		this.sectorOne = sectorOne;
 		this.sectorTwo = sectorTwo;
 		this.sectorThree = sectorThree;
