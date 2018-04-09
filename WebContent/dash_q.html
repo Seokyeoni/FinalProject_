@@ -3,10 +3,12 @@
 
 <head>
 <meta charset="UTF-8">
-<title>Dashboard page</title>
-
-
-
+<title>Triple core</title>
+<style type="text/css">
+ a:link { color: #738491 ; text-decoration: none;}
+ a:visited { color: #738491; text-decoration: none;}
+ a:hover { color: #2278AE; text-decoration: none;}
+</style>
 <link rel="stylesheet" href="css/dash.css">
 
 
@@ -20,26 +22,26 @@
 		<section>
 			<header>Main</header>
 			<ul>
-				<li class="active">Dashboard</li>
-				<li data-value="8">Reports</li>
-				<li>Groups</li>
+				<li class="active"><a href="dash_q.html">Dashboard</a></li>
+				<li>Summary</li>
+			</ul>
+		</section>
+		
+		<section>
+			<header>Categories</header>
+			<ul>
+				<li class="red" >카테고리1</li>
+				<li class="yellow">카테고리2</li>
+				<li class="green">카테고리3</li>
+				<li class="new"><i class="fa fa-plus-circle"> </i> Add Category</li>
 			</ul>
 		</section>
 		<section>
 			<header>Account</header>
 			<ul>
-				<li>Activity</li>
-				<li data-value="4">Messages</li>
+				<li><a href="main.html">logout</a></li>
+				<li>Messages</li>
 				<li>Downloads</li>
-			</ul>
-		</section>
-		<section>
-			<header>Categories</header>
-			<ul>
-				<li class="red">Credit Sales</li>
-				<li class="yellow">Channel Sales</li>
-				<li class="green">Direct Sales</li>
-				<li class="new"><i class="fa fa-plus-circle"> </i> Add Category</li>
 			</ul>
 		</section>
 	</nav>
@@ -50,7 +52,7 @@
 			<div class="interval">
 				<ul>
 					<li class="active">Quarterly</li>
-					<li>Monthly</li>
+					<li><a href="dash_m.html">Monthly</a></li>
 				</ul>
 			</div>
 		</header>
@@ -64,7 +66,7 @@
 			<div class="inlineChart">
 				<canvas id="c2" width="100" height="100"></canvas>
 				<div class="info">
-					<div class="value">$36,146</div>
+					<div class="value">$5,000</div>
 					<div class="title">Credit sales</div>
 				</div>
 			</div>
