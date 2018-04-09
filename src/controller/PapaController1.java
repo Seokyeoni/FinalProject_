@@ -41,7 +41,7 @@ public class PapaController1 extends HttpServlet {
 				
 				request.setAttribute("sample", sample);
 //				System.out.println(sample);
-				request.getRequestDispatcher("test_test.jsp").forward(request, response);
+				request.getRequestDispatcher("dash_m.jsp").forward(request, response);
 			} catch (SQLException e) {
 				e.printStackTrace();
 				
