@@ -24,17 +24,21 @@ processed_data_path = "C:/0.bigdata/4.web/Triple_Core/0.DataSet/1.ProcessedData"
 initial_validated_data = "[initial]validated_data_utf8.csv"
 old_validated_data = "old_validated_data_utf8.csv"
 
+processed_data_info = pd.read_csv("C:/0.bigdata/4.web/Triple_Core/0.DataSet/1.ProcessedData/old_validated_data_utf8.csv", encoding="UTF-8")
+processed_data_info_df = pd.DataFrame(processed_data_info)
+result_data_path = "C:/0.bigdata/4.web/Triple_Core/1.DataProcessing/result"
+
 exchange_info = pd.read_json("C:/0.bigdata/4.web/Triple_Core/0.DataSet/1.ProcessedData/exchange_info.json", encoding="UTF-8")
 
-## data_info => [ "Name", "Symbol", "Exchange", "Sector", "Industry", "Listing_status", "Delisting_date", "New_listing_date" ]
-## exchange_info => [ "Nation","Acronym","Name","Google","Yahoo","Symbol_adj","Currency","WebSite" ]
+## data_info => [ "Name", "Symbol", "Exchange", "Code", "Sector", "Industry", "Listing_status", "Delisting_date", "New_listing_date" ]
+## exchange_info => [ "Nation","Acronym","Name","Google","Yahoo","Symbol_adj","Currency","WebSite", "Available" ]
 
     
 def getStockData(data_info):
     startTime = time.time()
     
-    stock_columns = ["Sector", "Industry", "Exchange", "Symbol", "Name", "Date", "Currency", "Open", "High", "Low", "Close", "Rtn", "Volume"]
-    error_columns = [ "Name", "Symbol", "Exchange", "Sector", "Industry", "Listing_status", "Delisting_date", "New_listing_date" ]
+    stock_columns = [ "Name", "Symbol", "Exchange", "Code", "Sector", "Industry", "Date", "Currency", "Open", "High", "Low", "Close", "Rtn", "Volume" ]
+    error_columns = [ "Name", "Symbol", "Exchange", "Code", "Sector", "Industry", "Listing_status", "Delisting_date", "New_listing_date" ]
     
     param = {}
     param["q"] = ""
@@ -76,8 +80,9 @@ def getStockData(data_info):
                     #print(stock)
                     if not stock.empty:
                         stock["Name"] = row[0]
-                        stock["Sector"] = row[3]
-                        stock["Industry"] = row[4]
+                        stock["Code"] = row[3]
+                        stock["Sector"] = row[4]
+                        stock["Industry"] = row[5]
                         stock["Symbol"] = quote_symbol
                         stock["Exchange"] = exchange_name
                         stock["Currency"] = currency
@@ -90,15 +95,16 @@ def getStockData(data_info):
             
                     elif stock.empty:
                         quote_symbol = quote_symbol + exchange_info[exchange_name][4]
-                        print(quote_symbol)
+#                        print(quote_symbol)
                         
                         stock = getStockDataYahoo(quote_symbol)
                         #print(stock)
                         
                         if not stock.empty:
                             stock["Name"] = row[0]
-                            stock["Sector"] = row[3]
-                            stock["Industry"] = row[4]
+                            stock["Code"] = row[3]
+                            stock["Sector"] = row[4]
+                            stock["Industry"] = row[5]
                             stock["Symbol"] = quote_symbol
                             stock["Exchange"] = exchange_name
                             stock["Currency"] = currency
@@ -124,40 +130,40 @@ def getStockData(data_info):
             row = pd.DataFrame(row, index = error_columns)
             error_log = error_log.append(row.T)
         
-        if count == 1000:
+        if count == 3000:
             print(count)
             stock_total = stock_total.dropna()    
             stock_total = pd.DataFrame(stock_total, columns = stock_columns)
-            stock_total.to_csv("C:/0.bigdata/4.web/Triple_Core/0.DataRepo/0.TestData_Papa/test_stock01.csv", index=False, encoding="UTF-8")
+            stock_total.to_csv(result_data_path + "/" + "test_stock01.csv", index=False, encoding="UTF-8")
             error_log = pd.DataFrame(error_log, columns = error_columns)
-            error_log.to_csv("C:/0.bigdata/4.web/Triple_Core/0.DataRepo/0.TestData_Papa/test_error_log01.csv", index=False, encoding="UTF-8")
+            error_log.to_csv(result_data_path + "/" + "test_error_log01.csv", index=False, encoding="UTF-8")
             continue
         
         elif count == 9000:
             print(count)
             stock_total = stock_total.dropna()    
             stock_total = pd.DataFrame(stock_total, columns = stock_columns)
-            stock_total.to_csv("C:/0.bigdata/4.web/Triple_Core/0.DataRepo/0.TestData_Papa/test_stock02.csv", index=False, encoding="UTF-8")
+            stock_total.to_csv(result_data_path + "/" + "test_stock02.csv", index=False, encoding="UTF-8")
             error_log = pd.DataFrame(error_log, columns = error_columns)
-            error_log.to_csv("C:/0.bigdata/4.web/Triple_Core/0.DataRepo/0.TestData_Papa/test_error_log02.csv", index=False, encoding="UTF-8")
+            error_log.to_csv(result_data_path + "/" + "test_error_log02.csv", index=False, encoding="UTF-8")
             continue
         
         elif count == 18000:
             print(count)
             stock_total = stock_total.dropna()    
             stock_total = pd.DataFrame(stock_total, columns = stock_columns)
-            stock_total.to_csv("C:/0.bigdata/4.web/Triple_Core/0.DataRepo/0.TestData_Papa/test_stock03.csv", index=False, encoding="UTF-8")
+            stock_total.to_csv(result_data_path + "/" + "test_stock03.csv", index=False, encoding="UTF-8")
             error_log = pd.DataFrame(error_log, columns = error_columns)
-            error_log.to_csv("C:/0.bigdata/4.web/Triple_Core/0.DataRepo/0.TestData_Papa/test_error_log03.csv", index=False, encoding="UTF-8")
+            error_log.to_csv(result_data_path + "/" + "test_error_log03.csv", index=False, encoding="UTF-8")
             continue
             
         elif count == len(data_info.values):
             print(count)
             stock_total = stock_total.dropna()    
             stock_total = pd.DataFrame(stock_total, columns = stock_columns)
-            stock_total.to_csv("C:/0.bigdata/4.web/Triple_Core/0.DataRepo/0.TestData_Papa/test_stock04.csv", index=False, encoding="UTF-8")
+            stock_total.to_csv(result_data_path + "/" + "test_stock04.csv", index=False, encoding="UTF-8")
             error_log = pd.DataFrame(error_log, columns = error_columns)
-            error_log.to_csv("C:/0.bigdata/4.web/Triple_Core/0.DataRepo/0.TestData_Papa/test_error_log04.csv", index=False, encoding="UTF-8")
+            error_log.to_csv(result_data_path + "/" + "test_error_log04.csv", index=False, encoding="UTF-8")
             break
         
         else:
@@ -171,8 +177,7 @@ def getStockData(data_info):
 
 
 #symbol_info = pd.read_csv("C:/0.bigData/4.web/Triple_Core/0.DataRepo/0.LocalStorage/symbol_info_utf8_sample.csv", encoding="UTF-8")
-processed_data_info = pd.read_csv("C:/0.bigdata/4.web/Triple_Core/0.DataSet/1.ProcessedData/old_validated_data_utf8.csv", encoding="UTF-8")
-processed_data_info_df = pd.DataFrame(processed_data_info)
+
 
 
 getStockData(processed_data_info_df)

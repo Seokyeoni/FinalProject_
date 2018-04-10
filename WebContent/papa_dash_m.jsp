@@ -1,3 +1,4 @@
+<%@page import="java.util.List"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
@@ -65,12 +66,12 @@
 			</div>
 		</section>
 		<section>
-			<header>Total Sales</header>
+			<header>Rate of Return</header>
 			<div class="inlineChart">
 				<canvas id="c2" width="100" height="100"></canvas>
 				<div class="info">
-					<div class="value">$36,146</div>
-					<div class="title">Credit sales</div>
+					<div class="value"><%=request.getAttribute("sec1_ror") %></div>
+					<div class="title"><%=request.getAttribute("sec1_name") %></div>
 				</div>
 			</div>
 			<div class="inlineChart">
@@ -131,20 +132,9 @@
 	
 	var data1 = {
 			  labels : [
-				  <%
-				  	
-				  	System.out.println(request.getAttribute("sample"));
-				  %>
-				  "${requestScope.sample.get('2017-08')[1]}",
-				  "${requestScope.sample.get('2017-09')[1]}",
-				  "${requestScope.sample.get('2017-10')[1]}",
-				  "${requestScope.sample.get('2017-11')[1]}",
-				  "${requestScope.sample.get('2017-12')[1]}",
-				  "${requestScope.sample.get('2018-01')[1]}",
-				  "${requestScope.sample.get('2018-02')[1]}",
-				  "${requestScope.sample.get('2018-03')[1]}"
+				  <%=request.getAttribute("ym1")%>
 				  ],
-				  
+
 			  datasets : [
 			    {
 			      fillColor : "rgba(56,175,91,.1)",
@@ -152,14 +142,7 @@
 			      pointColor : "rgba(56,175,91,1)",
 			      pointStrokeColor : "rgba(0,0,0,0.6)",
 			      data : [
-			    	  ${requestScope.sample.get('2017-08')[2]},
-			    	  ${requestScope.sample.get('2017-09')[2]},
-			    	  ${requestScope.sample.get('2017-10')[2]},
-			    	  ${requestScope.sample.get('2017-11')[2]},
-			    	  ${requestScope.sample.get('2017-12')[2]},
-			    	  ${requestScope.sample.get('2018-01')[2]},
-			    	  ${requestScope.sample.get('2018-02')[2]},
-			    	  ${requestScope.sample.get('2018-03')[2]}
+			    	  <%=request.getAttribute("rtn1")%>
 			    	  ]
 			    },
 			    
@@ -169,14 +152,7 @@
 			      pointColor : "rgba(234,142,57,1)",
 			      pointStrokeColor : "rgba(0,0,0,0.6)",
 			      data : [
-			    	  ${requestScope.sample.get('2017-08')[2]},
-			    	  ${requestScope.sample.get('2017-09')[2]},
-			    	  ${requestScope.sample.get('2017-10')[2]},
-			    	  ${requestScope.sample.get('2017-11')[2]},
-			    	  ${requestScope.sample.get('2017-12')[2]},
-			    	  ${requestScope.sample.get('2018-01')[2]},
-			    	  ${requestScope.sample.get('2018-02')[2]},
-			    	  ${requestScope.sample.get('2018-03')[2]}
+			    	  <%=request.getAttribute("rtn1")%>
 			    	  ]
 			    },
 			    {
@@ -185,14 +161,7 @@
 			      pointColor : "rgba(236,72,127,1)",
 			      pointStrokeColor : "rgba(0,0,0,0.6)",
 			      data : [
-			    	  ${requestScope.sample.get('2017-08')[2]},
-			    	  ${requestScope.sample.get('2017-09')[2]},
-			    	  ${requestScope.sample.get('2017-10')[2]},
-			    	  ${requestScope.sample.get('2017-11')[2]},
-			    	  ${requestScope.sample.get('2017-12')[2]},
-			    	  ${requestScope.sample.get('2018-01')[2]},
-			    	  ${requestScope.sample.get('2018-02')[2]},
-			    	  ${requestScope.sample.get('2018-03')[2]}
+			    	  <%=request.getAttribute("rtn1")%>
 			    	  ]
 			    }
 			  ]
