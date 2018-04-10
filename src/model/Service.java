@@ -22,7 +22,7 @@ public class Service {
 			if (loginEmailAddress.equals(DBId)) {
 				if (loginPassword.equals(DBPw)) {
 					System.out.println("3");
-					UserDAO.sector_info(user);
+					sector_info = UserDAO.sector_info(user);
 					System.out.println("4");
 					return sector_info;
 				}

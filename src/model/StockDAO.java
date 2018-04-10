@@ -20,7 +20,7 @@ public class StockDAO {
 	// 고객 관심 sector => param => where sector = param
 
 	public static ArrayList<String[]> selectSectorByMonth(String sector) throws SQLException {
-//		System.out.println(sector);
+		System.out.println("===" + sector);
 		Connection con = null;
 		PreparedStatement pstmt = null;
 		ResultSet rset = null;
@@ -31,9 +31,9 @@ public class StockDAO {
 		try {
 			con = DBUtil.getConnection();
 			pstmt = con.prepareStatement(
-					"SELECT Sector, DATE_FORMAT(Date, '%Y-%m') as YM , AVG(Rtn) as Avg_Rtn FROM test_stocks_prices \r\n"
+					"SELECT Sector, DATE_FORMAT(Date, '%Y-%m') as YM , AVG(Rtn) * 20  as Avg_Rtn FROM test_stocks_prices \r\n"
 							+ "WHERE Date > ( SELECT DATE_SUB('2018-04-01', INTERVAL 12 MONTH) ) and Date < '2018-04-01'\r\n"
-							+ "and Sector = ?\r\n" + "GROUP BY Sector, YM");
+							+ "and Code = ?\r\n" + "GROUP BY Code, YM");
 			pstmt.setString(1, sector);
 
 			rset = pstmt.executeQuery();
@@ -63,10 +63,10 @@ public class StockDAO {
 		
 		try {
 			con = DBUtil.getConnection();
-			pstmt = con.prepareStatement("SELECT Sector, CONCAT( ROUND( AVG(Rtn) * 252 * 100, 2), '%' ) as Avg_Rtn, MIN(Date), MAX(Date) FROM test_stocks_prices \r\n" + 
+			pstmt = con.prepareStatement("SELECT Sector, CONCAT( ROUND( AVG(Rtn) * 20  * 100, 2), '%' ) as Avg_Rtn, MIN(Date), MAX(Date) FROM test_stocks_prices \r\n" + 
 														"WHERE Date > ( SELECT DATE_SUB('2018-04-01', INTERVAL 12 MONTH) ) and Date < '2018-04-01'\r\n" + 
-														"and Sector = ?\r\n" + 
-														"GROUP BY Sector");
+														"and Code = ?\r\n" + 
+														"GROUP BY Code");
 			pstmt.setString(1, sector);
 			rset = pstmt.executeQuery();
 			

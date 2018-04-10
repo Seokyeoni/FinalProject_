@@ -26,15 +26,16 @@ public class Controller extends HttpServlet {
 
 		String command = request.getParameter("command");
 
-		if (command.equals("search")) {
-			try {
-				ArrayList<String[]> stock = StockDAO.selectAll();
-				request.setAttribute("stock", stock);
-				request.getRequestDispatcher("testTable1.jsp").forward(request, response);
-			} catch (SQLException e) {
-				e.printStackTrace();
-			}
-		} else if (command.equals("login")) {
+//		if (command.equals("search")) {
+//			try {
+//				ArrayList<String[]> stock = StockDAO.selectAll();
+//				request.setAttribute("stock", stock);
+//				request.getRequestDispatcher("testTable1.jsp").forward(request, response);
+//			} catch (SQLException e) {
+//				e.printStackTrace();
+//			}
+//		} else 
+		if (command.equals("login")) {
 			LoginValidate(request, response);
 		} else if (command.equals("sign_in")) {
 			sign_in(request, response);
@@ -51,9 +52,44 @@ public class Controller extends HttpServlet {
 		try {
 			UserDTO sector_info = Service.loginValidate(user);
 			if (sector_info != null) {
-				url = "dash_q.html";
-				HttpSession session = request.getSession();
-				session.setAttribute("sector_info", sector_info);
+				url = "papa_dash_m.jsp";
+				String sec1 = sector_info.getSectorOne();
+				String sec2 = sector_info.getSectorTwo();
+				
+				ArrayList<String[]> sector1 = StockDAO.selectSectorByMonth(sec1);
+				String sec1_name = StockDAO.selectSectorByYear(sec1).get(0)[0] ;
+				String sec1_ror =  StockDAO.selectSectorByYear(sec1).get(0)[1] ;
+				
+				ArrayList<String[]> sector2 = StockDAO.selectSectorByMonth(sec2);
+				String ym1 = "";
+				String rtn1 = "";
+				String ym2 = "";
+				String rtn2 = "";
+				
+				for (Object s : sector1) {
+					String[] s1 = (String[]) s;
+					//System.out.println(Arrays.asList(s1).toString());
+					ym1 += "'" + s1[1] + "',";
+					rtn1 += "'" + s1[2] + "',";
+				}
+				for (Object s : sector2) {
+					String[] s2 = (String[]) s;
+					//System.out.println(Arrays.asList(s1).toString());
+					ym2 += "'" + s2[1] + "',";
+					rtn2 += "'" + s2[2] + "',";
+				}
+				//System.out.println(sample.keySet());
+				request.setAttribute("sec1_name", sec1_name);
+				request.setAttribute("sec1_ror", sec1_ror);
+				request.setAttribute("ym1", ym1);
+				request.setAttribute("rtn1", rtn1);
+				request.setAttribute("ym2", ym2);
+				request.setAttribute("rtn2", rtn2);
+				
+				
+				
+//				HttpSession session = request.getSession();
+//				session.setAttribute("sector_info", sector_info);
 
 			} else {
 				request.setAttribute("errMsg", "아이디와 비밀번호를 다시 확인해주세요");

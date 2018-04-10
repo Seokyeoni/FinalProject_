@@ -2,14 +2,21 @@
   box-sizing: border-box;
 }
 
-html {
-  overflow-y: scroll;
-}
+
+
+
+html { 
+    overflow-y:scoll
+    
+   }
 
 body {
-  background: #c1bdba;
+  
+
   font-family: 'Titillium Web', sans-serif;
-}
+ 
+ }
+
 
 a {
   text-decoration: none;
@@ -144,7 +151,7 @@ textarea {
 
 .field-wrap {
   position: relative;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 .top-row:after {
