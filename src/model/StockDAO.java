@@ -10,6 +10,7 @@ import java.util.ResourceBundle;
 
 import util.DBUtil;
 
+
 public class StockDAO {
 	static ResourceBundle sql = DBUtil.getResourceBundle();
 
@@ -34,15 +35,15 @@ public class StockDAO {
 			
 			while(rset.next()) {
 				row = new String[] {String.valueOf(rset.getString(1)),
+											String.valueOf(rset.getString(2)),
 											String.valueOf(rset.getDouble(3))
 											};
-				System.out.println(row);
+//				System.out.println(row);
 				stockDataByMonth.put(String.valueOf(rset.getString(2)), row);
 			}
 		} finally {
 			DBUtil.close(con, pstmt, rset);
 		}
-		
 		
 		return stockDataByMonth;
 	}

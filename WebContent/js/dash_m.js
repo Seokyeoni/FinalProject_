@@ -8,7 +8,7 @@ var data1 = {
       strokeColor : "rgba(56,175,91,1)",
       pointColor : "rgba(56,175,91,1)",
       pointStrokeColor : "rgba(0,0,0,0.6)",
-      data : [-7.2, -5, -2, 2.2,-0.3,5.5,4,${requestScope.sample.get("2018-02")[1]}]
+      data : [-7.2, -5, -2, 2.2,-0.3,5.5,4,5]
     },
     {
       fillColor : "rgba(234,142,57,.1)",

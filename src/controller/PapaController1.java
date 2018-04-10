@@ -10,6 +10,9 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
+
+import com.google.gson.Gson;
 
 import model.StockDAO;
 
@@ -24,24 +27,38 @@ public class PapaController1 extends HttpServlet {
 
 		String command = request.getParameter("command");
 
-		if (command.equals("google")) {
+		if (command.equals("input_test")) {
 			try {
-				ArrayList<String[]> sample = StockDAO.selectTwoSectors();
+				HashMap<String, String[]> sample = StockDAO.selectTwoSector();
 				request.setAttribute("sample", sample);
-//				System.out.println(sample);
-				request.getRequestDispatcher("Papa_google.jsp").forward(request, response);
+				
+				Gson gson = new Gson();
+				String json = gson.toJson(sample);
+				
+				HttpSession session = request.getSession();
+				session.setAttribute("json", json);
+				
+				request.getRequestDispatcher("input_test.jsp").forward(request, response);
+				
 			} catch (SQLException e) {
 				e.printStackTrace();
 				
 			}
+			
+//			try {
+//				ArrayList<String[]> sample = StockDAO.selectTwoSectors();
+//				request.setAttribute("sample", sample);
+//				request.getRequestDispatcher("input_test.jsp").forward(request, response);
+//			} catch (SQLException e) {
+//				e.printStackTrace();
+//				
+//			}
 		}
-		else if (command.equals("test")) {
+		else if (command.equals("dash_m")) {
 			try {
 				HashMap<String, String[]> sample = StockDAO.selectTwoSector();
-				
 				request.setAttribute("sample", sample);
-//				System.out.println(sample);
-				request.getRequestDispatcher("dash_m.jsp").forward(request, response);
+				request.getRequestDispatcher("papa_dash_m.jsp").forward(request, response);
 			} catch (SQLException e) {
 				e.printStackTrace();
 				
