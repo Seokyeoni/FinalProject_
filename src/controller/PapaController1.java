@@ -34,7 +34,6 @@ public class PapaController1 extends HttpServlet {
 				
 				Gson gson = new Gson();
 				String json = gson.toJson(sample);
-				
 				HttpSession session = request.getSession();
 				session.setAttribute("json", json);
 				

@@ -5,8 +5,10 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.ResourceBundle;
+
 
 import util.DBUtil;
 
@@ -17,6 +19,9 @@ public class StockDAO {
 	
 	
 // #01 : Two Sector Select month_avg(Rtn)
+	
+	// 고객 관심 sector => param => where sector = param
+	
 	public static HashMap<String, String[]> selectTwoSector() throws SQLException{
 		Connection con = null;
 		PreparedStatement pstmt = null;
@@ -38,7 +43,7 @@ public class StockDAO {
 											String.valueOf(rset.getString(2)),
 											String.valueOf(rset.getDouble(3))
 											};
-//				System.out.println(row);
+				//System.out.println(Arrays.asList(row));
 				stockDataByMonth.put(String.valueOf(rset.getString(2)), row);
 			}
 		} finally {

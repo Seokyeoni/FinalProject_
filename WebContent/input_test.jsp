@@ -9,13 +9,28 @@
 </head>
 <body>
 	<script type="text/javascript">
-		var data = {
-				2003:"${requestScope.sample.get('2018-02')[1]}"}
-		}
-		console.log(data["2003"])
+
 		var json = ${sessionScope.json}
 		var obj = JSON.parse(json)
 		console.log(obj)
+		
+		
+			var data1 = {
+			  labels : [
+				  "'2017-08",
+				  "'2017-09",
+				  "'2017-10",
+				  "2017-11",
+				  "2017-12",
+				  "2018-01",
+				  "2018-02",
+				  "2018-03"
+				  ]
+		}
+		
+		
+		
+		
 	</script>
 
 </body>
