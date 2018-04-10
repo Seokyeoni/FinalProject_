@@ -39,8 +39,37 @@ public class Controller extends HttpServlet {
 			LoginValidate(request, response);
 		} else if (command.equals("sign_in")) {
 			sign_in(request, response);
+		} else if (command.equals("change_sector")) {
+			change_sector(request,response);
 		}
 
+	}
+	private void change_sector(HttpServletRequest request, HttpServletResponse response) {
+		String url = "showerror.jsp";
+		String[] sector = request.getParameterValues("sector");
+		UserDTO chage_sector_user = new UserDTO();
+		chage_sector_user.setEmailAddress(request.getParameter("emailAddress"));
+		chage_sector_user.setSectorOne(sector[0]);
+		chage_sector_user.setSectorTwo(sector[1]);
+		chage_sector_user.setSectorThree(sector[2]);
+		try {
+			url = "showerror.jsp";
+			UserDTO changed_sector_info = Service.loginValidate(change_sector_user);
+			if (result) {
+				request.setAttribute("change_sector_info", changed_sector_info);
+				request.setAttribute("successMsg", "가입 완료");
+				url = "dash_m.jsp";
+				request.getSession();
+				request.setAttribute("emailAddress", emailAddress);
+				request.setAttribute("name", name);
+			} else {
+				request.setAttribute("errorMsg", "다시 시도하세요");
+			}
+		} catch (Exception s) {
+			request.setAttribute("errorMsg", s.getMessage());
+		}
+		request.getRequestDispatcher(url).forward(request, response);
+		
 	}
 	//로그인 하면서 섹터 세개 뽑아와야됨! 
 	private void LoginValidate(HttpServletRequest request, HttpServletResponse response)

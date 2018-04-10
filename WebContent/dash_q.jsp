@@ -1,7 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -17,8 +16,8 @@
 
 </head>
 
-<body>
 
+<body>
 
 	<nav>
 		<header>Stock Report</header>
@@ -54,8 +53,8 @@
 			<div class="user"></div>
 			<div class="interval">
 				<ul>
-					<a href="dash_q.html"><li>Quarterly</li></a>
-					<li class="active">Monthly</li>
+					<li class="active">Quarterly</li>
+					<li><a href="dash_m.html">Monthly</a></li>
 				</ul>
 			</div>
 		</header>
@@ -69,7 +68,7 @@
 			<div class="inlineChart">
 				<canvas id="c2" width="100" height="100"></canvas>
 				<div class="info">
-					<div class="value">$36,146</div>
+					<div class="value">$5,000</div>
 					<div class="title">Credit sales</div>
 				</div>
 			</div>
@@ -129,9 +128,7 @@
 
 
 
-	<script src="js/dash_m.js">
-		
-	</script>
+	<script src="js/dash_q.js"></script>
 
 
 
