@@ -35,34 +35,34 @@ public class Controller extends HttpServlet {
 //				e.printStackTrace();
 //			}
 //		} else 
+		
 		if (command.equals("login")) {
 			LoginValidate(request, response);
 		} else if (command.equals("sign_in")) {
 			sign_in(request, response);
 		} else if (command.equals("change_sector")) {
-			change_sector(request,response);
+			before_sector(request,response);
+			System.out.println("1");
 		}
 
 	}
-	private void change_sector(HttpServletRequest request, HttpServletResponse response) {
+	private void before_sector(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		String url = "showerror.jsp";
-		String[] sector = request.getParameterValues("sector");
 		UserDTO chage_sector_user = new UserDTO();
+		String[] sector = request.getParameterValues("sector");
 		chage_sector_user.setEmailAddress(request.getParameter("emailAddress"));
 		chage_sector_user.setSectorOne(sector[0]);
 		chage_sector_user.setSectorTwo(sector[1]);
 		chage_sector_user.setSectorThree(sector[2]);
 		try {
-			url = "showerror.jsp";
-			UserDTO changed_sector_info = Service.loginValidate(change_sector_user);
-			if (result) {
-				request.setAttribute("change_sector_info", changed_sector_info);
-				request.setAttribute("successMsg", "가입 완료");
-				url = "dash_m.jsp";
+			UserDTO sector_info= Service.changing_user(chage_sector_user);
+			if (sector_info != null) {
 				request.getSession();
-				request.setAttribute("emailAddress", emailAddress);
-				request.setAttribute("name", name);
-			} else {
+				request.setAttribute("sector_info", sector_info);
+				request.setAttribute("successMsg", "수정 완료");
+				url = "dash_m.jsp";
+			
+			}else {
 				request.setAttribute("errorMsg", "다시 시도하세요");
 			}
 		} catch (Exception s) {
@@ -81,7 +81,7 @@ public class Controller extends HttpServlet {
 		try {
 			UserDTO sector_info = Service.loginValidate(user);
 			if (sector_info != null) {
-				url = "papa_dash_m.jsp";
+				url = "dash_m.jsp";
 				String sec1 = sector_info.getSectorOne();
 				String sec2 = sector_info.getSectorTwo();
 				

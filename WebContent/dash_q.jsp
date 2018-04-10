@@ -35,7 +35,7 @@
 				<li class="red" ><a href = 'dash_c1.html'>카테고리1</a></li>
 				<li class="yellow"><a href = 'dash_c1.html'>카테고리2</a></li>
 				<li class="green"><a href = 'dash_c1.html'>카테고리3</a></li>
-				<li class="new"><i class="fa fa-plus-circle"> </i> Add Category</li>
+				<li class="new"><a href="http://localhost/Triple_Core/sector_change.html"><i class="fa fa-plus-circle"></i> Add Category</a></li>
 			</ul>
 		</section>
 		<section>
@@ -54,7 +54,7 @@
 			<div class="interval">
 				<ul>
 					<li class="active">Quarterly</li>
-					<li><a href="dash_m.html">Monthly</a></li>
+					<li><a href="dash_m.jsp">Monthly</a></li>
 				</ul>
 			</div>
 		</header>
