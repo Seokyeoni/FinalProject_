@@ -44,11 +44,9 @@ public class Controller extends HttpServlet {
 	//로그인 하면서 섹터 세개 뽑아와야됨! 
 	private void LoginValidate(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
-		String url = "login.html";
+		String url = "showerror.jsp";
 		String emailAddress = request.getParameter("emailAddress");
 		String password = request.getParameter("password");
-		System.out.println(emailAddress);
-		System.out.println(password);
 		UserDTO user = new UserDTO(emailAddress, password);
 		try {
 			UserDTO sector_info = Service.loginValidate(user);
@@ -79,7 +77,7 @@ public class Controller extends HttpServlet {
 		String sectorThree = sector[2];
 	
 		
-		UserDTO user = new UserDTO(name, emailAddress, password, sectorOne, sectorTwo, sectorThree);
+		UserDTO user = new UserDTO(emailAddress, password, name, sectorOne, sectorTwo, sectorThree);
 		try {
 			url = "showError.jsp";
 			boolean result = Service.addUser(user);

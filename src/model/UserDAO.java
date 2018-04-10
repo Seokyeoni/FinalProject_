@@ -14,40 +14,59 @@ public class UserDAO {
 	static ResourceBundle sql = DBUtil.getResourceBundle();
 
 	// 로그인 검증
-	public static ArrayList<UserDTO> loginValidate(UserDTO user) throws SQLException {
+	public static UserDTO loginValidate(UserDTO user) throws SQLException {
 
 		Connection con = null;
 		PreparedStatement pstmt = null;
 		ResultSet rset = null;
 		UserDTO pass_info = new UserDTO();
-		UserDTO sector_info = null;
-		ArrayList<UserDTO> total_info = new ArrayList<UserDTO>();
+		//UserDTO sector_info = null;
 		
 		String emailAddress = user.getEmailAddress();
-		System.out.println();
+		System.out.println("0.왔니?");
 		try {
 			con = DBUtil.getConnection();
-			pstmt = con.prepareStatement("SELECT emailAddress, password, name, sectorOne, sectorTwo, sectorThree FROM USER where EmailAddress=?");// 요렇게
+			pstmt = con.prepareStatement("SELECT emailAddress, password FROM USER where EmailAddress=?");// 요렇게
 			pstmt.setString(1, emailAddress);
 			rset = pstmt.executeQuery();
-			System.out.println();
+			
 			if (rset.next()) {
 				pass_info.setEmailAddress(rset.getString(1));
-				pass_info.setEmailAddress(rset.getString(1));
-				, rset.getString(2));
-				sector_info = new UserDTO(rset.getString(1), rset.getString(3), rset.getString(4), rset.getString(5), rset.getString(6));
-				total_info.add(pass_info);
-				total_info.add(sector_info);
-				System.out.println("1"+total_info.get(0));
-				System.out.println("1"+total_info.get(1));
-				System.out.println("2"+pass_info);
-				System.out.println("3"+sector_info);
+				pass_info.setPassword(rset.getString(2));
+				System.out.println("1"+pass_info.getName() + pass_info.getPassword());	
 			}
 		} finally {
 			DBUtil.close(con, pstmt);
 		}
 		System.out.println("돌아감");
-		return total_info;
+		return pass_info;
+	}
+	public static UserDTO sector_info(UserDTO user) throws SQLException {
+
+		Connection con = null;
+		PreparedStatement pstmt = null;
+		ResultSet rset = null;
+		UserDTO  sector_info = new UserDTO();
+		
+		String emailAddress = user.getEmailAddress();
+		
+		try {
+			con = DBUtil.getConnection();
+			pstmt = con.prepareStatement("SELECT emailAddress, name, sectorOne, sectorTwo, sectorThree FROM USER where EmailAddress=?");// 요렇게
+			pstmt.setString(1, emailAddress);
+			rset = pstmt.executeQuery();
+			if (rset.next()) {
+				sector_info.setEmailAddress(rset.getString(1));
+				sector_info.setName(rset.getString(2));
+				sector_info.setSectorOne(rset.getString(3));
+				sector_info.setSectorTwo(rset.getString(4));
+				sector_info.setSectorThree(rset.getString(5));
+			}
+		} finally {
+			DBUtil.close(con, pstmt);
+		}
+		System.out.println("돌아감");
+		return sector_info;
 	}
 	public static boolean addUser(UserDTO user) throws SQLException {
 
@@ -55,14 +74,14 @@ public class UserDAO {
 		PreparedStatement pstmt = null;
 		try {
 			con = DBUtil.getConnection();
-			pstmt = con.prepareStatement("insert into USER values(?,?,?,?,?,?)");//요렇게
+			pstmt = con.prepareStatement("insert into USER values(?,?,?,?,?,?)");// 요렇게
 			pstmt.setString(1, user.getEmailAddress());
 			pstmt.setString(2, user.getPassword());
 			pstmt.setString(3, user.getName());
 			pstmt.setString(4, user.getSectorOne());
 			pstmt.setString(5, user.getSectorTwo());
 			pstmt.setString(6, user.getSectorThree());
-			
+
 			int result = pstmt.executeUpdate();
 			if (result == 1) {
 				return true;
@@ -73,5 +92,6 @@ public class UserDAO {
 		return false;
 	}
 	// 다아른!거!따아른거!따아아악
+	
 
 }

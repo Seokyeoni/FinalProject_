@@ -17,19 +17,19 @@ public class UserDTO {
 		this.password = password; 
 	}
 	
-	public UserDTO(String emailAddress, String name, String sectrorOne, String sectorTwo, String sectorThree) {
+	public UserDTO(String emailAddress, String password, String name, String sectorOne, String sectorTwo, 	String sectorThree) {
+		super();
 		this.emailAddress = emailAddress;
+		this.password = password;
 		this.name = name;
-		this.sectorOne = sectrorOne;
+		this.sectorOne = sectorOne;
 		this.sectorTwo = sectorTwo;
 		this.sectorThree = sectorThree;
 	}
 	
-	public UserDTO(String emailAddress, String password, String name, String sectorOne, String sectorTwo,
-			String sectorThree) {
+	public UserDTO(String emailAddress, String name, String sectorOne, String sectorTwo,	String sectorThree) {
 		super();
 		this.emailAddress = emailAddress;
-		this.password = password;
 		this.name = name;
 		this.sectorOne = sectorOne;
 		this.sectorTwo = sectorTwo;
