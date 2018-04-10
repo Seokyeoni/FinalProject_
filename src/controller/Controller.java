@@ -41,21 +41,25 @@ public class Controller extends HttpServlet {
 		} else if (command.equals("sign_in")) {
 			sign_in(request, response);
 		} else if (command.equals("change_sector")) {
-			before_sector(request,response);
 			System.out.println("1");
+			before_sector(request,response);
 		}
 
 	}
 	private void before_sector(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		String url = "showerror.jsp";
 		UserDTO chage_sector_user = new UserDTO();
+		System.out.println("2");
 		String[] sector = request.getParameterValues("sector");
+		System.out.println("3 :" + sector.length);
 		chage_sector_user.setEmailAddress(request.getParameter("emailAddress"));
 		chage_sector_user.setSectorOne(sector[0]);
 		chage_sector_user.setSectorTwo(sector[1]);
 		chage_sector_user.setSectorThree(sector[2]);
+		
 		try {
 			UserDTO sector_info= Service.changing_user(chage_sector_user);
+			System.out.println("13");
 			if (sector_info != null) {
 				request.getSession();
 				request.setAttribute("sector_info", sector_info);

@@ -23,7 +23,6 @@ public class UserDAO {
 		//UserDTO sector_info = null;
 		
 		String emailAddress = user.getEmailAddress();
-		System.out.println("0.왔니?");
 		try {
 			con = DBUtil.getConnection();
 			pstmt = con.prepareStatement("SELECT emailAddress, password FROM USER where EmailAddress=?");// 요렇게
@@ -33,17 +32,15 @@ public class UserDAO {
 			if (rset.next()) {
 				pass_info.setEmailAddress(rset.getString(1));
 				pass_info.setPassword(rset.getString(2));
-				System.out.println("1"+pass_info.getName() + pass_info.getPassword());	
 			}
 		} finally {
 			DBUtil.close(con, pstmt);
 		}
-		System.out.println("돌아감");
 		return pass_info;
 	}
 	
 	public static UserDTO sector_info(UserDTO user) throws SQLException {
-
+		System.out.println("8");
 		Connection con = null;
 		PreparedStatement pstmt = null;
 		ResultSet rset = null;
@@ -52,6 +49,7 @@ public class UserDAO {
 		String emailAddress = user.getEmailAddress();
 		
 		try {
+			System.out.println("9");
 			con = DBUtil.getConnection();
 			pstmt = con.prepareStatement("SELECT emailAddress, name, sectorOne, sectorTwo, sectorThree FROM USER where EmailAddress=?");// 요렇게
 			pstmt.setString(1, emailAddress);
@@ -66,6 +64,7 @@ public class UserDAO {
 		} finally {
 			DBUtil.close(con, pstmt);
 		}
+		System.out.println("10");
 		return sector_info;
 	}
 	public static boolean addUser(UserDTO user) throws SQLException {
@@ -94,7 +93,9 @@ public class UserDAO {
 	// 다아른!거!따아른거!따아아악
 	public static Boolean changing_user_sector(UserDTO user) throws SQLException {
 		Connection con = null;
-		PreparedStatement pstmt = null;
+		PreparedStatement pstmt1 = null;
+		PreparedStatement pstmt2= null;
+		PreparedStatement pstmt3 = null;
 //		ResultSet rset = null;
 		//UserDTO  changed_sector_user = new UserDTO();
 		String SectorOne = user.getSectorOne();
@@ -104,12 +105,20 @@ public class UserDAO {
 		
 		try {
 			con = DBUtil.getConnection();
-			pstmt = con.prepareStatement("UPDATE USER ( SET SectorOne = ?, SET SectorTwo = ?, SET SectorThree = ? WHERE EmailAddress = ?");// 요렇게
-			pstmt.setString(1, SectorOne);
-			pstmt.setString(2, SectorTwo);
-			pstmt.setString(3, SectorThree);
-			pstmt.setString(4, emailAddress);
-			pstmt.executeUpdate();
+			pstmt1 = con.prepareStatement("UPDATE USER SET SectorOne = ? WHERE EmailAddress = ?");// 요렇게
+			pstmt2 = con.prepareStatement("UPDATE USER SET SectorTwo = ? WHERE EmailAddress = ?");
+			pstmt3 = con.prepareStatement("UPDATE USER SET SectorThree = ? WHERE EmailAddress = ?");
+			System.out.println(SectorOne);
+			System.out.println(emailAddress);
+			pstmt1.setString(1,  SectorOne);
+			pstmt1.setString(2, emailAddress);
+			pstmt2.setString(1, SectorTwo);
+			pstmt2.setString(2, emailAddress);
+			pstmt3.setString(1, SectorThree);
+			pstmt3.setString(2, emailAddress);
+			pstmt1.executeUpdate();
+			pstmt2.executeUpdate();
+			pstmt3.executeUpdate();
 //			rset = pstmt.executeQuery();
 //			if (rset.next()) {
 //				changed_sector_user.setEmailAddress(rset.getString(1));
@@ -117,14 +126,18 @@ public class UserDAO {
 //				changed_sector_user.setSectorOne(rset.getString(3));
 //				changed_sector_user.setSectorTwo(rset.getString(4));
 //			}
-			int result = pstmt.executeUpdate();
+			int result = pstmt1.executeUpdate();
 			if (result != 0) {
+				System.out.println("5");
 				return true;
+				
 			}
 		
 
 		} finally {
-			DBUtil.close(con, pstmt);
+			DBUtil.close(con, pstmt1);
+			DBUtil.close(con, pstmt2);
+			DBUtil.close(con, pstmt3);
 		}
 		return false;
 	}

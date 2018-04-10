@@ -20,7 +20,7 @@ public class StockDAO {
 	// 고객 관심 sector => param => where sector = param
 
 	public static ArrayList<String[]> selectSectorByMonth(String sector) throws SQLException {
-		System.out.println("===" + sector);
+//		System.out.println("===" + sector);
 		Connection con = null;
 		PreparedStatement pstmt = null;
 		ResultSet rset = null;
