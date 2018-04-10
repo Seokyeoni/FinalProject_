@@ -19,25 +19,34 @@ public class UserDAO {
 		Connection con = null;
 		PreparedStatement pstmt = null;
 		ResultSet rset = null;
-		UserDTO pass_info = null;
+		UserDTO pass_info = new UserDTO();
 		UserDTO sector_info = null;
 		ArrayList<UserDTO> total_info = new ArrayList<UserDTO>();
 		
 		String emailAddress = user.getEmailAddress();
+		System.out.println();
 		try {
 			con = DBUtil.getConnection();
 			pstmt = con.prepareStatement("SELECT emailAddress, password, name, sectorOne, sectorTwo, sectorThree FROM USER where EmailAddress=?");// 요렇게
 			pstmt.setString(1, emailAddress);
 			rset = pstmt.executeQuery();
+			System.out.println();
 			if (rset.next()) {
-				pass_info = new UserDTO(rset.getString(1), rset.getString(2));
+				pass_info.setEmailAddress(rset.getString(1));
+				pass_info.setEmailAddress(rset.getString(1));
+				, rset.getString(2));
 				sector_info = new UserDTO(rset.getString(1), rset.getString(3), rset.getString(4), rset.getString(5), rset.getString(6));
 				total_info.add(pass_info);
 				total_info.add(sector_info);
+				System.out.println("1"+total_info.get(0));
+				System.out.println("1"+total_info.get(1));
+				System.out.println("2"+pass_info);
+				System.out.println("3"+sector_info);
 			}
 		} finally {
 			DBUtil.close(con, pstmt);
 		}
+		System.out.println("돌아감");
 		return total_info;
 	}
 	public static boolean addUser(UserDTO user) throws SQLException {

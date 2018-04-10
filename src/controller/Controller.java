@@ -47,11 +47,13 @@ public class Controller extends HttpServlet {
 		String url = "login.html";
 		String emailAddress = request.getParameter("emailAddress");
 		String password = request.getParameter("password");
+		System.out.println(emailAddress);
+		System.out.println(password);
 		UserDTO user = new UserDTO(emailAddress, password);
 		try {
 			UserDTO sector_info = Service.loginValidate(user);
 			if (sector_info != null) {
-				url = "dash_q.jsp";
+				url = "dash_q.html";
 				HttpSession session = request.getSession();
 				session.setAttribute("sector_info", sector_info);
 
@@ -66,20 +68,25 @@ public class Controller extends HttpServlet {
 	}
 	public void sign_in(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
+		
 		String url = "showError.jsp";
 		String emailAddress = request.getParameter("emailAddress");
 		String password = request.getParameter("password");
 		String name = request.getParameter("name");
-		String sectrorOne = request.getParameter("sectorOne");
-		String sectorTwo = request.getParameter("sectorTwo");
-		String sectorThree = request.getParameter("sectorThree");
-		UserDTO user = new UserDTO(name, emailAddress, password, sectrorOne, sectorTwo, sectorThree);
+		String[] sector = request.getParameterValues("sector");
+		String sectorOne = sector[0];
+		String sectorTwo = sector[1];
+		String sectorThree = sector[2];
+	
+		
+		UserDTO user = new UserDTO(name, emailAddress, password, sectorOne, sectorTwo, sectorThree);
 		try {
+			url = "showError.jsp";
 			boolean result = Service.addUser(user);
 			if (result) {
 				request.setAttribute("user", user);
 				request.setAttribute("successMsg", "가입 완료");
-				url = "dash_q.jsp";
+				url = "log.html";
 				request.getSession();
 				request.setAttribute("emailAddress", emailAddress);
 				request.setAttribute("name", name);

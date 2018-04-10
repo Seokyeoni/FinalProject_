@@ -17,7 +17,7 @@ public class Service {
 	  		 UserDTO sector_info = null;
 	         total_info = UserDAO.loginValidate(user);
 	         pass_info = total_info.get(0);
-	         sector_info = total_info.get(0);
+	         sector_info = total_info.get(1);
 	         
 	         String DBId = pass_info.getEmailAddress();
 	         String DBPw= pass_info.getPassword();      
@@ -38,6 +38,7 @@ public class Service {
 		   public static boolean addUser(UserDTO user) throws MessageException{
 		      boolean result = false;
 		      try{
+		    	  System.out.println("3. 서비스");
 		         result = UserDAO.addUser(user);
 		      }catch(SQLException s){
 		         throw new MessageException("이미 존재하는 ID입니다. 창의력을 발휘해 보세요.");

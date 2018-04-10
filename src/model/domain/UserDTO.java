@@ -7,7 +7,7 @@ public class UserDTO {
 	private String sectorOne;
 	private String sectorTwo;
 	private String sectorThree;
-	
+		
 	public UserDTO() {
 		super();
 	}
@@ -35,43 +35,52 @@ public class UserDTO {
 		this.sectorTwo = sectorTwo;
 		this.sectorThree = sectorThree;
 	}
-	
-	public String getName() {
-		return name;
-	}
-	public void setName(String name) {
-		this.name = name;
-	}
+		
 	public String getEmailAddress() {
 		return emailAddress;
 	}
+
 	public void setEmailAddress(String emailAddress) {
 		this.emailAddress = emailAddress;
 	}
+
 	public String getPassword() {
 		return password;
 	}
+
 	public void setPassword(String password) {
 		this.password = password;
 	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
 	public String getSectorOne() {
 		return sectorOne;
 	}
-	public void setSectorOne(String sectrorOne) {
-		this.sectorOne = sectrorOne;
+
+	public void setSectorOne(String sectorOne) {
+		this.sectorOne = sectorOne;
 	}
+
 	public String getSectorTwo() {
 		return sectorTwo;
 	}
+
 	public void setSectorTwo(String sectorTwo) {
 		this.sectorTwo = sectorTwo;
 	}
+
 	public String getSectorThree() {
 		return sectorThree;
 	}
+
 	public void setSectorThree(String sectorThree) {
 		this.sectorThree = sectorThree;
 	}
-	
-	
 }
