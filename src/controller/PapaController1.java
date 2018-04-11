@@ -50,8 +50,7 @@ public class PapaController1 extends HttpServlet {
 //				e.printStackTrace();
 //				
 //			}
-		}
-		else if (command.equals("dash_m")) {
+		}	else if (command.equals("dash_m")) {
 			try {
 				String sec1 = "기초 소재";
 				String sec2 = "테스트";

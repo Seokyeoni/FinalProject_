@@ -56,8 +56,8 @@ update_to_aggregate_RawData(update_date)
 def initiate_to_validate_ListingStatus():
     print("[exc] initiate_to_validate_ListingStatus() ")
     initial_validated_data_df = pd.read_csv(aggregated_raw_data_path + "/" + initial_raw_data, encoding="UTF-8")
-    for sector in sector_info.keys():
-        initial_validated_data_df.loc[ initial_validated_data_df["Sector"] == str(sector_info[sector][0]) , "Code"] = sector
+    for code in sector_info.keys():
+        initial_validated_data_df.loc[ initial_validated_data_df["Sector"] == str(sector_info[code][0]) , "Code"] = code
         
     initial_validated_data_df["Listing_status"]="O"
     initial_validated_data_df["Delisting_date"] = "null"
@@ -141,6 +141,16 @@ def validate_ListingStatus(update_raw_data):
             
         old_validated_data_df = pd.DataFrame(old_validated_data_df, columns = ["Name", "Symbol", "Exchange", "Code", "Sector", "Industry", "Listing_status", "Delisting_date", "New_listing_date"])
         old_validated_data_df.to_csv(processed_data_path + "/" + old_validated_data, sep=",", index=False, encoding="UTF-8")
+
+        
+        for code in sector_info.keys():
+            if code != "Code":
+                old_validated_data_df = pd.read_csv(processed_data_path + "/" + old_validated_data, encoding="UTF-8")
+                old_validated_data_by_sector = "old_validated_data_" + code + "_utf8.csv"
+                old_validated_data_df_by_sector = old_validated_data_df.loc[ old_validated_data_df["Code"] == code ]
+                old_validated_data_df_by_sector.to_csv(processed_data_path + "/by_sector/" + old_validated_data_by_sector, sep=",", index=False, encoding="UTF-8")
+            else:
+                continue
 
 
 ### ============================================================================

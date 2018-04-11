@@ -73,18 +73,18 @@ def getStockData(data_info):
                     
                     param["q"] = quote_symbol
                     param["x"] = exchange_info[exchange_name][3] ## google
-        #            param["x"] = exchange_info[exchange_name][4] ## yahoo
+#                    param["x"] = exchange_info[exchange_name][4] ## yahoo
                     param["c"] = currency
                     
                     stock = get_price_data(param)
                     #print(stock)
                     if not stock.empty:
                         stock["Name"] = row[0]
+                        stock["Symbol"] = quote_symbol
+                        stock["Exchange"] = exchange_name
                         stock["Code"] = row[3]
                         stock["Sector"] = row[4]
                         stock["Industry"] = row[5]
-                        stock["Symbol"] = quote_symbol
-                        stock["Exchange"] = exchange_name
                         stock["Currency"] = currency
                         stock["Rtn"] = np.log(stock["Close"]) - np.log(stock["Close"].shift(1))
                         stock = stock.dropna()
@@ -94,19 +94,19 @@ def getStockData(data_info):
                         print("Google] " + quote_symbol + " success")
             
                     elif stock.empty:
-                        quote_symbol = quote_symbol + exchange_info[exchange_name][4]
+                        quote_symbol = quote_symbol + exchange_info[exchange_name][4] ## yahoo
 #                        print(quote_symbol)
                         
                         stock = getStockDataYahoo(quote_symbol)
-                        #print(stock)
+#                        print(stock)
                         
                         if not stock.empty:
                             stock["Name"] = row[0]
+                            stock["Symbol"] = quote_symbol
+                            stock["Exchange"] = exchange_name
                             stock["Code"] = row[3]
                             stock["Sector"] = row[4]
                             stock["Industry"] = row[5]
-                            stock["Symbol"] = quote_symbol
-                            stock["Exchange"] = exchange_name
                             stock["Currency"] = currency
                             stock["Rtn"] = np.log(stock["Close"]) - np.log(stock["Close"].shift(1))
                             stock = stock.dropna()
@@ -130,14 +130,14 @@ def getStockData(data_info):
             row = pd.DataFrame(row, index = error_columns)
             error_log = error_log.append(row.T)
         
-        if count == 3000:
+        if count == 10:
             print(count)
             stock_total = stock_total.dropna()    
             stock_total = pd.DataFrame(stock_total, columns = stock_columns)
             stock_total.to_csv(result_data_path + "/" + "test_stock01.csv", index=False, encoding="UTF-8")
             error_log = pd.DataFrame(error_log, columns = error_columns)
             error_log.to_csv(result_data_path + "/" + "test_error_log01.csv", index=False, encoding="UTF-8")
-            continue
+            break
         
         elif count == 9000:
             print(count)
@@ -171,7 +171,9 @@ def getStockData(data_info):
         
     endTime = time.time() - startTime
     print("실행에 소용된 시간=", endTime, "초")
-    if endTime / 60 > 1:
+    if endTime / 3600 > 1:
+        print( endTime / 3600, "시간")
+    else:
         print( endTime / 60, "분")
         
 

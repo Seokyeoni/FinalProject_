@@ -39,8 +39,8 @@ public class UserDAO {
 		return pass_info;
 	}
 	
-	public static UserDTO sector_info(UserDTO user) throws SQLException {
-		System.out.println("8");
+	public static UserDTO selectUserInfo(UserDTO user) throws SQLException {
+//		System.out.println("8");
 		Connection con = null;
 		PreparedStatement pstmt = null;
 		ResultSet rset = null;
@@ -49,7 +49,7 @@ public class UserDAO {
 		String emailAddress = user.getEmailAddress();
 		
 		try {
-			System.out.println("9");
+//			System.out.println("9");
 			con = DBUtil.getConnection();
 			pstmt = con.prepareStatement("SELECT emailAddress, name, sectorOne, sectorTwo, sectorThree FROM USER where EmailAddress=?");// 요렇게
 			pstmt.setString(1, emailAddress);
@@ -64,7 +64,7 @@ public class UserDAO {
 		} finally {
 			DBUtil.close(con, pstmt);
 		}
-		System.out.println("10");
+//		System.out.println("10");
 		return sector_info;
 	}
 	public static boolean addUser(UserDTO user) throws SQLException {
@@ -91,7 +91,7 @@ public class UserDAO {
 		return false;
 	}
 	// 다아른!거!따아른거!따아아악
-	public static Boolean changing_user_sector(UserDTO user) throws SQLException {
+	public static Boolean updateSector(UserDTO user) throws SQLException {
 		Connection con = null;
 		PreparedStatement pstmt1 = null;
 		PreparedStatement pstmt2= null;
@@ -108,8 +108,8 @@ public class UserDAO {
 			pstmt1 = con.prepareStatement("UPDATE USER SET SectorOne = ? WHERE EmailAddress = ?");// 요렇게
 			pstmt2 = con.prepareStatement("UPDATE USER SET SectorTwo = ? WHERE EmailAddress = ?");
 			pstmt3 = con.prepareStatement("UPDATE USER SET SectorThree = ? WHERE EmailAddress = ?");
-			System.out.println(SectorOne);
-			System.out.println(emailAddress);
+//			System.out.println(SectorOne);
+//			System.out.println(emailAddress);
 			pstmt1.setString(1,  SectorOne);
 			pstmt1.setString(2, emailAddress);
 			pstmt2.setString(1, SectorTwo);
@@ -128,7 +128,7 @@ public class UserDAO {
 //			}
 			int result = pstmt1.executeUpdate();
 			if (result != 0) {
-				System.out.println("5");
+//				System.out.println("5");
 				return true;
 				
 			}
