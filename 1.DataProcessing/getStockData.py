@@ -26,9 +26,10 @@ old_validated_data = "old_validated_data_utf8.csv"
 
 processed_data_info = pd.read_csv("C:/0.bigdata/4.web/Triple_Core/0.DataSet/1.ProcessedData/old_validated_data_utf8.csv", encoding="UTF-8")
 processed_data_info_df = pd.DataFrame(processed_data_info)
-result_data_path = "C:/0.bigdata/4.web/Triple_Core/1.DataProcessing/result"
+result_data_path = "C:/0.bigdata/0.data/Triple_Core/1.DataProcessing/result"
 
 exchange_info = pd.read_json("C:/0.bigdata/4.web/Triple_Core/0.DataSet/1.ProcessedData/exchange_info.json", encoding="UTF-8")
+
 
 ## data_info => [ "Name", "Symbol", "Exchange", "Code", "Sector", "Industry", "Listing_status", "Delisting_date", "New_listing_date" ]
 ## exchange_info => [ "Nation","Acronym","Name","Google","Yahoo","Symbol_adj","Currency","WebSite", "Available" ]
@@ -87,6 +88,10 @@ def getStockData(data_info):
                         stock["Industry"] = row[5]
                         stock["Currency"] = currency
                         stock["Rtn"] = np.log(stock["Close"]) - np.log(stock["Close"].shift(1))
+                        stock.loc[ (np.isinf(stock["Rtn"]) ) | (np.isnan(stock["Rtn"])), "Rtn"] = None
+                        
+#                        stock.loc[ (stock["Rtn"] == np.inf)  | (stock["Rtn"] == -(np.inf)), "Rtn"] = None
+                        
                         stock = stock.dropna()
                         
                         #stock = pd.DataFrame(stock, columns = stock_columns)
@@ -109,6 +114,7 @@ def getStockData(data_info):
                             stock["Industry"] = row[5]
                             stock["Currency"] = currency
                             stock["Rtn"] = np.log(stock["Close"]) - np.log(stock["Close"].shift(1))
+                            stock.loc[ (np.isinf(stock["Rtn"]) ) | (np.isnan(stock["Rtn"])), "Rtn"] = None
                             stock = stock.dropna()
                             
                             #stock = pd.DataFrame(stock, columns = stock_columns)
@@ -130,14 +136,14 @@ def getStockData(data_info):
             row = pd.DataFrame(row, index = error_columns)
             error_log = error_log.append(row.T)
         
-        if count == 10:
+        if count == 1000:
             print(count)
             stock_total = stock_total.dropna()    
             stock_total = pd.DataFrame(stock_total, columns = stock_columns)
             stock_total.to_csv(result_data_path + "/" + "test_stock01.csv", index=False, encoding="UTF-8")
             error_log = pd.DataFrame(error_log, columns = error_columns)
             error_log.to_csv(result_data_path + "/" + "test_error_log01.csv", index=False, encoding="UTF-8")
-            break
+            continue
         
         elif count == 9000:
             print(count)

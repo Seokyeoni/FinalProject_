@@ -26,7 +26,7 @@
 		<section>
 			<header>Main</header>
 			<ul>
-				<li class="active"><a href="dash_q.jsp">Dashboard</a></li>
+				<li class="active"><a href="http://localhost/Triple_Core/dashCont?command=dash_m">Dashboard</a></li>
 				<li>Summary</li>
 			</ul>
 		</section>
@@ -34,18 +34,19 @@
 		<section>
 			<header>Categories</header>
 			<ul>
-				<li class="red" ><a href = 'dash_c1.jsp'>카테고리1</a></li>
-				<li class="yellow"><a href = 'dash_c1.html'>카테고리2</a></li>
-				<li class="green"><a href = 'dash_c1.html'>카테고리3</a></li>
-				<li class="new"><a href="http://localhost/Triple_Core/sector_change.html"><i class="fa fa-plus-circle"></i> Add Category</a></li>
+				<li class="red" ><a href = "http://localhost/Triple_Core/dashCont?command=dash_c_sec1">[Google Map] Sector1</a></li>
+				<li class="yellow"><a href = "http://localhost/Triple_Core/dashCont?command=dash_c_sec2"'>[Google Map] Sector2</a></li>
+				<li class="green"><a href = "http://localhost/Triple_Core/dashCont?command=dash_c_sec3">[Google Map] Sector3</a></li>
+				<li class="new"><a href="http://localhost/Triple_Core/sector_change.jsp"><i class="fa fa-plus-circle"></i> Change Sectors</a></li>
 			</ul>
 		</section>
 		<section>
 			<header>Account</header>
 			<ul>
 				<li><a href="main.html">logout</a></li>
-				<li>Messages</li>
+<!-- 			<li>Messages</li>
 				<li>Downloads</li>
+ -->
 			</ul>
 		</section>
 	</nav>
@@ -55,8 +56,8 @@
 			<div class="user"></div>
 			<div class="interval">
 				<ul>
+					<a href="http://localhost/Triple_Core/dashCont?command=dash_q"><li>Monthly</li></a>
 					<li class="active">Quarterly</li>
-					<a href="http://localhost/Triple_Core/cont?command=dash_m"><li>Monthly</li></a>
 				</ul>
 			</div>
 		</header>
@@ -111,7 +112,7 @@
 						<td>${v.sector}</td>
 						<td>${v.industry}</td>
 						<td>${v.avgRtn}</td>
-						<td>${v.avgVol}</td>
+						<td><fmt:formatNumber value="${v.avgVol}" pattern="#,###" /></td>
 					</tr>
 
 				</tbody>
@@ -121,9 +122,9 @@
 		</section>
 	</article>
 	<script
-		src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+		src='js/jquery.min.js'></script>
 	<script
-		src='http://cdnjs.cloudflare.com/ajax/libs/Chart.js/0.2.0/Chart.min.js'></script>
+		src='js/Chart.min.js'></script>
 
 
 	<script type="text/javascript">
@@ -144,7 +145,7 @@
 				strokeColor : "rgba(234,142,57,1)",
 				pointColor : "rgba(234,142,57,1)",
 				pointStrokeColor : "rgba(0,0,0,0.6)",
-				data : [			    	  <%=request.getAttribute("sector1_rtn")%>			    	  ]
+				data : [			    	  <%=request.getAttribute("sector2_rtn")%>			    	  ]
 			},
 			
 			{
@@ -152,7 +153,7 @@
 				strokeColor : "rgba(236,72,127,1)",
 				pointColor : "rgba(236,72,127,1)",
 				pointStrokeColor : "rgba(0,0,0,0.6)",
-				data : [			    	  <%=request.getAttribute("sector1_rtn")%>			    	  ]
+				data : [			    	  <%=request.getAttribute("sector3_rtn")%>			    	  ]
 			}
 			]
 		}
@@ -307,8 +308,6 @@
 	
 	new Chart($("#c4").get(0).getContext("2d")).Doughnut(data2,options2);
 	
-
-
 
 	
 	</script>

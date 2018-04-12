@@ -37,25 +37,32 @@ public class LoginController extends HttpServlet {
 	private void LoginValidate(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 		String url = "showerror.jsp";
+		
 		String emailAddress = request.getParameter("emailAddress");
 		String password = request.getParameter("password");
 		UserDTO user = new UserDTO(emailAddress, password);
 
 		try {
 			UserDTO user_info = Service.loginValidate(user);
+			System.out.println("[step01] login_user_info: " + user_info.getEmailAddress());
+			
 			if (user_info != null) {
 				url = "dash_m.jsp";
 				String sec1 = user_info.getSectorOne();
-//				System.out.println("=====1====" + sec1);
 				String sec2 = user_info.getSectorTwo();
 				String sec3 = user_info.getSectorThree();
+				String[] sectors = new String[] {sec1, sec2, sec3};
 				
-
-				String[] sector1_info = Service.showDefaultChart(sec1);
-				String[] sector2_info = Service.showDefaultChart(sec2);
-				String[] sector3_info = Service.showDefaultChart(sec3);
+				System.out.println("[step02] sector_name: " + sec1);
 				
-//				System.out.println(sector1_info[2]);
+				String[] sector1_info = Service.showMonthlyChart(sec1);
+				String[] sector2_info = Service.showMonthlyChart(sec2);
+				String[] sector3_info = Service.showMonthlyChart(sec3);
+				System.out.println("===show====");
+				
+				ArrayList<CompanyDTO> top_company = Service.showMonthlyTopFive(sectors);
+				System.out.println("[step03] sector_ror: " + sector1_info[1]);
+				
 				request.setAttribute("sector1_name", sector1_info[0]);
 				request.setAttribute("sector1_ror", sector1_info[1]);
 				request.setAttribute("sector1_ym", sector1_info[2]);
@@ -71,9 +78,6 @@ public class LoginController extends HttpServlet {
 				request.setAttribute("sector3_ym", sector3_info[2]);
 				request.setAttribute("sector3_rtn", sector3_info[3]);
 				
-				
-				String[] sectors = new String[] {sec1, sec2, sec3};
-				ArrayList<CompanyDTO> top_company = Service.showTopFive(sectors);
 				request.setAttribute("top_company", top_company);
 				
 //				System.out.println(top_company.get(1).getName());
@@ -84,6 +88,7 @@ public class LoginController extends HttpServlet {
 			} else {
 				request.setAttribute("errMsg", "아이디와 비밀번호를 다시 확인해주세요");
 			}
+			
 		} catch (Exception s) {
 			request.setAttribute("errorMsg", s.getMessage());
 
@@ -104,6 +109,7 @@ public class LoginController extends HttpServlet {
 		String sectorThree = sector[2];
 
 		UserDTO user = new UserDTO(emailAddress, password, name, sectorOne, sectorTwo, sectorThree);
+		System.out.println("[step01] new_user_info: " + user.getEmailAddress());
 		try {
 			url = "showError.jsp";
 			boolean result = Service.addUser(user);
@@ -120,6 +126,7 @@ public class LoginController extends HttpServlet {
 		} catch (Exception s) {
 			request.setAttribute("errorMsg", s.getMessage());
 		}
+		System.out.println("[step02] back to log.html" + request.getAttribute("emailAddress"));
 		request.getRequestDispatcher(url).forward(request, response);
 	}
 
