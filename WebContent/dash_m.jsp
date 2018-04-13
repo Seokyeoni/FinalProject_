@@ -26,7 +26,7 @@
 		<section>
 			<header>Main</header>
 			<ul>
-				<li class="active"><a href="http://localhost/Triple_Core/dashCont?command=dash_m">Dashboard</a></li>
+				<li class="active"><a href="/Triple_Core/dashCont?command=dash_m">Dashboard</a></li>
 				<li>Summary</li>
 			</ul>
 		</section>
@@ -34,10 +34,10 @@
 		<section>
 			<header>Categories</header>
 			<ul>
-				<li class="red" ><a href = "http://localhost/Triple_Core/dashCont?command=dash_c_sec1">[Google Map] Sector1</a></li>
-				<li class="yellow"><a href = "http://localhost/Triple_Core/dashCont?command=dash_c_sec2"'>[Google Map] Sector2</a></li>
-				<li class="green"><a href = "http://localhost/Triple_Core/dashCont?command=dash_c_sec3">[Google Map] Sector3</a></li>
-				<li class="new"><a href="http://localhost/Triple_Core/sector_change.jsp"><i class="fa fa-plus-circle"></i> Change Sectors</a></li>
+				<li class="red" ><a href = "/Triple_Core/dashCont?command=dash_c_sec1"> <%=request.getAttribute("sector1_name")%></a></li>
+				<li class="yellow"><a href = "/Triple_Core/dashCont?command=dash_c_sec2"'> <%=request.getAttribute("sector2_name")%></a></li>
+				<li class="green"><a href = "/Triple_Core/dashCont?command=dash_c_sec3"> <%=request.getAttribute("sector3_name")%></a></li>
+				<li class="new"><a href="/Triple_Core/sector_change.jsp"><i class="fa fa-plus-circle"></i> Change Sectors</a></li>
 			</ul>
 		</section>
 		<section>
@@ -55,7 +55,7 @@
 			<div class="title">Dashboard</div>
 			<div class="interval">
 				<ul>
-					<a href="http://localhost/Triple_Core/dashCont?command=dash_q"><li>Quarterly</li></a>
+					<a href="/Triple_Core/dashCont?command=dash_q"><li>Quarterly</li></a>
 					<li class="active">Monthly</li>
 				</ul>
 			</div>

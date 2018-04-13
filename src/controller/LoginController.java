@@ -84,6 +84,9 @@ public class LoginController extends HttpServlet {
 
 				HttpSession session = request.getSession();
 				session.setAttribute("user_info", user_info);
+				session.setAttribute("sector1_name", sector1_info[0]);
+				session.setAttribute("sector2_name", sector2_info[0]);
+				session.setAttribute("sector3_name", sector3_info[0]);
 
 			} else {
 				request.setAttribute("errMsg", "아이디와 비밀번호를 다시 확인해주세요");

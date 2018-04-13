@@ -91,6 +91,9 @@ public class DashController extends HttpServlet {
 //				System.out.println(top_company.get(1).getName());
 
 				session.setAttribute("user_info", user_info);
+				session.setAttribute("sector1_name", sector1_info[0]);
+				session.setAttribute("sector2_name", sector2_info[0]);
+				session.setAttribute("sector3_name", sector3_info[0]);
 
 			} else {
 				request.setAttribute("errMsg", "아이디와 비밀번호를 다시 확인해주세요");
@@ -154,6 +157,9 @@ public class DashController extends HttpServlet {
 //				System.out.println(top_company.get(1).getName());
 
 				session.setAttribute("user_info", user_info);
+				session.setAttribute("sector1_name", sector1_info[0]);
+				session.setAttribute("sector2_name", sector2_info[0]);
+				session.setAttribute("sector3_name", sector3_info[0]);
 
 			} else {
 				request.setAttribute("errMsg", "아이디와 비밀번호를 다시 확인해주세요");
@@ -170,11 +176,16 @@ public class DashController extends HttpServlet {
 	private void drawSectorOneGoogleMap(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 		HttpSession session = request.getSession();
+		String sector1_name = (String)session.getAttribute("sector1_name");
+		String sector2_name = (String)session.getAttribute("sector2_name");
+		String sector3_name = (String)session.getAttribute("sector3_name");
+		
 
 		String url = "showerror.jsp";
 
 		try {
 			UserDTO user_info = (UserDTO) session.getAttribute("user_info");
+			
 			System.out.println("[step01] login_user_info: " + user_info.getEmailAddress());
 
 			if (user_info != null) {
@@ -198,19 +209,23 @@ public class DashController extends HttpServlet {
 					request.setAttribute("USD_rtn", nation_rtn.get(6));
 
 				} else if (sec == "s03") { // s03 은 없는 국가 존재
-					System.out.println("[step03] USD_rtn: " + nation_rtn.get(5));
+//					System.out.println("[step03] USD_rtn: " + nation_rtn.get(5));
 					request.setAttribute("CNY_rtn", nation_rtn.get(0));
 					request.setAttribute("HKD_rtn", nation_rtn.get(1));
 					request.setAttribute("JPY_rtn", nation_rtn.get(2));
 					request.setAttribute("KRW_rtn", nation_rtn.get(3));
 					request.setAttribute("MXN_rtn", nation_rtn.get(4));
-					request.setAttribute("TWD_rtn", 0);
+					request.setAttribute("TWD_rtn", "0.00");
 					request.setAttribute("USD_rtn", nation_rtn.get(5));
 				}
 
 				// System.out.println(top_company.get(1).getName());
 
 				session.setAttribute("user_info", user_info);
+				session.setAttribute("sector1_name", sector1_name);
+				session.setAttribute("sector2_name", sector2_name);
+				session.setAttribute("sector3_name", sector3_name);
+				
 
 			} else {
 				request.setAttribute("errMsg", "아이디와 비밀번호를 다시 확인해주세요");
@@ -227,6 +242,7 @@ public class DashController extends HttpServlet {
 	private void drawSectorTwoGoogleMap(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 		HttpSession session = request.getSession();
+		String sector2_name = (String)session.getAttribute("sector2_name");
 
 		String url = "showerror.jsp";
 
@@ -261,13 +277,14 @@ public class DashController extends HttpServlet {
 					request.setAttribute("JPY_rtn", nation_rtn.get(2));
 					request.setAttribute("KRW_rtn", nation_rtn.get(3));
 					request.setAttribute("MXN_rtn", nation_rtn.get(4));
-					request.setAttribute("TWD_rtn", "0");
+					request.setAttribute("TWD_rtn", 0.00);
 					request.setAttribute("USD_rtn", nation_rtn.get(5));
 				}
 
 				// System.out.println(top_company.get(1).getName());
 
 				session.setAttribute("user_info", user_info);
+				session.setAttribute("sector2_name", sector2_name);
 
 			} else {
 				request.setAttribute("errMsg", "아이디와 비밀번호를 다시 확인해주세요");
@@ -283,6 +300,7 @@ public class DashController extends HttpServlet {
 	private void drawSectorThreeGoogleMap(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 		HttpSession session = request.getSession();
+		String sector3_name = (String)session.getAttribute("sector3_name");
 
 		String url = "showerror.jsp";
 
@@ -317,13 +335,14 @@ public class DashController extends HttpServlet {
 					request.setAttribute("JPY_rtn", nation_rtn.get(2));
 					request.setAttribute("KRW_rtn", nation_rtn.get(3));
 					request.setAttribute("MXN_rtn", nation_rtn.get(4));
-					request.setAttribute("TWD_rtn", "0");
+					request.setAttribute("TWD_rtn", 0.00);
 					request.setAttribute("USD_rtn", nation_rtn.get(5));
 				}
 
 				// System.out.println(top_company.get(1).getName());
 
 				session.setAttribute("user_info", user_info);
+				session.setAttribute("sector3_name", sector3_name);
 
 			} else {
 				request.setAttribute("errMsg", "아이디와 비밀번호를 다시 확인해주세요");
@@ -400,6 +419,9 @@ public class DashController extends HttpServlet {
 //				System.out.println(top_company.get(1).getName());
 
 				session.setAttribute("user_info", new_user_info);
+				session.setAttribute("sector1_name", sector1_info[0]);
+				session.setAttribute("sector2_name", sector2_info[0]);
+				session.setAttribute("sector3_name", sector3_info[0]);
 
 			} else {
 				request.setAttribute("errorMsg", "다시 시도하세요");

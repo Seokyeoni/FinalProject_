@@ -58,7 +58,7 @@ public class StockDAO {
 				sec_name = String.valueOf(rset1.getString(1));
 				System.out.println(sec_name);
 			}
-			String sql2 = "SELECT Sector, CONCAT( ROUND( AVG(Rtn) * 20 * 100, 2), '%' ) as Avg_Rtn, MIN(Date), MAX(Date) \r\n" + 
+			String sql2 = "SELECT Sector, CONCAT( ROUND( AVG(Rtn) * 20 * 100, 2), '%' ) as Avg_Rtn \r\n" + 
 					"FROM " + sector + "\r\n" + 
 					"WHERE Date > ( SELECT DATE_SUB('2018-04-01', INTERVAL 12 MONTH) ) and Date < '2018-04-01'\r\n" + 
 					"and Volume > 500000\r\n" + 
@@ -118,14 +118,24 @@ public class StockDAO {
 		try {
 			con = DBUtil.getConnection();
 			System.out.println("==connect==");
-			String sql = "SELECT Name, Exchange, Sector, Industry, CONCAT( ROUND( AVG(Rtn) * 20 * 100, 2), '%' ) as Avg_Rtn, ROUND( AVG(Volume), 0 ) as Avg_Vol, MIN(Date), MAX(Date) \r\n" + 
+//			String sql = "SELECT Name, Exchange, Sector, Industry, CONCAT( ROUND( AVG(Rtn) * 20 * 100, 2), '%' ) as Avg_Rtn, ROUND( AVG(Volume), 0 ) as Avg_Vol, MIN(Date), MAX(Date) \r\n" + 
+//					"FROM test_stocks_prices\r\n" + 
+//					"WHERE Date > ( SELECT DATE_SUB('2018-04-01', INTERVAL 12 MONTH) ) and Date < '2018-04-01'\r\n" + 
+//					"and Code = ? or Code = ? or Code = ?\r\n" + 
+//					"GROUP BY Name\r\n" + 
+//					"HAVING Avg_Vol > 1000000\r\n" + 
+//					"ORDER BY Avg_Rtn DESC\r\n" + 
+//					"LIMIT 5";
+			String sql = "SELECT Name, Exchange, Sector, Industry, CONCAT( ROUND( AVG(Rtn) * 20 * 100, 2), '%' ) as Avg_Rtn, ROUND( AVG(Volume), 0 ) as Avg_Vol, AVG(Rtn * 20 * 100) as Avg_Rtn2\r\n" + 
 					"FROM test_stocks_prices\r\n" + 
 					"WHERE Date > ( SELECT DATE_SUB('2018-04-01', INTERVAL 12 MONTH) ) and Date < '2018-04-01'\r\n" + 
 					"and Code = ? or Code = ? or Code = ?\r\n" + 
 					"GROUP BY Name\r\n" + 
 					"HAVING Avg_Vol > 1000000\r\n" + 
+					"and Avg_Rtn2 < 30.00\r\n" + 
 					"ORDER BY Avg_Rtn DESC\r\n" + 
 					"LIMIT 5";
+			
 			pstmt = con.prepareStatement(sql);
 			pstmt.setString(1, sectors[0]);
 			pstmt.setString(2, sectors[1]);
@@ -191,7 +201,7 @@ public class StockDAO {
 			}
 			
 			pstmt2 = con.prepareStatement(
-					"SELECT Sector, CONCAT( ROUND( AVG(Rtn) * 63 * 100, 2), '%' ) as Avg_Rtn, MIN(Date), MAX(Date) FROM test_stocks_prices \r\n" + 
+					"SELECT Sector, CONCAT( ROUND( AVG(Rtn) * 63 * 100, 2), '%' ) as Avg_Rtn FROM test_stocks_prices \r\n" + 
 					"WHERE Date > ( SELECT DATE_SUB('2018-04-01', INTERVAL 8 QUARTER) ) and Date < '2018-04-01'\r\n" + 
 					"and Code = ?\r\n" + 
 					"GROUP BY Code"
@@ -246,11 +256,12 @@ public class StockDAO {
 			con = DBUtil.getConnection();
 			System.out.println("==connect==");
 			pstmt = con.prepareStatement(
-					"SELECT Name, Exchange, Sector, Industry, CONCAT( ROUND( AVG(Rtn) * 63 * 100, 2), '%' ) as Avg_Rtn, ROUND( AVG(Volume), 0 ) as Avg_Vol, MIN(Date), MAX(Date) FROM test_stocks_prices \r\n" + 
+					"SELECT Name, Exchange, Sector, Industry, CONCAT( ROUND( AVG(Rtn) * 63 * 100, 2), '%' ) as Avg_Rtn, ROUND( AVG(Volume), 0 ) as Avg_Vol,  AVG(Rtn * 63 * 100) as Avg_Rtn2 FROM test_stocks_prices \r\n" + 
 					"WHERE Date > ( SELECT DATE_SUB('2018-04-01', INTERVAL 8 QUARTER) ) and Date < '2018-04-01'\r\n" + 
 					"and Code = ? or Code = ? or Code = ?\r\n" + 
 					"GROUP BY Name\r\n" + 
 					"HAVING Avg_Vol > 1000000\r\n" + 
+					"and Avg_Rtn2 < 30.00\r\n" + 
 					"ORDER BY Avg_Rtn DESC\r\n" + 
 					"LIMIT 5"
 					);
@@ -296,7 +307,6 @@ public class StockDAO {
 			String sql = "SELECT Sector, Currency, ROUND( AVG(Rtn) * 20 * 100, 2) as Avg_Rtn\r\n" + 
 					"FROM test_stocks_prices\r\n" + 
 					"WHERE Date > ( SELECT DATE_SUB('2018-04-01', INTERVAL 12 MONTH) ) and Date < '2018-04-01'\r\n" + 
-					"and Volume > 500000\r\n" + 
 					"and Code = ?\r\n" + 
 					"GROUP BY Currency\r\n" + 
 					"ORDER BY Currency ASC";
