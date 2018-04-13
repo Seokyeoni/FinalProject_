@@ -12,12 +12,12 @@ import numpy as np
 import time
 
 from modules.googleFinance import get_price_data
-from modules.yahooFinance import getStockDataYahoo
+from modules.yahooFinance import getStockDataYahooTwoYr
 
 
 
 processed_data_path = "C:/0.bigdata/4.web/Triple_Core/0.DataSet/1.ProcessedData"
-result_data_path = "C:/0.bigdata/0.data/Triple_Core/1.DataProcessing/result"
+result_data_path = "C:/0.bigdata/0.data/Triple_Core/1.DataProcessing/result2yr"
 
 old_validated_data = "old_validated_data_utf8.csv"
 processed_data_info = pd.read_csv("C:/0.bigdata/4.web/Triple_Core/0.DataSet/1.ProcessedData/old_validated_data_utf8.csv", encoding="UTF-8")
@@ -56,7 +56,7 @@ def getStockData(data_info, dir_name):
     param["q"] = ""
     param["x"] = ""
     param["i"] = str(60*60*24)
-    param["p"] = "1Y"
+    param["p"] = "2Y"
     param["c"] = ""
     
     stock = pd.DataFrame()
@@ -89,8 +89,7 @@ def getStockData(data_info, dir_name):
                     param["c"] = currency
                     
                     stock, google_empty = get_price_data(param)
-                    print(stock)
-                    
+                    #print(stock)
                     if not stock.empty:
                         stock["Name"] = row[0]
                         stock["Symbol"] = quote_symbol
@@ -114,7 +113,7 @@ def getStockData(data_info, dir_name):
                         quote_symbol = quote_symbol + exchange_info[exchange_name][4] ## yahoo
 #                        print(quote_symbol)
                         
-                        stock = getStockDataYahoo(quote_symbol)
+                        stock = getStockDataYahooTwoYr(quote_symbol)
 #                        print(stock)
                         
                         if not stock.empty:
@@ -148,7 +147,7 @@ def getStockData(data_info, dir_name):
             row = pd.DataFrame(row, index = error_columns)
             error_log = error_log.append(row.T)
         
-        if count == 1:
+        if count == 500:
             print(count)
             stock_total = stock_total.dropna()    
             stock_total = pd.DataFrame(stock_total, columns = stock_columns)

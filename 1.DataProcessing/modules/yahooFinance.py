@@ -28,7 +28,7 @@ def getStockDataYahoo(stockCode, start='', end=''):
         end = dt.datetime.strptime(end, '%Y-%m-%d')
     
     stock = pd.DataFrame()
-    for i in range(0, 2):
+    for i in range(0, 1):
         try:
             stock = web.YahooDailyReader(stockCode, start, end, adjust_price=True).read()
         except:
@@ -39,7 +39,7 @@ def getStockDataYahoo(stockCode, start='', end=''):
             stock = stock.drop('Adj_Ratio', 1)
             
             # Volume이 0 인 경우가 있으므로, 이를 제거한다 
-            stock = stock.drop(stock[stock.Volume < 10].index)
+            stock = stock.drop(stock[stock.Volume < 10000].index)
             
             # 수집한 데이터를 파일에 저장한다.
             break
@@ -71,3 +71,44 @@ def getWeekMonthOHLC(x, type='Week'):
     rtn = rtn.dropna()
     rtn = rtn.apply(pd.to_numeric)
     return rtn
+
+
+
+def getStockDataYahooTwoYr(stockCode, start='', end=''):
+    # 수집 기간
+    if start == '':
+        today = dt.datetime.today()
+        time_delta = dt.timedelta(days=730)
+        firstday = (today - time_delta).replace(day=1)
+        start = dt.datetime.strftime(firstday,"%Y-%m-%d")
+    else:
+        start = dt.datetime.strptime(start, '%Y-%m-%d')
+    
+    if end == '':
+        end = dt.date.today()
+    else:
+        end = dt.datetime.strptime(end, '%Y-%m-%d')
+    
+    stock = pd.DataFrame()
+    for i in range(0, 2):
+        try:
+            stock = web.YahooDailyReader(stockCode, start, end, adjust_price=True).read()
+        except:
+            print("%s not collected (%d)" % (stockCode, i + 1))
+            
+        if not stock.empty:
+            # 수정주가 비율은 이미 적용되었으므로 제거한다
+            stock = stock.drop('Adj_Ratio', 1)
+            
+            # Volume이 0 인 경우가 있으므로, 이를 제거한다 
+#            stock = stock.drop(stock[stock.Volume < 10].index)
+            stock = stock.drop(stock[stock.Volume < 10000].index)
+            
+            # 수집한 데이터를 파일에 저장한다.
+            break
+        
+    if stock.empty:
+        print("%s not collected" % stockCode)
+    
+
+    return stock

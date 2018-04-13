@@ -19,9 +19,11 @@ import pandas as pd
 
 
 def get_price_data(query):
-    for i in range(0, 2):
+    for i in range(0, 1):
+        google_empty = True
         try:
             r = requests.get("https://finance.google.com/finance/getprices", params=query)
+            print(r)
             lines = r.text.splitlines()
             data = []
             basetime = 0
@@ -34,11 +36,15 @@ def get_price_data(query):
                 elif cols[0][0].isdigit():
                     date = basetime + (int(cols[0])*int(query['i']))
                     data.append([str(datetime.fromtimestamp(date)), float(cols[4]), float(cols[2]), float(cols[3]), float(cols[1]), int(cols[5])])
-            
             stock = pd.DataFrame(data, columns = ['Date', 'Open', 'High', 'Low', 'Close', 'Volume'])
+            
+            if not stock.empty:
+                google_empty = False
+                
+            stock = stock.drop(stock[stock.Volume < 10000].index)
             break
         
         except:
             print("%s not collected (%d)" % (query['q'], i + 1))
             
-    return stock 
+    return stock, google_empty 
