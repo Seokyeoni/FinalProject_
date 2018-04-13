@@ -53,7 +53,6 @@
 	<article>
 		<header>
 			<div class="title">Dashboard</div>
-			<div class="user"></div>
 			<div class="interval">
 				<ul>
 					<a href="http://localhost/Triple_Core/dashCont?command=dash_q"><li>Quarterly</li></a>

@@ -51,7 +51,6 @@
 	<article>
 		<header>
 			<div class="title">Google Map</div>
-			<div class="user"></div>
 			<div class="interval">
 				<ul>
 					<a href="http://localhost/Triple_Core/dashCont?command=dash_q"><li>Quarterly</li></a>
