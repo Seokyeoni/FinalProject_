@@ -23,7 +23,7 @@ def get_price_data(query):
         google_empty = True
         try:
             r = requests.get("https://finance.google.com/finance/getprices", params=query)
-            print(r)
+#            print(r)
             lines = r.text.splitlines()
             data = []
             basetime = 0

@@ -89,7 +89,7 @@ def getStockData(data_info, dir_name):
                     param["c"] = currency
                     
                     stock, google_empty = get_price_data(param)
-                    print(stock)
+#                    print(stock)                    
                     
                     if not stock.empty:
                         stock["Name"] = row[0]
